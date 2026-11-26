@@ -1,0 +1,429 @@
+{
+ "commit": "126a14346683b8302e67565c87f7514db302c354",
+ "smoke": false,
+ "config": {
+  "n_mlp_seeds": 3,
+  "n_boot": 1000
+ },
+ "budgets": [
+  250,
+  500,
+  1000,
+  2000,
+  4000,
+  8000,
+  16000,
+  "full"
+ ],
+ "lr_C_chosen": {
+  "sib": {
+   "ar": 0.01,
+   "el": 10,
+   "en": 0.1,
+   "et": 0.01,
+   "eu": 0.01,
+   "fa": 0.01,
+   "fi": 0.01,
+   "fr": 0.1,
+   "ga": 0.01,
+   "he": 0.1,
+   "hi": 0.1,
+   "hr": 0.01,
+   "hu": 0.01,
+   "id": 0.01,
+   "it": 0.1,
+   "ka": 0.01,
+   "kk": 0.1,
+   "ko": 0.01,
+   "mt": 0.1,
+   "ru": 1,
+   "sw": 0.01,
+   "ta": 0.01,
+   "tl": 100,
+   "tr": 10,
+   "ur": 0.01
+  },
+  "umsab": {
+   "ar": 0.001,
+   "de": 0.001,
+   "en": 0.01,
+   "es": 0.01,
+   "fr": 0.001,
+   "hi": 1,
+   "it": 0.01
+  }
+ },
+ "bli_cells_joined": true,
+ "inputs": {
+  "sib/ar.npz": {
+   "path": "C:\\data\\language-graph\\v1\\downstream\\sib200\\ar.npz",
+   "bytes": 1123511,
+   "sha256": "3eb8783dc92a92c1b84190d4ec6f7f63da65d3dbf04c8267c65163ff72dfa92c"
+  },
+  "sib/as.npz": {
+   "path": "C:\\data\\language-graph\\v1\\downstream\\sib200\\as.npz",
+   "bytes": 1122510,
+   "sha256": "1cd2b3f5bc3f1f66d1c35a256abcdc27795dde61d64014e28ccefb0228264fb3"
+  },
+  "sib/ckb.npz": {
+   "path": "C:\\data\\language-graph\\v1\\downstream\\sib200\\ckb.npz",
+   "bytes": 1122174,
+   "sha256": "535dd0246adf806bdcfddac3497b919b53fde862c56e527ae39386e28231172f"
+  },
+  "sib/de.npz": {
+   "path": "C:\\data\\language-graph\\v1\\downstream\\sib200\\de.npz",
+   "bytes": 1126004,
+   "sha256": "c69a958fb32a7e32f8092f5aa5887beeccbba50dc00330ab07f65fd7d0ceb7f0"
+  },
+  "sib/el.npz": {
+   "path": "C:\\data\\language-graph\\v1\\downstream\\sib200\\el.npz",
+   "bytes": 1125749,
+   "sha256": "60a4795bc5bc04790090e52ee1e33555db9ef01c9567bfce01210d7164961966"
+  },
+  "sib/en.npz": {
+   "path": "C:\\data\\language-graph\\v1\\downstream\\sib200\\en.npz",
+   "bytes": 1125948,
+   "sha256": "43ad26e72d369e008eb8182d6d7b1cf821539f651894f0fe63343c59d66d608f"
+  },
+  "sib/es.npz": {
+   "path": "C:\\data\\language-graph\\v1\\downstream\\sib200\\es.npz",
+   "bytes": 1126158,
+   "sha256": "165d09bd23153cbc78355c46ad6bdb59bfe9cd53aa0278fb239204410e02ab9a"
+  },
+  "sib/et.npz": {
+   "path": "C:\\data\\language-graph\\v1\\downstream\\sib200\\et.npz",
+   "bytes": 1123163,
+   "sha256": "d29fe4357dec637a35bd1b964ee0ba805a9600af420f6ab61ddaccc3e5cae995"
+  },
+  "sib/eu.npz": {
+   "path": "C:\\data\\language-graph\\v1\\downstream\\sib200\\eu.npz",
+   "bytes": 1124346,
+   "sha256": "2641b70067db08d03f14ac94d7448598a2159ad6a84257e265e0862c83649179"
+  },
+  "sib/fa.npz": {
+   "path": "C:\\data\\language-graph\\v1\\downstream\\sib200\\fa.npz",
+   "bytes": 1123446,
+   "sha256": "f50eb30ce19adb47d61447051552ca790c08f5b914be4d95a1ff84864944dc39"
+  },
+  "sib/fi.npz": {
+   "path": "C:\\data\\language-graph\\v1\\downstream\\sib200\\fi.npz",
+   "bytes": 1124057,
+   "sha256": "04f4cf0c32ebb4127b205b3d1d19ef6829a1ab07582b3536d4bc659671feeef7"
+  },
+  "sib/fr.npz": {
+   "path": "C:\\data\\language-graph\\v1\\downstream\\sib200\\fr.npz",
+   "bytes": 1128008,
+   "sha256": "401f65a14e9aecc6fbb3cef4a2e4dc78db837a0d687d33773a4d3ad82720effa"
+  },
+  "sib/ga.npz": {
+   "path": "C:\\data\\language-graph\\v1\\downstream\\sib200\\ga.npz",
+   "bytes": 1124271,
+   "sha256": "d52d3b7cebbd91538d34b1ee3725d396ff424e1cbc150d3511b0479f6765a7d7"
+  },
+  "sib/he.npz": {
+   "path": "C:\\data\\language-graph\\v1\\downstream\\sib200\\he.npz",
+   "bytes": 1122626,
+   "sha256": "2ab02b6f490f516122222e313dbadfb1daac676fa3b36e9472b7176a17e13c45"
+  },
+  "sib/hi.npz": {
+   "path": "C:\\data\\language-graph\\v1\\downstream\\sib200\\hi.npz",
+   "bytes": 1124857,
+   "sha256": "abd2c645d003972042f3c62a59c2b543d5064d436bb09e24d29679306645d3d4"
+  },
+  "sib/hr.npz": {
+   "path": "C:\\data\\language-graph\\v1\\downstream\\sib200\\hr.npz",
+   "bytes": 1124911,
+   "sha256": "9fa824135963717d9c3704b8943bb76fa0734313c9e6685d1efc3d7234e9e8ba"
+  },
+  "sib/hu.npz": {
+   "path": "C:\\data\\language-graph\\v1\\downstream\\sib200\\hu.npz",
+   "bytes": 1124252,
+   "sha256": "1db4badf3dcfde0e22bb2313c71374bb61e45bd745e94fd0baff7af68e7e11ba"
+  },
+  "sib/id.npz": {
+   "path": "C:\\data\\language-graph\\v1\\downstream\\sib200\\id.npz",
+   "bytes": 1126952,
+   "sha256": "8d2f60b206d6cc70f8b63a58dccfb1c4865e621bc2685baab513ad8c4b514abc"
+  },
+  "sib/it.npz": {
+   "path": "C:\\data\\language-graph\\v1\\downstream\\sib200\\it.npz",
+   "bytes": 1125798,
+   "sha256": "2aec141184bb40b668893dc5245d3bec1907fb20145cd9f33e34f6b2b772320f"
+  },
+  "sib/jv.npz": {
+   "path": "C:\\data\\language-graph\\v1\\downstream\\sib200\\jv.npz",
+   "bytes": 1122763,
+   "sha256": "11495c1dfb7b3d5b2639de6feb93d14341a80f1b2e3aa9a1818f2b8bf32ff606"
+  },
+  "sib/ka.npz": {
+   "path": "C:\\data\\language-graph\\v1\\downstream\\sib200\\ka.npz",
+   "bytes": 1123018,
+   "sha256": "bb494e85737cc5152640713e0671482edbb4ab3c52db066b51687b5a548c57d1"
+  },
+  "sib/kk.npz": {
+   "path": "C:\\data\\language-graph\\v1\\downstream\\sib200\\kk.npz",
+   "bytes": 1123159,
+   "sha256": "1f5589331d562d9d4169b6fbd8a04266cc5987c0de5494d2bddf13f04eb2d10a"
+  },
+  "sib/ko.npz": {
+   "path": "C:\\data\\language-graph\\v1\\downstream\\sib200\\ko.npz",
+   "bytes": 1122814,
+   "sha256": "bc4bf50e17cecdea1c8a33053c6cb7563a51bfb4704fa27faf430fa2a910681a"
+  },
+  "sib/mg.npz": {
+   "path": "C:\\data\\language-graph\\v1\\downstream\\sib200\\mg.npz",
+   "bytes": 1127836,
+   "sha256": "775d2e6117801f2a1724633560bb65325694e8c58cc8ec7e9d8eaea73a2f3189"
+  },
+  "sib/mt.npz": {
+   "path": "C:\\data\\language-graph\\v1\\downstream\\sib200\\mt.npz",
+   "bytes": 1123324,
+   "sha256": "f3372030461b267ddf997e8d1cb784c531ac91b67f9b4cea4a425b0eb426a4f4"
+  },
+  "sib/or.npz": {
+   "path": "C:\\data\\language-graph\\v1\\downstream\\sib200\\or.npz",
+   "bytes": 1123535,
+   "sha256": "183416449fc59382af6bfe271544a874274907cdfae6d7426aceadfaa8f7325e"
+  },
+  "sib/qu.npz": {
+   "path": "C:\\data\\language-graph\\v1\\downstream\\sib200\\qu.npz",
+   "bytes": 1121870,
+   "sha256": "f34bad702932c57498818256166a9cc7e70b50b38bf2be573b5a63cdb4ccf298"
+  },
+  "sib/ru.npz": {
+   "path": "C:\\data\\language-graph\\v1\\downstream\\sib200\\ru.npz",
+   "bytes": 1123941,
+   "sha256": "26199903e61a8bda0e1fc4b2f356c22d35d1c667c9266073a5c02ec36349323d"
+  },
+  "sib/sw.npz": {
+   "path": "C:\\data\\language-graph\\v1\\downstream\\sib200\\sw.npz",
+   "bytes": 1124997,
+   "sha256": "e800e38e94803d11c9b1a9d091c7ab05f601c75aa39d8e5e33eac81a1b6ccde7"
+  },
+  "sib/ta.npz": {
+   "path": "C:\\data\\language-graph\\v1\\downstream\\sib200\\ta.npz",
+   "bytes": 1122924,
+   "sha256": "46d960e250aefaa5cda176bf689f7f48fa13991a81e7927e010c2faf07ddea2c"
+  },
+  "sib/tl.npz": {
+   "path": "C:\\data\\language-graph\\v1\\downstream\\sib200\\tl.npz",
+   "bytes": 1127902,
+   "sha256": "209491f4fb74aa3481e20e576132f879282057bd3cc6e6a48de33a0b682b4abc"
+  },
+  "sib/tr.npz": {
+   "path": "C:\\data\\language-graph\\v1\\downstream\\sib200\\tr.npz",
+   "bytes": 1122820,
+   "sha256": "754562d3a8837111cb1f311682df2e6b47441119836b757647d6094c13e4ac57"
+  },
+  "sib/ur.npz": {
+   "path": "C:\\data\\language-graph\\v1\\downstream\\sib200\\ur.npz",
+   "bytes": 1124288,
+   "sha256": "415fc8c9729138979ea4e6b2d0722a0b4e7889134e35f6c03a0d70a3750d8615"
+  },
+  "sib/yo.npz": {
+   "path": "C:\\data\\language-graph\\v1\\downstream\\sib200\\yo.npz",
+   "bytes": 1125966,
+   "sha256": "6ed381811ae0c6351f03fab6c122e0b5d50cb5618b9d16b4f45a80ec6dabd02d"
+  },
+  "umsab/ar.npz": {
+   "path": "C:\\data\\language-graph\\v1\\downstream\\umsab\\ar.npz",
+   "bytes": 3376361,
+   "sha256": "f3c1608140c3048705a18637a1bc993861f95ad051167728048cd84d779e93af"
+  },
+  "umsab/de.npz": {
+   "path": "C:\\data\\language-graph\\v1\\downstream\\umsab\\de.npz",
+   "bytes": 3333775,
+   "sha256": "099ae46ed8807907fe8b530a959d89cf002052fb7260b8e79d9ef3ce10cd107e"
+  },
+  "umsab/en.npz": {
+   "path": "C:\\data\\language-graph\\v1\\downstream\\umsab\\en.npz",
+   "bytes": 3392478,
+   "sha256": "d152dfc052d8cc2ac31aa72ce67eef782f619d73651bc64f55b4c305f15dbf88"
+  },
+  "umsab/es.npz": {
+   "path": "C:\\data\\language-graph\\v1\\downstream\\umsab\\es.npz",
+   "bytes": 3391000,
+   "sha256": "28648bc2b572c58f8a00810fc8ced2b1666af5f88071f1c7c9a4bf01ff983261"
+  },
+  "umsab/fr.npz": {
+   "path": "C:\\data\\language-graph\\v1\\downstream\\umsab\\fr.npz",
+   "bytes": 3381644,
+   "sha256": "66c5c503fcddc4432c432c1b65fcd873b3ef23b27d7df835bdc102aac6ec33c8"
+  },
+  "umsab/hi.npz": {
+   "path": "C:\\data\\language-graph\\v1\\downstream\\umsab\\hi.npz",
+   "bytes": 3331044,
+   "sha256": "e5c8ce7973623eb918d1399cb6274738c89df2b476e76364e616c20d83072448"
+  },
+  "umsab/it.npz": {
+   "path": "C:\\data\\language-graph\\v1\\downstream\\umsab\\it.npz",
+   "bytes": 3383627,
+   "sha256": "a8204510ca0e461131e37e20e7bb9b6ddb5846dbd02abb52dd15a6d873e525e8"
+  },
+  "dc/b1000/dict_sizes.csv": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\dc\\b1000\\dict_sizes.csv",
+   "bytes": 4451,
+   "sha256": "26f24e5a4a477d355e51ce4f4807b014a4d4f0d459a7bb91cc6f37d51af1723c"
+  },
+  "dc/b1000/pairs.csv": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\dc\\b1000\\pairs.csv",
+   "bytes": 830,
+   "sha256": "0ecae4906359915d7a329119208a61c8ba4d584db231e8f3a8decbee754844ad"
+  },
+  "dc/b16000/dict_sizes.csv": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\dc\\b16000\\dict_sizes.csv",
+   "bytes": 3158,
+   "sha256": "5cc6f44a761f764c8d93320ec175f86616c9eb27a3e46f5aa5b6ed08cc99b508"
+  },
+  "dc/b16000/pairs.csv": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\dc\\b16000\\pairs.csv",
+   "bytes": 357,
+   "sha256": "d32d5d5efdad3a78d19a2781413fa6fd24cadedf75f92296a06ea3484ce2d46f"
+  },
+  "dc/b2000/dict_sizes.csv": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\dc\\b2000\\dict_sizes.csv",
+   "bytes": 4531,
+   "sha256": "b31c55246657319ec87111e3067816f234de0b664db771d61c83e436258c474b"
+  },
+  "dc/b2000/pairs.csv": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\dc\\b2000\\pairs.csv",
+   "bytes": 830,
+   "sha256": "0ecae4906359915d7a329119208a61c8ba4d584db231e8f3a8decbee754844ad"
+  },
+  "dc/b250/dict_sizes.csv": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\dc\\b250\\dict_sizes.csv",
+   "bytes": 4411,
+   "sha256": "eb3be08336ce5bbd8c153a70ce2f03adcecfdefd49dd23018fbf0bc3a274fc46"
+  },
+  "dc/b250/pairs.csv": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\dc\\b250\\pairs.csv",
+   "bytes": 830,
+   "sha256": "0ecae4906359915d7a329119208a61c8ba4d584db231e8f3a8decbee754844ad"
+  },
+  "dc/b4000/dict_sizes.csv": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\dc\\b4000\\dict_sizes.csv",
+   "bytes": 4249,
+   "sha256": "709bcd33652505d297a37187dec79207fa265b734106fcad2b5b0c14d68779d0"
+  },
+  "dc/b4000/pairs.csv": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\dc\\b4000\\pairs.csv",
+   "bytes": 734,
+   "sha256": "3b82a8066deb860af7c31dfb06117da36cb808897c9f6f340535b5b89c478858"
+  },
+  "dc/b500/dict_sizes.csv": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\dc\\b500\\dict_sizes.csv",
+   "bytes": 4411,
+   "sha256": "a20aa6f73b277fa2673786bb055ef974b2bcd3f96857bb90a2db001406dea965"
+  },
+  "dc/b500/pairs.csv": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\dc\\b500\\pairs.csv",
+   "bytes": 830,
+   "sha256": "0ecae4906359915d7a329119208a61c8ba4d584db231e8f3a8decbee754844ad"
+  },
+  "dc/b8000/dict_sizes.csv": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\dc\\b8000\\dict_sizes.csv",
+   "bytes": 3779,
+   "sha256": "07b9c950e4849d2e68f770a4818056e0f6f1d73505dc1c0e7e71c1fd76b4b404"
+  },
+  "dc/b8000/pairs.csv": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\dc\\b8000\\pairs.csv",
+   "bytes": 576,
+   "sha256": "f232fbe79b7ac6921bc31687566c48ccc7612951a7acd8a6b97aabefa692f80e"
+  },
+  "dc/bfull/dict_sizes.csv": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\dc\\bfull\\dict_sizes.csv",
+   "bytes": 4590,
+   "sha256": "b554a21b9b8c14a97b329540bef7b10417798565e9bbd650aff1f148d0881730"
+  },
+  "dc/bfull/pairs.csv": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\dc\\bfull\\pairs.csv",
+   "bytes": 830,
+   "sha256": "0ecae4906359915d7a329119208a61c8ba4d584db231e8f3a8decbee754844ad"
+  },
+  "uc/b1000/dict_sizes.csv": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\uc\\b1000\\dict_sizes.csv",
+   "bytes": 1925,
+   "sha256": "f62264f7e3784c23f0111937b0ef6ff3efdbc0aa417c87d9c654a2904d0c8712"
+  },
+  "uc/b1000/pairs.csv": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\uc\\b1000\\pairs.csv",
+   "bytes": 456,
+   "sha256": "c11e7e35f08aaad17468c1efdfa909c10b7fed8b1e37e316ea1e1802ac1eac3a"
+  },
+  "uc/b16000/dict_sizes.csv": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\uc\\b16000\\dict_sizes.csv",
+   "bytes": 1891,
+   "sha256": "58120fba357443cfb08e1fb7cfd15b89041c5ba1b06f8d6f508702122bf17748"
+  },
+  "uc/b16000/pairs.csv": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\uc\\b16000\\pairs.csv",
+   "bytes": 416,
+   "sha256": "f56b32808c81d849adaeb97044d857a481995bec5dda6224b797760bdae1304b"
+  },
+  "uc/b2000/dict_sizes.csv": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\uc\\b2000\\dict_sizes.csv",
+   "bytes": 1967,
+   "sha256": "246eb6c95fbabcfc019817431c707e69df05e0c0de4f545019b2dab4a71a31f8"
+  },
+  "uc/b2000/pairs.csv": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\uc\\b2000\\pairs.csv",
+   "bytes": 456,
+   "sha256": "c11e7e35f08aaad17468c1efdfa909c10b7fed8b1e37e316ea1e1802ac1eac3a"
+  },
+  "uc/b250/dict_sizes.csv": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\uc\\b250\\dict_sizes.csv",
+   "bytes": 1904,
+   "sha256": "eb5025a256242b46ccdb78eba92c97e8f398eabca0d97911f325927816931def"
+  },
+  "uc/b250/pairs.csv": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\uc\\b250\\pairs.csv",
+   "bytes": 456,
+   "sha256": "c11e7e35f08aaad17468c1efdfa909c10b7fed8b1e37e316ea1e1802ac1eac3a"
+  },
+  "uc/b4000/dict_sizes.csv": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\uc\\b4000\\dict_sizes.csv",
+   "bytes": 1967,
+   "sha256": "36e5df627f9f1529633e6ca2b914c44821ff0259e0aafd1ad3e4a4fb61714474"
+  },
+  "uc/b4000/pairs.csv": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\uc\\b4000\\pairs.csv",
+   "bytes": 456,
+   "sha256": "c11e7e35f08aaad17468c1efdfa909c10b7fed8b1e37e316ea1e1802ac1eac3a"
+  },
+  "uc/b500/dict_sizes.csv": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\uc\\b500\\dict_sizes.csv",
+   "bytes": 1904,
+   "sha256": "fa70a6f50f32989f60d66a2c1fad66d9604f0bb3ba8265cd02765e0e5d519b70"
+  },
+  "uc/b500/pairs.csv": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\uc\\b500\\pairs.csv",
+   "bytes": 456,
+   "sha256": "c11e7e35f08aaad17468c1efdfa909c10b7fed8b1e37e316ea1e1802ac1eac3a"
+  },
+  "uc/b8000/dict_sizes.csv": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\uc\\b8000\\dict_sizes.csv",
+   "bytes": 1967,
+   "sha256": "7a6f09f32dcfd7a8894beb25fe2dcdb47ec98e2b0d3983f580356d07d3c8709d"
+  },
+  "uc/b8000/pairs.csv": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\uc\\b8000\\pairs.csv",
+   "bytes": 456,
+   "sha256": "c11e7e35f08aaad17468c1efdfa909c10b7fed8b1e37e316ea1e1802ac1eac3a"
+  },
+  "uc/bfull/dict_sizes.csv": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\uc\\bfull\\dict_sizes.csv",
+   "bytes": 2032,
+   "sha256": "6fe0b0c21b6fc4275dc7fc0ad24478f37c4a7c67eff308a3c5f1c911972f15b5"
+  },
+  "uc/bfull/pairs.csv": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\uc\\bfull\\pairs.csv",
+   "bytes": 456,
+   "sha256": "c11e7e35f08aaad17468c1efdfa909c10b7fed8b1e37e316ea1e1802ac1eac3a"
+  },
+  "controlled-scarcity/cells.csv": {
+   "path": "C:\\Users\\youss\\OneDrive - aus.edu\\Desktop\\clwe-chains\\experiments\\controlled-scarcity\\results\\cells.csv",
+   "bytes": 134514,
+   "sha256": "2a9618a5b72f23dcfd7ece15c461151cf2cd4731cfd9695af28dee6443474a06"
+  }
+ }
+}

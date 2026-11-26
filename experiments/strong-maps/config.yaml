@@ -1,0 +1,24 @@
+# Strong maps. See README.md (approved 2026-11-23).
+seed: 0                         # pilot pairs (seed-0 draws) and the weight's folds over pairs
+vocab: 20000                    # induction vocabulary: each language's most frequent words
+# final: procrustes, every map a rotation (PROC-B); was vecmap until the stage 1 pilot showed
+# VecMap's final step distorting chains (README build notes, decisions.md 2026-11-23)
+selflearn: {k: 10, rounds: 10, tol: 0.01, min_full: 600, final: procrustes}
+rcsls: {k: 10, lr: 1.0, niter: 10}            # fastText alignment/align.py defaults
+weights: [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]   # chain's weight in the weighted combination
+weight_folds: 5                 # full run: w by cross-validation over pairs
+tie: 0.005                      # selection: ties within this go to the simpler candidate
+candidates: [chain, combo, wcombo, hubs3, seeded]          # simplest first
+pilot:
+  s1: {per_language: 1}         # one pair per low-resource language
+  a: {languages: 4}             # 4 pairs from different source languages
+  a2: {languages: 4}
+  d: {pairs: 6}
+  dc_budgets: [250, 1000, 4000, 16000]   # controlled scarcity: stage D's pilot pairs
+scenarios:                      # stage 1's runner on each stage's data
+  s1: {experiment: scarce-natural-s1, data: "", hubs: s1, joined: true, rcsls: false}
+  a: {experiment: scarce-moderate-a, data: a, hubs: a, joined: true, rcsls: false}
+  a2: {experiment: scarce-moderate-a2, data: a2, hubs: a2, joined: true, rcsls: false}
+  d: {experiment: natural-highres-d, data: d, hubs: d, joined: false, rcsls: true}
+  dc: {experiment: controlled-scarcity, data: dc, hubs: d, joined: true, rcsls: true,
+       budgets: [250, 500, 1000, 2000, 4000, 8000, 16000]}

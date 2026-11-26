@@ -1,0 +1,6 @@
+# Phase 6 stage 1E: route choice under natural dictionaries. See README.md.
+max_mid: 2                       # one or two intermediates
+oracle_top: 5                    # routes rescored from the NN screening (fold 0, s -> t)
+validation: {frac: 0.2, max: 500, min: 10}   # edge measures: most frequent 20% of a words, <= 500
+bootstrap: {n: 1000, seed: 0}    # paired, per pair-direction
+max_cached_vectors: 40           # all 36 languages' vectors stay on the GPU (remote, 24 GB)

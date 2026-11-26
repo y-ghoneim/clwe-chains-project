@@ -1,0 +1,3 @@
+# Phase 6 stage A2: low-resource x node, distant, direct 1,000-3,000 (43 pairs). See README.md.
+data: a2                    # v1/phase6/a2 (prep/07 and prep/08 --stage a2)
+methods: [thin, chain, combo, joined_mb]   # as stage A (decisions.md 2026-11-17)

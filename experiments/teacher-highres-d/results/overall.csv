@@ -1,0 +1,8 @@
+method,mean_over_languages,n_languages,n_dirs,n_above,n_below
+chain,-0.00175125,22,80,9,22
+combo,0.0409806,22,80,67,0
+teacherd_0.03,0.00822663,22,80,34,1
+teacherd_0.1,0.0137216,22,80,33,3
+teacherd_0.3,0.0159711,22,80,28,7
+teacherd_1,0.0108346,22,80,23,12
+teacherd_cv,0.0112568,22,80,27,7

@@ -1,0 +1,4 @@
+# Settings of the downstream UMSAB run (README.md). Classifier settings (the C grid, the MLP
+# configuration) live in src/clwe_chains/transfer.py and are recorded in run_info.json.
+n_mlp_seeds: 3        # MLP seeds per labelled language; logistic regression is deterministic
+n_boot: 1000          # bootstrap resamples (tweets within a direction; pairs for the summaries)

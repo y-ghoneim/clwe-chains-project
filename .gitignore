@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Machine-specific config
+configs/local.yaml
+
+# Data and large outputs never go in the repo (they live under data_root)
+data/
+*.vec
+*.vec.gz
+*.bin
+*.npy
+*.npz
+*.pt
+*.zip
+*.tar.gz
+*.parquet
+
+# OS / editors
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# FLORES+ terms forbid re-hosting it; it lives only under data_root and must never be committed
+flores*/
+
+# smoke runs of an experiment runner (--limit); never results
+experiments/*/results/smoke/

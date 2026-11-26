@@ -1,0 +1,11 @@
+# Ensemble control (review A3). See README.md (approved 2026-11-21).
+seed: 0                     # bootstrap resamples: seeded with this, the pair's name and the fold
+stages:                     # stage 1's runner on each stage's data, pairs, folds and test words
+  d:
+    experiment: natural-highres-d   # pairs.csv from experiments/<experiment>/
+    data: d                         # v1/phase6/<data>
+    partners: [boot, lstsq]
+  s1:
+    experiment: scarce-natural-s1
+    data: ""                        # stage 1's data is the v1/phase6 root
+    partners: [boot]                # least squares left out: direct dictionaries of 66-499 pairs

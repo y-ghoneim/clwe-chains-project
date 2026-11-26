@@ -1,0 +1,7 @@
+stage,method,records,same_rank_share,max_rank_diff
+d,thin,400,0.99994,5
+d,chain,400,0.99994,3
+d,combo,400,0.999955,2
+s1,thin,770,1,0
+s1,chain,770,1,0
+s1,combo,770,1,0

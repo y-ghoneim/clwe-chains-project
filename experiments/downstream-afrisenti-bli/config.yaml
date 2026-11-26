@@ -1,0 +1,3 @@
+# Companion BLI run for the AfriSenti downstream experiment. See README.md.
+data: af                    # v1/phase6/af (prep/07 and prep/08 --stage af)
+methods: [thin, chain, combo]   # as stage D; downstream uses direct and chain

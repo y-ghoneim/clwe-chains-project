@@ -1,0 +1,32 @@
+{
+ "sizes": [
+  16000,
+  32000,
+  64000
+ ],
+ "medians_log2": [
+  11.866603442360358,
+  12.56294720893121,
+  13.917701065464874
+ ],
+ "growth": 4.144211471854613,
+ "lo": 2.3939865788154706,
+ "hi": "inf",
+ "unbounded_share": 0.38,
+ "undefined_share": 0.0,
+ "verdict": "grows in proportion",
+ "same_pairs": {
+  "n_pairs": 20,
+  "medians_log2": [
+   11.813041987783176,
+   12.592105946840956,
+   13.917701065464874
+  ],
+  "growth": 4.300961084441449,
+  "lo": 2.505786798111347,
+  "hi": "inf",
+  "unbounded_share": 0.405,
+  "undefined_share": 0.0,
+  "verdict": "grows in proportion"
+ }
+}

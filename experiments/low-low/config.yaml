@@ -1,0 +1,3 @@
+# Both ends low-resource. See README.md (approved 2026-11-25). Rules fixed before results.
+small: 100          # pairs with a direct dictionary under this many pairs are their own group
+min_test: 50        # a pair needs at least this many test words (eligible concepts, all folds)

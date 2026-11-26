@@ -1,0 +1,3 @@
+# MasakhaNEWS downstream run. See README.md.
+n_mlp_seeds: 3                # as the sentiment parts
+n_boot: 1000

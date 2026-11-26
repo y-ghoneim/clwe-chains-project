@@ -1,0 +1,166 @@
+# Shared defaults. Machine-specific settings (data_root, device, eval.block_rows) go in
+# configs/local.yaml, which is gitignored. Copy configs/local.example.yaml to get started.
+
+# Large files live outside the repo (and outside OneDrive). Override in local.yaml or with the
+# LG_DATA_ROOT environment variable.
+data_root: C:/data/language-graph
+
+seed: 0
+device: cuda
+
+embeddings: {dim: 300, max_vocab: 200000, normalize: [unit, center, unit]}
+
+eval:
+  csls_k: 10
+  block_rows: 1024           # rows per GPU similarity block; 1024 fits 6 GB. Per machine.
+  half: true                 # fp16 finds neighbour candidates, scores in fp32 (same ranks)
+
+list:                        # the shared concept list (brief 5.2, 5.3)
+  n_candidates: 20000        # provisional filter
+  wikt_codes: {zh: [cmn, zh], hr: [hr, sh]}
+  cognate_threshold: 0.8     # provisional
+  round_trip_top_k: 5        # concept must be among the word's 5 best English translations (P)
+  coverage_top: 1000         # coverage is measured over the top 1,000 candidates
+  coverage_threshold: 0.69   # provisional (user, 2026-11-15): keeps mt for the AUS replication
+  test_frac: 0.2
+  split_seeds: [0, 1, 2, 3, 4]
+  # Robustness subset (brief 5.7): headline routes are retrained and retested on concepts whose
+  # words share a Wiktionary sense table in at least this share of evaluable pairs
+  # (prep/05_sense.py). Fixed before results.
+  sense_subset: {min_coherence: 0.9, min_evaluable: 10}
+
+pairs:                       # phase 4 pair selection (decisions.md 2026-11-15)
+  seed: 0
+  cap_b: 3                   # at most this many stratum-(b) pairs per language
+  contact: [[ar, fa], [ar, ur], [ar, sw], [mt, it], [tl, es], [ja, zh], [ko, zh], [tr, fa]]
+  # CC-100 size in GiB (Conneau et al. 2020, Table 6); mt isn't in CC-100 (null ranks last).
+  sizes_gib: {en: 300.8, ar: 28.0, de: 66.6, el: 46.9, es: 53.3, et: 6.1, eu: 2.0, fa: 111.6,
+              fi: 54.3, fr: 56.8, ga: 0.5, he: 31.6, hi: 20.2, hr: 20.5, hu: 58.4, id: 148.3,
+              it: 30.2, ja: 69.3, ka: 9.1, kk: 6.4, ko: 54.2, mt: null, ru: 278.0, sw: 1.6,
+              ta: 12.2, th: 71.7, tl: 3.1, tr: 20.9, ur: 5.7, zh: 46.9}
+  xling: [hr, en, fi, fr, de, it, ru, tr]                   # Glavaš et al. 2019
+  panlex_bli: [et, eu, fi, he, hu, id, ka, ko, th, tr]      # Vulić et al. 2019, our nodes only
+  scripts: {en: Latin, ar: Arabic, de: Latin, el: Greek, es: Latin, et: Latin, eu: Latin,
+            fa: Arabic, fi: Latin, fr: Latin, ga: Latin, he: Hebrew, hi: Devanagari, hr: Latin,
+            hu: Latin, id: Latin, it: Latin, ja: Japanese, ka: Georgian, kk: Cyrillic,
+            ko: Hangul, mt: Latin, ru: Cyrillic, sw: Latin, ta: Tamil, th: Thai, tl: Latin,
+            tr: Latin, ur: Arabic, zh: Han}
+
+phase6:                      # phase 6 stage 1 (decisions.md 2026-11-16; brief 5.10 isolation)
+  low: [yo, or, mg, mhr, as, myv]   # low-resource languages paired with the 30 nodes
+  max_direct: 500            # direct PanLex size (min distinct words) below this
+  folds: 5                   # disjoint folds of each pair's eligible concepts
+  fold_seed: 0
+  en_chain: [mg, or]         # also chain through en (their best hubs are fr and hi)
+
+phase6_stages:               # later phase 6 stages (decisions.md 2026-11-17); same prep and runner
+  a:                         # low-resource x node, distant, direct in [500, 1000)
+    data: a
+    experiment: scarce-moderate-a
+    low: [yo, or, mg, mhr, as, myv, nah, ckb, qu, jv]
+    min_direct: 500
+    max_direct: 1000
+  d:                         # phase 4's 40 pairs with natural dictionaries
+    data: d
+    experiment: natural-highres-d
+    pairs_from: experiments/graph-all-pairs/pairs.csv
+    joined: false            # joined dictionaries of large pairs would be huge; not compared
+  u:                         # the 21 pairs of the UMSAB languages, BLI companion of the downstream run
+    data: u
+    experiment: downstream-umsab-bli
+    pairs_from: experiments/downstream-umsab-bli/pairs_spec.csv
+    joined: false
+  af:                        # AfriSenti languages x UMSAB languages, companion of downstream part 2
+    data: af
+    experiment: downstream-afrisenti-bli
+    low: [yo, am]            # not graph nodes: list words built as stage 1's (sw is a node)
+    pairs_from: experiments/downstream-afrisenti-bli/pairs_spec.csv
+    joined: false
+  mn:                        # MasakhaNEWS languages x en, fr, companion of downstream MasakhaNEWS
+    data: mn
+    experiment: downstream-masakhanews-bli
+    low: [yo, am, so]        # not graph nodes (sw is a node)
+    pairs_from: experiments/downstream-masakhanews-bli/pairs_spec.csv
+    joined: false
+  a2:                        # as a, direct in [1000, 3000)
+    data: a2
+    experiment: scarce-moderate-a2
+    low: [yo, or, mg, mhr, as, myv, nah, ckb, qu, jv]
+    min_direct: 1000
+    max_direct: 3000
+  b:                         # low-resource x related node (same branch), any direct size
+    data: b
+    experiment: close-pairs-b
+    low: [mhr, myv, or, as, mg, jv, ckb, yo]
+    pairs_from: experiments/close-pairs-b/pairs_spec.csv
+  ll:                        # low-resource x low-resource, different families (experiments/low-low)
+    data: ll
+    experiment: low-low
+    low: [yo, or, mg, mhr, as, myv, nah, ckb, qu, jv]
+    pairs_from: experiments/low-low/pairs_spec.csv
+
+downstream:                  # experiments/downstream-umsab/README.md (decisions.md 2026-11-19)
+  umsab:
+    languages: [en, ar, de, es, fr, hi, it]   # the UMSAB languages that are graph nodes (no pt)
+  afrisenti:                 # experiments/downstream-afrisenti/README.md (decisions.md 2026-11-19)
+    languages: [yo, sw, am]
+    labelled: [en, ar, de, es, fr, it]        # UMSAB languages used as Y (no hi: romanised)
+    scripts: {yo: Latin, sw: Latin, am: Ethiopic}
+  masakhanews:               # experiments/downstream-masakhanews/README.md (decisions.md 2026-11-20)
+    languages: [yo, sw, am, so]
+    labelled: [en, fr]
+    folders: {yo: yor, sw: swa, am: amh, so: som, en: eng, fr: fra}
+    scripts: {yo: Latin, sw: Latin, am: Ethiopic, so: Latin, en: Latin, fr: Latin}
+  sib200:                    # experiments/downstream-sib200/README.md (decisions.md 2026-11-20)
+    excluded: [zh, ja, th]   # no spaces between words
+    low: [yo, or, mg, as, ckb, qu, jv]   # low-resource languages in SIB-200 (no mhr, myv, nah)
+    stages: {well: [d], low: ["", a, a2]}
+    bli: {"": scarce-natural-s1, a: scarce-moderate-a, a2: scarce-moderate-a2, d: natural-highres-d}
+    codes: {en: eng_Latn, ar: arb_Arab, de: deu_Latn, el: ell_Grek, es: spa_Latn, et: est_Latn,
+            eu: eus_Latn, fa: pes_Arab, fi: fin_Latn, fr: fra_Latn, ga: gle_Latn, he: heb_Hebr,
+            hi: hin_Deva, hr: hrv_Latn, hu: hun_Latn, id: ind_Latn, it: ita_Latn, ka: kat_Geor,
+            kk: kaz_Cyrl, ko: kor_Hang, mt: mlt_Latn, ru: rus_Cyrl, sw: swh_Latn, ta: tam_Taml,
+            tl: tgl_Latn, tr: tur_Latn, ur: urd_Arab, yo: yor_Latn, or: ory_Orya, mg: plt_Latn,
+            as: asm_Beng, ckb: ckb_Arab, qu: quy_Latn, jv: jav_Latn}
+  wikiann:                   # experiments/downstream-wikiann/README.md (decisions.md 2026-11-20)
+    excluded: [zh, ja, th]   # character tokens
+    low: [yo, or, mg, mhr, as, ckb, qu, jv]   # low-resource languages with WikiANN (no myv, nah)
+    min_train: 1000          # sentences a labelled (training) language needs
+    stages: {well: [d], low: ["", a, a2]}     # phase 6 data folders ("" = stage 1)
+    bli: {"": scarce-natural-s1, a: scarce-moderate-a, a2: scarce-moderate-a2, d: natural-highres-d}
+
+controlled_scarcity:         # experiments/controlled-scarcity, downstream-tier2 (decisions.md 2026-11-20)
+  bases: [d, u]              # stage D's pairs (BLI and Tier 2) and the UMSAB pairs (Tier 2 only)
+  budgets: [250, 500, 1000, 2000, 4000, 8000, 16000]   # direct pairs; nested subsamples
+  seed: 0
+
+break_even_grid:             # experiments/break-even-grid (decisions.md 2026-11-23)
+  base: d                    # stage D's 40 pairs
+  data: dh                   # output: <phase6>/dh/h<size>/
+  hub_sizes: [1000, 2000, 4000, 8000, 16000, 32000, 64000]   # both hub steps; nested subsamples
+  seed: 0
+
+machine_dicts:               # RQ3: dictionaries made by machine translation (decisions.md 2026-11-18)
+  sets:
+    highres:                 # phase 4's 40 pairs on stage D's folds; every edge machine-made
+      base: d
+      chain_edges: true      # s-t, s-hub, hub-t all built from translations
+      frequent_words: 0      # source words = the list words only (as Doe et al.: one word list)
+      list_version: true     # also the shared list itself as each edge's dictionary
+    low:                     # stage 1's pairs of the low-resource languages NLLB covers
+      base: ""
+      low: [yo, or, mg, as]
+      chain_edges: false     # only s-t is machine-made; the chain keeps its natural dictionaries
+      frequent_words: 1000   # list words plus each language's 1,000 most frequent words
+  nllb:                      # same decoding as experiments/mt-pivot, so its hop cache is shared
+    model: facebook/nllb-200-3.3B
+    beams: 5
+    n_return: 5
+    max_new_tokens: 8
+    batch: 128
+  llm:                       # prep/12: the same words, translated by an LLM through the batch API
+    model: claude-haiku-5-5  # user, 2026-11-18: LLM budget $20 maximum
+    words_per_request: 100
+    effort: low
+    max_tokens: 16000        # thinking counts toward it; the non-streaming limit is about 21k
+    price_per_mtok: {input: 0.05, output: 0.25}   # batch prices (half of $0.10 / $0.50), 2026-11

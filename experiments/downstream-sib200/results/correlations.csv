@@ -1,0 +1,13 @@
+set,model,what,n,rho,lo,hi
+well,lr,advantage in F1 vs r,62,0.0161227,-0.253356,0.283497
+well,lr,advantage in F1 vs advantage in MRR,62,0.103221,-0.186839,0.348025
+well,lr,"F1 vs MRR, directions x {direct, chain}",124,0.562474,0.336809,0.71769
+well,mlp,advantage in F1 vs r,62,0.172312,-0.0793713,0.422478
+well,mlp,advantage in F1 vs advantage in MRR,62,0.319886,0.0565911,0.549203
+well,mlp,"F1 vs MRR, directions x {direct, chain}",124,0.690335,0.506355,0.813154
+low,lr,advantage in F1 vs r,142,0.205729,0.0105655,0.379086
+low,lr,advantage in F1 vs advantage in MRR,142,0.479366,0.340838,0.596591
+low,lr,"F1 vs MRR, directions x {direct, chain}",284,0.747046,0.690255,0.795365
+low,mlp,advantage in F1 vs r,142,0.182265,-0.00490737,0.359494
+low,mlp,advantage in F1 vs advantage in MRR,142,0.504219,0.366441,0.624468
+low,mlp,"F1 vs MRR, directions x {direct, chain}",284,0.800883,0.75154,0.839189

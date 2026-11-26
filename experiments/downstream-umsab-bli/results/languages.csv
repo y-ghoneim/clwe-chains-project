@@ -1,0 +1,13 @@
+method,lang,mean,n_pairs,n_dirs,n_above,n_below
+chain,ar,-0.0157591,6,12,0,5
+chain,de,-0.00120365,5,10,1,0
+chain,en,-0.0137559,4,8,0,3
+chain,es,-0.00115161,3,6,0,0
+chain,fr,-0.00578231,2,4,0,1
+chain,hi,-0.0141735,1,2,0,1
+combo,ar,0.0205621,6,12,7,0
+combo,de,0.0103582,5,10,4,0
+combo,en,0.00255244,4,8,1,0
+combo,es,0.0101183,3,6,3,0
+combo,fr,0.0163317,2,4,3,0
+combo,hi,0.0263413,1,2,2,0

@@ -1,0 +1,3 @@
+# Phase 6 stage B: low-resource x related node (same branch), 16 pairs. See README.md.
+data: b                     # v1/phase6/b (prep/07 and prep/08 --stage b)
+methods: [thin, chain, combo, joined_mb]   # as stage A (decisions.md 2026-11-17)

@@ -1,0 +1,9 @@
+method,lang,mean,n_pairs,n_dirs,n_above,n_below
+chain,am,-0.00698487,2,4,0,1
+chain,so,0.0233906,2,4,2,0
+chain,sw,-0.0169916,2,4,0,2
+chain,yo,0.00999151,2,4,2,1
+combo,am,0.0259597,2,4,3,0
+combo,so,0.026299,2,4,3,0
+combo,sw,0.0520392,2,4,4,0
+combo,yo,0.0166886,2,4,3,0

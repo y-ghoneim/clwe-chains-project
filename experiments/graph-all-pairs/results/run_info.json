@@ -1,0 +1,127 @@
+{
+ "commit": "8eb84c718a8af021bdf4ba4fb7abc24d476d68e5",
+ "config": {
+  "stages": [
+   "A",
+   "B",
+   "C"
+  ],
+  "max_mid": 3,
+  "validation": {
+   "n": 500
+  },
+  "hub": [
+   "en",
+   "ru"
+  ],
+  "oracle": {
+   "max_mid": 2,
+   "shortlist": 10,
+   "check_pairs": 2,
+   "seed": 0
+  },
+  "alt_p": [
+   1.5,
+   2,
+   3
+  ],
+  "cv": {
+   "k": 5,
+   "seed": 0
+  },
+  "bootstrap": {
+   "n": 1000,
+   "seed": 0
+  },
+  "learned": {
+   "per_measure": 20,
+   "n_random": 20,
+   "seed": 0
+  },
+  "lang2vec_codes": {
+   "ar": "arb"
+  }
+ },
+ "list_config": {
+  "n_candidates": 20000,
+  "wikt_codes": {
+   "zh": [
+    "cmn",
+    "zh"
+   ],
+   "hr": [
+    "hr",
+    "sh"
+   ]
+  },
+  "cognate_threshold": 0.8,
+  "round_trip_top_k": 5,
+  "coverage_top": 1000,
+  "coverage_threshold": 0.69,
+  "test_frac": 0.2,
+  "split_seeds": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "sense_subset": {
+   "min_coherence": 0.9,
+   "min_evaluable": 10
+  }
+ },
+ "eval_config": {
+  "csls_k": 10,
+  "block_rows": 1024,
+  "half": true
+ },
+ "n_concepts": 883,
+ "n_robust": 534,
+ "n_pairs": 40,
+ "cache_dir": "C:\\data\\language-graph\\v1\\results\\graph-all-pairs",
+ "lang2vec_missing": {
+  "syntax_wals": [
+   "et",
+   "hr",
+   "kk"
+  ],
+  "geo": []
+ },
+ "device": "NVIDIA GeForce RTX 4050 Laptop GPU",
+ "stages": {
+  "A": [
+   {
+    "commit": "ebb7494ffbb4d22f90035f63e1f125f356be87ef",
+    "started": "2026-11-16T00:43:40",
+    "finished": "2026-11-16T05:00:23",
+    "seconds": 15403,
+    "limit": null,
+    "new_evaluations": 3966,
+    "max_identical_excluded_per_split": 13
+   }
+  ],
+  "B": [
+   {
+    "commit": "8f77da5ba15adffd79ecf598a3dd7631eb3626f7",
+    "started": "2026-11-16T05:02:40",
+    "finished": "2026-11-16T09:00:10",
+    "seconds": 14249,
+    "limit": null,
+    "new_evaluations": 34536,
+    "max_identical_excluded_per_split": 13
+   }
+  ],
+  "C": [
+   {
+    "commit": "8eb84c718a8af021bdf4ba4fb7abc24d476d68e5",
+    "started": "2026-11-16T09:02:16",
+    "finished": "2026-11-16T10:28:28",
+    "seconds": 5172,
+    "limit": null,
+    "new_evaluations": 19916,
+    "max_identical_excluded_per_split": 13
+   }
+  ]
+ }
+}

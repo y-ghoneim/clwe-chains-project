@@ -1,0 +1,180 @@
+{
+ "commit": "f3ff2bba7f5d83f39dc220309e6259ff84924101",
+ "config": {
+  "data": "external/muse",
+  "pairs": [
+   [
+    "en",
+    "de"
+   ],
+   [
+    "de",
+    "en"
+   ],
+   [
+    "en",
+    "es"
+   ],
+   [
+    "es",
+    "en"
+   ],
+   [
+    "en",
+    "fr"
+   ],
+   [
+    "fr",
+    "en"
+   ],
+   [
+    "en",
+    "ru"
+   ],
+   [
+    "ru",
+    "en"
+   ]
+  ],
+  "published": {
+   "csls": {
+    "en-de": 73.5,
+    "de-en": 72.4,
+    "en-es": 81.4,
+    "es-en": 82.9,
+    "en-fr": 81.1,
+    "fr-en": 82.4,
+    "en-ru": 51.7,
+    "ru-en": 63.7
+   },
+   "nn": {
+    "en-de": 68.4,
+    "de-en": 67.7,
+    "en-es": 77.4,
+    "es-en": 77.3,
+    "en-fr": 74.9,
+    "fr-en": 76.1,
+    "en-ru": 47.0,
+    "ru-en": 58.2
+   }
+  }
+ },
+ "eval": {
+  "k": 10,
+  "block": 1024,
+  "half": true
+ },
+ "normalize": [
+  "unit",
+  "center",
+  "unit"
+ ],
+ "gpu": "NVIDIA RTX 4500 Ada Generation",
+ "inputs": {
+  "processed/embeddings/de.vocab.txt": {
+   "path": "C:\\data\\language-graph\\processed\\embeddings\\de.vocab.txt",
+   "bytes": 2368470,
+   "sha256": "71eab2e85fa32d18c0bf4be57313ed8b573dbd89b191d27490599ecfe3403aa5"
+  },
+  "processed/embeddings/en.vocab.txt": {
+   "path": "C:\\data\\language-graph\\processed\\embeddings\\en.vocab.txt",
+   "bytes": 1881085,
+   "sha256": "51cc319471a9c9598f77e232965d0ac4d5919a698376c1459ea11335975126c0"
+  },
+  "processed/embeddings/es.vocab.txt": {
+   "path": "C:\\data\\language-graph\\processed\\embeddings\\es.vocab.txt",
+   "bytes": 2023812,
+   "sha256": "18b1b6f848261586ed8e6bd684d43ddcf20ce37a004eb8b26efea50caf612fdc"
+  },
+  "processed/embeddings/fr.vocab.txt": {
+   "path": "C:\\data\\language-graph\\processed\\embeddings\\fr.vocab.txt",
+   "bytes": 2006275,
+   "sha256": "e6f99eb100f78e3b5a7c80435efcb2dea89efb9e05cbd31ba0bfb99e06254c44"
+  },
+  "processed/embeddings/ru.vocab.txt": {
+   "path": "C:\\data\\language-graph\\processed\\embeddings\\ru.vocab.txt",
+   "bytes": 3772627,
+   "sha256": "3918f01040825f8db415fc259d0081a654ce6de8c65c97ecd16f493a7492bea7"
+  },
+  "external/muse/en-de.0-5000.txt": {
+   "path": "C:\\data\\language-graph\\external\\muse\\en-de.0-5000.txt",
+   "bytes": 251620,
+   "sha256": "8ad0a24101fe9e493cf2e64e8c1e0c9fc55ab40e72ab16b208447648441098c8"
+  },
+  "external/muse/en-de.5000-6500.txt": {
+   "path": "C:\\data\\language-graph\\external\\muse\\en-de.5000-6500.txt",
+   "bytes": 65860,
+   "sha256": "142f68871e9a7bee04bef7df9a6baf27c8a4dee383c7153331157356b2d6ce97"
+  },
+  "external/muse/de-en.0-5000.txt": {
+   "path": "C:\\data\\language-graph\\external\\muse\\de-en.0-5000.txt",
+   "bytes": 180676,
+   "sha256": "8f68d0f7eac21ca09b357984cf6f80480c032ad4f6a4f5c3ce509139ff30ef92"
+  },
+  "external/muse/de-en.5000-6500.txt": {
+   "path": "C:\\data\\language-graph\\external\\muse\\de-en.5000-6500.txt",
+   "bytes": 49612,
+   "sha256": "e3c93041167fca27f6be652cdfcfb783ffe8886cc791f206e189c5f0af2ad1ca"
+  },
+  "external/muse/en-es.0-5000.txt": {
+   "path": "C:\\data\\language-graph\\external\\muse\\en-es.0-5000.txt",
+   "bytes": 195755,
+   "sha256": "2f149f002bb0d131037073d84bc8037f4162853e338c79c6a2ea0a2f93e80eed"
+  },
+  "external/muse/en-es.5000-6500.txt": {
+   "path": "C:\\data\\language-graph\\external\\muse\\en-es.5000-6500.txt",
+   "bytes": 51088,
+   "sha256": "5518d6b3536d8fc39ceddb999da2a97bb79cb129a656460949ac4deef465277c"
+  },
+  "external/muse/es-en.0-5000.txt": {
+   "path": "C:\\data\\language-graph\\external\\muse\\es-en.0-5000.txt",
+   "bytes": 141265,
+   "sha256": "d5029f71fe1b02ea9ef5d517fbb03aff82c29bd59221835d8a9ec5821e986fd0"
+  },
+  "external/muse/es-en.5000-6500.txt": {
+   "path": "C:\\data\\language-graph\\external\\muse\\es-en.5000-6500.txt",
+   "bytes": 41349,
+   "sha256": "f3194f61b2a5e8e777758a076fa48c1ac7d2a83d778a0aea7a468e5dd951e96b"
+  },
+  "external/muse/en-fr.0-5000.txt": {
+   "path": "C:\\data\\language-graph\\external\\muse\\en-fr.0-5000.txt",
+   "bytes": 178608,
+   "sha256": "96cfce2c345fdbf254310d63fc7230bc23529d4ecc669bb4a5e6bbede5db3182"
+  },
+  "external/muse/en-fr.5000-6500.txt": {
+   "path": "C:\\data\\language-graph\\external\\muse\\en-fr.5000-6500.txt",
+   "bytes": 50509,
+   "sha256": "ff4855a4cecf168652d8dff2870a9edb43b94dac0fc0eacaef27457af91f5d01"
+  },
+  "external/muse/fr-en.0-5000.txt": {
+   "path": "C:\\data\\language-graph\\external\\muse\\fr-en.0-5000.txt",
+   "bytes": 133981,
+   "sha256": "047c342853e76ffe18ce06a15060baff833b1e0fbe1929471dbd1d4d36a0ce06"
+  },
+  "external/muse/fr-en.5000-6500.txt": {
+   "path": "C:\\data\\language-graph\\external\\muse\\fr-en.5000-6500.txt",
+   "bytes": 39812,
+   "sha256": "1e23d73dd6d235378bf8f83a8d40d761e213eb460e8619677fdbaf8247f65f5d"
+  },
+  "external/muse/en-ru.0-5000.txt": {
+   "path": "C:\\data\\language-graph\\external\\muse\\en-ru.0-5000.txt",
+   "bytes": 255894,
+   "sha256": "7d7cb58a2da39fc1d4c34e663a6707765062126aba8f83f9518a7681fa811da4"
+  },
+  "external/muse/en-ru.5000-6500.txt": {
+   "path": "C:\\data\\language-graph\\external\\muse\\en-ru.5000-6500.txt",
+   "bytes": 59650,
+   "sha256": "0897817fb3a65fbe5ca1fc9cb7450b70f8ec715485d34b432e429879c302eda9"
+  },
+  "external/muse/ru-en.0-5000.txt": {
+   "path": "C:\\data\\language-graph\\external\\muse\\ru-en.0-5000.txt",
+   "bytes": 175692,
+   "sha256": "83c0b1b59e332d10a007ed7af5bfa258c1605be8ee8db43dee113865fe55c26a"
+  },
+  "external/muse/ru-en.5000-6500.txt": {
+   "path": "C:\\data\\language-graph\\external\\muse\\ru-en.5000-6500.txt",
+   "bytes": 49695,
+   "sha256": "a93bacaebefd124f2b2c8f732190bd5e6ff14fe4723a0f4e3ac491ca34e42e6c"
+  }
+ }
+}

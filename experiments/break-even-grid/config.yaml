@@ -1,0 +1,11 @@
+# Break-even grid (BLI). See README.md (approved 2026-11-23).
+# the hub-size folders, their sizes and seed: configs/default.yaml break_even_grid (prep/20)
+direct: dc                      # controlled scarcity's folders and caches: the direct maps
+direct_sizes: [500, 1000, 2000, 4000, 8000, 16000]
+growth_sizes: [16000, 32000, 64000]   # the hub sizes the growth of N* is measured over
+growth_cutoff: 2.0              # "levels off": the growth's 90% interval below 2x (user)
+proportional: 4.0               # 16k -> 64k: proportional growth (r only) is 4x
+check_tolerance: 0.0001         # --check: largest |MRR difference| per record (laptop vs remote,
+                                # decisions.md 2026-11-23: within 0.0001 where maps are unique)
+interval: 90                    # percent, for N* and the growth
+pair_bootstrap: {n: 1000, seed: 0}    # over pairs, for N* and the growth

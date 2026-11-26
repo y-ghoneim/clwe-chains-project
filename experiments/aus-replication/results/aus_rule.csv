@@ -1,0 +1,17 @@
+route,syntax_wals_cost,geo_cost,syntax_wals_rank,geo_rank
+en-ar,0.5126,0.0411,1,7
+en-es-ar,0.6440,0.0406,2,6
+en-ga-ar,0.6558,0.0490,3,9
+en-mt-ar,1.7665,0.0275,6,3
+en-es-ga-ar,0.7904,0.0574,4,12
+en-es-mt-ar,1.8760,0.0255,7,1
+en-ga-es-ar,1.3013,0.0416,5,8
+en-ga-mt-ar,2.4315,0.0311,12,4
+en-mt-es-ar,1.9463,0.0513,8,10
+en-mt-ga-ar,1.9908,0.0726,9,16
+en-es-ga-mt-ar,2.5660,0.0394,14,5
+en-es-mt-ga-ar,2.1003,0.0706,11,15
+en-ga-es-mt-ar,2.5333,0.0265,13,2
+en-ga-mt-es-ar,2.6113,0.0549,15,11
+en-mt-es-ga-ar,2.0927,0.0681,10,14
+en-mt-ga-es-ar,2.6363,0.0653,16,13

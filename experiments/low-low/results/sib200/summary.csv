@@ -1,0 +1,3 @@
+model,n_pairs,n_directions,f1_direct,f1_chain,f1_nomap,acc_direct,acc_chain,acc_nomap,chain_minus_direct,lo,hi,above,below
+lr,17,34,0.226809,0.410377,0.125761,0.310121,0.458478,0.203431,0.183568,0.14957,0.21976,28,0
+mlp,17,34,0.24565,0.420319,0.135043,0.296857,0.451845,0.181901,0.174669,0.146925,0.203901,29,0

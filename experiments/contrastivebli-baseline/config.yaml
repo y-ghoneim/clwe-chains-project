@@ -1,0 +1,21 @@
+# ContrastiveBLI baseline. See README.md.
+seed: 0                         # the pair draw: a seed-0 permutation per group, its first n_pairs
+n_pairs: 6                      # per group (user, 2026-11-24)
+fold: 0
+c1_repo: external/contrastivebli/repo                 # under data_root; the authors' code
+c1_commit: 31cf6888e0998b7c8cde69b7619dbaa919cf574e   # the run refuses any other checkout
+groups:                         # strong-maps units; "1k" / "5k": the authors' settings
+  s1: {settings: 1k, mini: 3000}
+  a: {settings: 1k, mini: 3000}
+  a2: {settings: 1k, mini: 3000}
+  d: {settings: 5k, mini: 1000, cap: 5000, published_pairs: 3}   # first 3 also as published
+  dc_b1000: {settings: 1k, mini: 3000, pairs_from: d}   # d's pairs, direct cut to 1,000 pairs
+settings:                       # C1/src/main.py, "Experimental Settings for Reproducing ..."
+  1k: {num_sample: 60, lr: 2.0, num_steps: 50, num_sl: 3, num_aug: 6000, dico_max_rank: 20000,
+       gamma: 1.0}
+  5k: {num_sample: 150, lr: 1.5, num_steps: 200, num_sl: 2, num_aug: 10000, dico_max_rank: 60000,
+       gamma: 0.99}
+fixed: {D_emb: 300, dropout: 0.0, eval_batch_size: 5000, grad_clip: 0.15, norm_input: true,
+        neg_max: 60000, resnet: false}   # main.py's argparse defaults
+torch_seed: 0
+# ours: run.py's OURS, from strong maps' and several-hubs-procrustes' caches

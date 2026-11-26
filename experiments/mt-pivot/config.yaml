@@ -1,0 +1,56 @@
+# MT pivot experiment (plan: docs/superpowers/plans/2026-11-17-mt-pivot.md). See README.md.
+# Stashed from the report for now (user, 2026-11-18); these runs keep it ready to come back to.
+model: facebook/nllb-200-3.3B      # or facebook/nllb-200-distilled-1.3B / -600M (--model)
+beams: 5
+n_return: 5                        # candidates kept at the final hop (P@1, P@5, MRR)
+max_new_tokens: 8
+batch: 128                         # source words per generate() call
+llm_candidates: 3                  # --system llm: up to 3 translations per word
+llm_words_per_request: 40          # fewer than the dictionaries' 100: replies are 3x longer
+runs:
+  # Per pair-direction: `words` sampled test words (seed); the first `select_words` get every
+  # one-hop route and pick the best one; the rest get the named routes and that best route.
+  pilot:                           # run at 0eba2af (older code: no cleaning, strict scoring, round trip)
+    data: d
+    pairs: [ru-fi, tr-it, ja-hu, ko-tr, th-eu, ka-hu, mt-sw, kk-tl]
+    words: 200
+    select_words: 200
+    seed: 0
+  pilot2:                          # all 40 of phase 4's pairs, named routes (user, 2026-11-18)
+    data: d
+    pairs: null
+    words: 400
+    select_words: 100
+    seed: 0
+  full:                            # pilot2 on every test word. A seeded sample's first 400 rows
+    data: d                        # are pilot2's sample, so the same 100 words pick the pivot
+    pairs: null                    # and pilot2's translations come from the cache
+    words: 100000
+    select_words: 100
+    seed: 0
+  lowres:                          # stage 1's pairs whose languages NLLB has (yo, or, mg, as);
+    data: ""                       # needs prep/10_phase6_mt_items.py --stage "" first. All of
+    pairs: null                    # each pair's words (277-660; decisions.md 2026-11-18)
+    words: 100000
+    select_words: 100
+    seed: 0
+  llm40:                           # RQ3b, --system llm: every word, in full's seeded order (the
+    data: d                        # same words as NLLB's full run), routes direct, via en, via
+    pairs: null                    # the hub only (decisions.md 2026-11-18)
+    words: 100000
+    select_words: 100
+    seed: 0
+    routes: basic
+  llmlow:                          # RQ3b, --system llm: lowres's words (all), the same routes
+    data: ""
+    pairs: null
+    words: 100000
+    select_words: 100
+    seed: 0
+    routes: basic
+  smoke:                           # laptop pipeline check
+    data: d
+    pairs: [ru-fi]
+    words: 10
+    select_words: 5
+    seed: 0

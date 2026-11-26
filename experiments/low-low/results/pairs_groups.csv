@@ -1,0 +1,41 @@
+s,t,hub,direct,test_words,group,included
+as,jv,en,243,396,100 and above,True
+as,mg,fr,81,246,under 100,True
+as,mhr,en,342,614,100 and above,True
+as,myv,en,258,492,100 and above,True
+as,nah,en,324,323,100 and above,True
+as,qu,en,218,532,100 and above,True
+as,yo,en,232,442,100 and above,True
+ckb,jv,en,284,407,100 and above,True
+ckb,mg,fr,210,252,100 and above,True
+ckb,mhr,en,445,609,100 and above,True
+ckb,myv,en,365,496,100 and above,True
+ckb,nah,en,379,327,100 and above,True
+ckb,qu,en,190,539,100 and above,True
+ckb,yo,en,287,436,100 and above,True
+jv,mhr,en,322,428,100 and above,True
+jv,myv,en,421,368,100 and above,True
+jv,nah,en,551,285,100 and above,True
+jv,or,hi,70,259,under 100,True
+jv,qu,en,544,400,100 and above,True
+jv,yo,en,370,331,100 and above,True
+mg,mhr,en,241,262,100 and above,True
+mg,myv,fr,205,231,100 and above,True
+mg,nah,fr,225,200,100 and above,True
+mg,or,hi,145,173,100 and above,True
+mg,qu,fr,48,255,under 100,True
+mg,yo,fr,138,205,100 and above,True
+mhr,nah,en,478,340,100 and above,True
+mhr,or,hi,52,300,under 100,True
+mhr,qu,en,46,599,under 100,True
+mhr,yo,en,237,483,100 and above,True
+myv,nah,en,428,301,100 and above,True
+myv,or,hi,45,262,under 100,True
+myv,qu,en,294,495,100 and above,True
+myv,yo,en,238,397,100 and above,True
+nah,or,hi,41,218,under 100,True
+nah,qu,es,379,327,100 and above,True
+nah,yo,en,318,264,100 and above,True
+or,qu,hi,2,282,under 100,True
+or,yo,hi,15,236,under 100,True
+qu,yo,en,319,443,100 and above,True

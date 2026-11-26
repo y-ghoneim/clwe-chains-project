@@ -1,0 +1,51 @@
+{
+ "commit": "9c14949e8f2e6f1fb326d066422585d5a40d4df8",
+ "model": "facebook/nllb-200-3.3B",
+ "run": "pilot2",
+ "config": {
+  "model": "facebook/nllb-200-3.3B",
+  "beams": 5,
+  "n_return": 5,
+  "max_new_tokens": 8,
+  "batch": 128,
+  "runs": {
+   "pilot": {
+    "data": "d",
+    "pairs": [
+     "ru-fi",
+     "tr-it",
+     "ja-hu",
+     "ko-tr",
+     "th-eu",
+     "ka-hu",
+     "mt-sw",
+     "kk-tl"
+    ],
+    "words": 200,
+    "select_words": 200,
+    "seed": 0
+   },
+   "pilot2": {
+    "data": "d",
+    "pairs": null,
+    "words": 400,
+    "select_words": 100,
+    "seed": 0
+   },
+   "smoke": {
+    "data": "d",
+    "pairs": [
+     "ru-fi"
+    ],
+    "words": 10,
+    "select_words": 5,
+    "seed": 0
+   }
+  }
+ },
+ "pairs_done": 40,
+ "pairs": 40,
+ "new_translations": 561008,
+ "seconds": 3945.9,
+ "words_per_second": 142.2
+}

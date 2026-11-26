@@ -1,0 +1,10 @@
+src,classifier,hub,in_xlmr,ours_direct,ours_chain,ours_nomap,xlmr_transfer,xlmr_in_language,chain_minus_xlmr
+ckb,ar,en,no,55.9,71.1,21.6,25.7,50.1,45.4
+qu,ar,es,no,32.4,36.3,19.1,50.8,64.1,-14.5
+yo,ar,en,no,32.4,45.1,25.0,32.5,49.6,12.6
+as,ar,en,yes,48.0,66.2,16.2,85.2,88.1,-19.0
+jv,ar,en,yes,55.9,66.2,17.2,83.0,83.2,-16.8
+jv,en,fr,yes,62.7,57.4,14.2,81.8,83.2,-24.4
+mg,ar,fr,yes,35.3,47.5,23.5,78.2,85.3,-30.7
+mg,en,fr,yes,54.4,52.9,20.6,76.6,85.3,-23.7
+or,ar,hi,yes,35.8,60.3,16.7,84.6,89.2,-24.3

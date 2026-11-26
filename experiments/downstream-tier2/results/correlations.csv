@@ -1,0 +1,7 @@
+task,model,what,n,rho,lo,hi
+sib,lr,advantage in F1 vs r,366,0.778008,0.689617,0.845893
+sib,lr,advantage in F1 vs advantage in MRR (same cell),366,0.764448,0.662582,0.840141
+sib,mlp,advantage in F1 vs r,366,0.806402,0.728561,0.864741
+sib,mlp,advantage in F1 vs advantage in MRR (same cell),366,0.807185,0.706868,0.885857
+umsab,lr,advantage in F1 vs r,210,0.532514,0.410837,0.67191
+umsab,mlp,advantage in F1 vs r,210,0.697874,0.610682,0.792908

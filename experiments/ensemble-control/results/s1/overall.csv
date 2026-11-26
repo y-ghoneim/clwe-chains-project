@@ -1,0 +1,5 @@
+method,mean_over_languages,n_languages,n_dirs,n_above,n_below
+boot,-0.00539681,6,154,0,49
+chain,0.0350516,6,154,134,0
+combo,0.031339,6,154,146,0
+ensboot,-0.00040259,6,154,5,7

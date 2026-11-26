@@ -1,0 +1,24 @@
+# Our method on PanLex-BLI. See README.md (approved 2026-11-25). Fixed before any result.
+data: external/panlex-bli/lexicons/all   # under the data root; <s>-<t>/<s>-<t>.<split>.cc.trans
+languages: [bg, ca, eo, et, eu, fi, he, hu, id, ka, ko, lt, "no", th, tr]   # "no": YAML's false
+direct: [1000, 500]        # the benchmark's training file for the direct map; 1000 first
+hub_file: 5000             # the training file of each hub step (s-x, x-t), test words removed
+n_hubs: 3                  # several hubs: the 3 widest; the chain uses the widest
+bootstrap: {n: 1000, seed: 0}
+# Evaluation bases (--basis). ours: the configured normalization and CSLS. paper: Vulić et al.'s
+# likely basis (analyses/2026-11-25-panlex-reproduction: length normalization only, nearest
+# neighbour; combinations average cosines), so our methods sit next to the published averages.
+bases:
+  ours: {normalize: null, retrieval: csls}
+  paper: {normalize: [unit], retrieval: nn}
+# Rows per GPU block here (at most the machine's eval.block_rows): ~2,000 queries x 200k scores per
+# map at 1,024 rows peaked at 10.3 GiB on the 6 GB laptop; 256 peaks at 4.1 GiB, same ranks.
+block_rows: 256
+# Published averages over all 210 directions at 1k (Vulić et al. 2019, Table 3, MRR), as recorded
+# in README.md; the reproduction check compares our direct map with "orthogonal".
+published_mrr_1k:
+  orthogonal: 0.071
+  orthogonal_self_learning: 0.132
+  vecmap_pipeline: 0.101
+  best_self_learning: 0.274
+  unsupervised: 0.140

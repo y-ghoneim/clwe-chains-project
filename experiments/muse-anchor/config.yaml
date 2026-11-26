@@ -1,0 +1,9 @@
+# External anchor on MUSE (review B). See README.md (approved 2026-11-21).
+data: external/muse                    # under the data root; {src}-{tgt}.0-5000.txt / .5000-6500.txt
+pairs: [[en, de], [de, en], [en, es], [es, en], [en, fr], [fr, en], [en, ru], [ru, en]]
+# Conneau et al. 2018, Table 1, supervised Procrustes (fastText Wikipedia vectors), P@1 in %
+published:
+  csls: {en-de: 73.5, de-en: 72.4, en-es: 81.4, es-en: 82.9, en-fr: 81.1, fr-en: 82.4,
+         en-ru: 51.7, ru-en: 63.7}
+  nn: {en-de: 68.4, de-en: 67.7, en-es: 77.4, es-en: 77.3, en-fr: 74.9, fr-en: 76.1,
+       en-ru: 47.0, ru-en: 58.2}

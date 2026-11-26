@@ -1,0 +1,3 @@
+# Phase 6 stage D: phase 4's 40 pairs with natural dictionaries. See README.md.
+data: d                     # v1/phase6/d (prep/07 and prep/08 --stage d)
+methods: [thin, chain, combo]   # stage 1's runner, these methods only (decisions.md 2026-11-17)

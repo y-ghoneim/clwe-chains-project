@@ -1,0 +1,9 @@
+s,t,direct,hub,route
+yo,en,3079,es,1101
+yo,fr,648,en,3079
+sw,en,9777,it,7586
+sw,fr,5339,en,9777
+am,en,1520,fr,1522
+am,fr,1522,en,1520
+so,en,1160,fr,990
+so,fr,990,en,1160

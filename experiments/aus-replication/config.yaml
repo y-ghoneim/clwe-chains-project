@@ -1,0 +1,9 @@
+# Phase 3: AUS replication on the shared list. See README.md (approved before running).
+pair: [en, ar]
+mids: [es, ga, mt]
+lang2vec_codes: {en: eng, es: spa, ga: gle, mt: mlt, ar: arb}  # arb reproduces AUS Table 1
+bootstrap: {n: 1000, seed: 0}
+aus_exact: {ks: [1, 5, 10], overlap_k: 10}
+settings:
+  faithful: {solver: lstsq, vectors: raw, retrieval: nn, gold: list, train_eq_test: true}
+  proper: {solver: procrustes, vectors: normalized, retrieval: csls, gold: full, robustness: true}

@@ -1,0 +1,89 @@
+{
+ "commit": "48fcf80d84958e32c32cf66c878412f232a93b0a",
+ "started": "2026-11-15T21:33:43",
+ "finished": "2026-11-15T21:44:41",
+ "config": {
+  "pair": [
+   "en",
+   "ar"
+  ],
+  "mids": [
+   "es",
+   "ga",
+   "mt"
+  ],
+  "lang2vec_codes": {
+   "en": "eng",
+   "es": "spa",
+   "ga": "gle",
+   "mt": "mlt",
+   "ar": "arb"
+  },
+  "bootstrap": {
+   "n": 1000,
+   "seed": 0
+  },
+  "aus_exact": {
+   "ks": [
+    1,
+    5,
+    10
+   ],
+   "overlap_k": 10
+  },
+  "settings": {
+   "faithful": {
+    "solver": "lstsq",
+    "vectors": "raw",
+    "retrieval": "nn",
+    "gold": "list",
+    "train_eq_test": true
+   },
+   "proper": {
+    "solver": "procrustes",
+    "vectors": "normalized",
+    "retrieval": "csls",
+    "gold": "full",
+    "robustness": true
+   }
+  }
+ },
+ "list_config": {
+  "n_candidates": 20000,
+  "wikt_codes": {
+   "zh": [
+    "cmn",
+    "zh"
+   ],
+   "hr": [
+    "hr",
+    "sh"
+   ]
+  },
+  "cognate_threshold": 0.8,
+  "round_trip_top_k": 5,
+  "coverage_top": 1000,
+  "coverage_threshold": 0.69,
+  "test_frac": 0.2,
+  "split_seeds": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "sense_subset": {
+   "min_coherence": 0.9,
+   "min_evaluable": 10
+  }
+ },
+ "eval_config": {
+  "csls_k": 10,
+  "block_rows": 1024,
+  "half": true
+ },
+ "n_concepts": 883,
+ "n_robust": 534,
+ "max_identical_excluded_per_split": 0,
+ "device": "NVIDIA GeForce RTX 4050 Laptop GPU"
+}

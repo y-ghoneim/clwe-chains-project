@@ -1,0 +1,7 @@
+model,what,n,rho,lo,hi
+lr,advantage in F1 vs r,30,0.541951,0.122941,0.806802
+lr,advantage in F1 vs advantage in MRR,30,-0.0718576,-0.460152,0.34569
+lr,"F1 vs MRR, directions x {direct, chain}",60,0.0799111,-0.317287,0.498388
+mlp,advantage in F1 vs r,30,0.412703,-0.00994932,0.701084
+mlp,advantage in F1 vs advantage in MRR,30,-0.189766,-0.493189,0.136694
+mlp,"F1 vs MRR, directions x {direct, chain}",60,0.109419,-0.26974,0.517338

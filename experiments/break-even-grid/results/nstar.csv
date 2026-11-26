@@ -1,0 +1,9 @@
+hub,n_pairs,n_crossed,n_below,n_above,n_rebound,median_log2,n_star,lo_log2,hi_log2,lo,hi,undefined_share,pooled_log2,pooled_n_star,pooled_rebound
+1000,40,0,40,0,0,-inf,below 500,-inf,-inf,below 500,below 500,0,-inf,below 500,False
+2000,40,14,26,0,0,-inf,below 500,-inf,-inf,below 500,below 500,0,-inf,below 500,False
+4000,40,38,2,0,0,9.85681,927,9.71141,10.0857,838,1087,0,9.94423,985,False
+8000,39,37,0,2,0,10.8281,1818,10.7889,11.1724,1769,2308,0,10.9533,1983,False
+16000,38,34,0,4,0,11.8666,3734,11.7254,12.138,3386,4507,0,11.8605,3719,False
+32000,29,25,0,4,0,12.5629,6051,12.2521,13.0896,4878,8717,0,12.7345,6815,False
+64000,20,11,0,9,0,13.9177,15476,13.0846,inf,8687,above 16000,0,13.5388,11901,False
+full,40,13,0,27,0,inf,above 8000,inf,inf,above 16000,above 16000,0,inf,above 16000,False

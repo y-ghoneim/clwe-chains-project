@@ -1,0 +1,7 @@
+# Copy to configs/local.yaml (gitignored) and uncomment what differs on this machine.
+# Only per-machine values belong here; research settings stay in default.yaml.
+
+# data_root: D:/data/language-graph
+# device: cuda               # or cpu
+# eval:
+#   block_rows: 1024         # 1024 fits the laptop's 6 GB; the remote PC (24 GB) can go higher

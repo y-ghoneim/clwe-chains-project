@@ -1,0 +1,3 @@
+# Controlled scarcity (BLI). See README.md.
+data: dc                    # v1/phase6/dc/b<budget> (prep/18)
+methods: [thin, chain, combo, joined_mb]

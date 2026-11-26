@@ -1,0 +1,5 @@
+fit,a,b,a_ci,b_ci,r0,r0_ci,r0_undefined_share,n_pairs,n_clusters
+chain_r,0.0080058,0.00664937,"(np.float64(-0.01583), np.float64(0.02082))","(np.float64(0.00306), np.float64(0.01541))",-1.20399,"(np.float64(-6.22183), np.float64(1.13973))",0.001,285,50
+chain_log10_direct,0.121593,-0.0304385,"(np.float64(0.08855), np.float64(0.15329))","(np.float64(-0.03819), np.float64(-0.02214))",,"(np.float64(nan), np.float64(nan))",1,285,50
+joined_mb_r,0.0081702,0.00457204,"(np.float64(-0.00517), np.float64(0.03331))","(np.float64(-0.00196), np.float64(0.00938))",-1.78699,"(np.float64(-19.07323), np.float64(0.76704))",0.057,245,10
+combo_r,0.0457048,-0.00298249,"(np.float64(0.01731), np.float64(0.07144))","(np.float64(-0.01051), np.float64(0.00541))",,"(np.float64(nan), np.float64(nan))",0.717,285,50

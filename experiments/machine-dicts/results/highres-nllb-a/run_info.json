@@ -1,0 +1,530 @@
+{
+ "commit": "4390b56313d7f23503d8efc59d45fcd0f058045c",
+ "eval_commits": [
+  "4390b56313d7f23503d8efc59d45fcd0f058045c"
+ ],
+ "config": {
+  "alphas": [
+   0.1,
+   0.3,
+   1,
+   3,
+   10
+  ],
+  "bootstrap": {
+   "n": 1000,
+   "seed": 0
+  },
+  "stage": {
+   "methods": [
+    "thin",
+    "chain",
+    "combo"
+   ],
+   "versions": [
+    "highres-list",
+    "highres-nllb-a",
+    "highres-nllb-b",
+    "low-nllb-a",
+    "low-nllb-b",
+    "highres-llm-a",
+    "highres-llm-b",
+    "low-llm-a",
+    "low-llm-b"
+   ],
+   "version": "highres-nllb-a"
+  }
+ },
+ "eval": {
+  "csls_k": 10,
+  "half": true,
+  "retrieval": "csls"
+ },
+ "phase6_config": {
+  "low": [
+   "yo",
+   "or",
+   "mg",
+   "mhr",
+   "as",
+   "myv"
+  ],
+  "max_direct": 500,
+  "folds": 5,
+  "fold_seed": 0,
+  "en_chain": [
+   "mg",
+   "or"
+  ]
+ },
+ "gpu": "NVIDIA RTX 4500 Ada Generation",
+ "n_records": 1200,
+ "seconds_per_evaluation": 1.2631269898747997,
+ "inputs": {
+  "dict_sizes.csv": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dict_sizes.csv",
+   "bytes": 2973,
+   "sha256": "231a76606e07256a7f040ae716ff2503189cd6910c8618165fa9c1bec6e0bfe5"
+  },
+  "dicts\\ar__hi.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\ar__hi.parquet",
+   "bytes": 14305,
+   "sha256": "a2b2339abb157985f71477862dbe7e2c771b0d94e1f330a2d8af2a14d2b176a6"
+  },
+  "dicts\\en__ar.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\en__ar.parquet",
+   "bytes": 14750,
+   "sha256": "9f5404f27fccd864dda9670313cab3b2769cfd6cf05ed4dd2f52463132414b45"
+  },
+  "dicts\\en__el.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\en__el.parquet",
+   "bytes": 12799,
+   "sha256": "b34e1a5457c97894c8c6d0b2d60f31f6a0ead91c7a1362960e2a605047170808"
+  },
+  "dicts\\en__et.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\en__et.parquet",
+   "bytes": 13320,
+   "sha256": "28c922a445808ec8b8f9d16ec164887e24edd5c6c00eddb020a827a8ecdec965"
+  },
+  "dicts\\en__eu.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\en__eu.parquet",
+   "bytes": 12017,
+   "sha256": "863d5d532bb4eec41a549030cf3f4ce20de9b9a13d464466b046cd00ac304360"
+  },
+  "dicts\\en__fi.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\en__fi.parquet",
+   "bytes": 13291,
+   "sha256": "78731525e75a1734e5a61dd82a31a9fb8ee33192c833fd8ce9764fd8384ad544"
+  },
+  "dicts\\en__fr.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\en__fr.parquet",
+   "bytes": 11768,
+   "sha256": "60d964161ddb2212d266b73ebe84adf5e0ec2e29b32beae9e69b31b7aa2f761f"
+  },
+  "dicts\\en__ga.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\en__ga.parquet",
+   "bytes": 12283,
+   "sha256": "9720989ac048ca3efefd40a80a38bfbe334a541212faf67daba5212e8b05b69a"
+  },
+  "dicts\\en__he.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\en__he.parquet",
+   "bytes": 13261,
+   "sha256": "b4e2f82ca2ce69513509f789d242dca2660e07105d98686026a8cf778d75d917"
+  },
+  "dicts\\en__hi.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\en__hi.parquet",
+   "bytes": 14672,
+   "sha256": "aefd73e12967f60e775b95570e2cbe0d90d3f1747c0d8d9f940c4da212629444"
+  },
+  "dicts\\en__hu.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\en__hu.parquet",
+   "bytes": 13341,
+   "sha256": "c6e8f53c0b00b9fa73135e7e248efca23843ad3dce4b55a26286a8b07abdddbf"
+  },
+  "dicts\\en__id.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\en__id.parquet",
+   "bytes": 13770,
+   "sha256": "af36ab8625d91074dd7dbcb9461d9395b15023b5e913d9f23c5487ce362f78b0"
+  },
+  "dicts\\en__it.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\en__it.parquet",
+   "bytes": 12618,
+   "sha256": "8d5bb22f201899e5477e55a45b7b4ac4f260aff9ee18041dde3c99ac1c8148a7"
+  },
+  "dicts\\en__ja.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\en__ja.parquet",
+   "bytes": 12095,
+   "sha256": "cd3a2d6fd39d992dcc13147db64ba81c837e77211842b1b8a04198ed5aa3663c"
+  },
+  "dicts\\en__ka.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\en__ka.parquet",
+   "bytes": 13498,
+   "sha256": "32489a36edaaf762179d6b8f6fa621daaebd1809290c2d1e9932d3a71cbc8695"
+  },
+  "dicts\\en__ko.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\en__ko.parquet",
+   "bytes": 13108,
+   "sha256": "a7a5d34e09d6ca298c72d3e3ef9a493c347049ef15459bcce4ea9b111b6af2e2"
+  },
+  "dicts\\en__ru.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\en__ru.parquet",
+   "bytes": 13218,
+   "sha256": "eca1a6fc6629714b226a8fe2463ece0edcd8ea839be197a6deb1d4385c059207"
+  },
+  "dicts\\en__sw.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\en__sw.parquet",
+   "bytes": 14592,
+   "sha256": "3ab307ee9cad3968bcc192aa1805f0984170719f8f8f7e718c7b2e0ecc85d8a1"
+  },
+  "dicts\\en__ta.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\en__ta.parquet",
+   "bytes": 15007,
+   "sha256": "568134020839d6021b35006190ba1ba732c1f2bfa3903bd43fe7b59f9f647b29"
+  },
+  "dicts\\en__th.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\en__th.parquet",
+   "bytes": 11030,
+   "sha256": "8b9f649c368cf2bc34769e7e0afb60472994a9df61e7c868852260e1d01530cc"
+  },
+  "dicts\\en__tl.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\en__tl.parquet",
+   "bytes": 14842,
+   "sha256": "34a7abe4ed861e4bab6f90a1a7214221efcd00e1b8730ff6a7d5c06308388945"
+  },
+  "dicts\\en__tr.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\en__tr.parquet",
+   "bytes": 13301,
+   "sha256": "78ac231cd37c0e2e2d3eeb25168a33a9acfad2df0ea7502fb15d68b370c304e7"
+  },
+  "dicts\\en__ur.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\en__ur.parquet",
+   "bytes": 14033,
+   "sha256": "437d3a2635796651248c42364d76f077fcaf403992c81821f6b873f10c436e60"
+  },
+  "dicts\\en__zh.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\en__zh.parquet",
+   "bytes": 12730,
+   "sha256": "8e4ec4889d8624891ff7d2f01a6f636e9ca58798e68f65efb83a699b8c08e355"
+  },
+  "dicts\\et__en.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\et__en.parquet",
+   "bytes": 13263,
+   "sha256": "8a1c3eefc3049e9e5ff94fa0455f4c7577bc82306381eded7140847dff11e6cd"
+  },
+  "dicts\\et__he.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\et__he.parquet",
+   "bytes": 14297,
+   "sha256": "9a55c89e4c16fe82f64229082e1784d7dc0582c59e28591ef48d90e5a00e3b1d"
+  },
+  "dicts\\et__ru.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\et__ru.parquet",
+   "bytes": 14391,
+   "sha256": "05c296b90e06efe13c1cbd31262905093538d10337d1dc6166177f5771b951f3"
+  },
+  "dicts\\et__th.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\et__th.parquet",
+   "bytes": 11838,
+   "sha256": "7e43fee0db61ed198432f867600e770b937d4a2bcaaaa0317843e4b990f7e457"
+  },
+  "dicts\\fa__en.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\fa__en.parquet",
+   "bytes": 12794,
+   "sha256": "0cedb53e438b9bdd7a99b6a7ce5bd9432b73f78bc97dbc221d8bf6af0900b2e0"
+  },
+  "dicts\\fa__hu.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\fa__hu.parquet",
+   "bytes": 13664,
+   "sha256": "c1b71a19eed80da8e03c83a9dd368b9f9756c9924f801c727da17cf97d785403"
+  },
+  "dicts\\fi__en.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\fi__en.parquet",
+   "bytes": 13241,
+   "sha256": "03417f96efba080626591654a42b6329a16faa6c838355a2d0c430ed1e273e0d"
+  },
+  "dicts\\fi__eu.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\fi__eu.parquet",
+   "bytes": 11556,
+   "sha256": "68ad5158fe7e9576bbff4a1ecb5d5653332f8d4a69d9391b038d2b0c2ed1225f"
+  },
+  "dicts\\fr__ar.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\fr__ar.parquet",
+   "bytes": 13792,
+   "sha256": "2bc60d93497e4e826e7869a927d73887865fe73208565a18413418c57afd812d"
+  },
+  "dicts\\fr__en.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\fr__en.parquet",
+   "bytes": 11775,
+   "sha256": "092d38aee1b534608ebc1a6835e07817af47975765dedda2cff20a6cf8ff349e"
+  },
+  "dicts\\fr__fi.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\fr__fi.parquet",
+   "bytes": 12877,
+   "sha256": "d03ec50a5810e729aa548e65f634efd6325bcfcdcf025b74d537185be967692b"
+  },
+  "dicts\\fr__tl.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\fr__tl.parquet",
+   "bytes": 13385,
+   "sha256": "517b047339a027ada4729d42120bb82dba2a48b7a0bc3c6e510d3bcf3f693048"
+  },
+  "dicts\\fr__tr.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\fr__tr.parquet",
+   "bytes": 12368,
+   "sha256": "b11d0e9d7ed28220819cc75e3120121cc1e93dc2236919d5d84514059adad0ac"
+  },
+  "dicts\\ga__en.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\ga__en.parquet",
+   "bytes": 12265,
+   "sha256": "ca541ac484265f6ce04b40f82442264dccc3a6e311ee10981173cab68fbe6470"
+  },
+  "dicts\\ga__he.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\ga__he.parquet",
+   "bytes": 13859,
+   "sha256": "8d2a229332176bacb6e3924829fbfd609b7a207f3cf1ccf2481c9c0d0780078a"
+  },
+  "dicts\\he__el.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\he__el.parquet",
+   "bytes": 13807,
+   "sha256": "ff315e42e98a0b6e5c16cd7c08d2453a56de18b4086832df89ecda167bc3d596"
+  },
+  "dicts\\he__en.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\he__en.parquet",
+   "bytes": 13230,
+   "sha256": "f997ccac91861232a2e6fce405657f6fcbd000c8e2bf3cf6060abf8620f01635"
+  },
+  "dicts\\he__ka.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\he__ka.parquet",
+   "bytes": 15051,
+   "sha256": "883a01f81fa725d5669756d204c44b6506160705b5e3c2a448e03746468f3a9e"
+  },
+  "dicts\\hi__en.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\hi__en.parquet",
+   "bytes": 14642,
+   "sha256": "d9cbd42a7cbede794902972e1d8322479772cbf7e6793cc25602f834bb16558f"
+  },
+  "dicts\\hi__ta.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\hi__ta.parquet",
+   "bytes": 15431,
+   "sha256": "e0713ccc91a94ccffa9408ff2fe3a8e002b9c90c6c9fd4ed3f1f3e18b7deb599"
+  },
+  "dicts\\hr__en.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\hr__en.parquet",
+   "bytes": 12828,
+   "sha256": "24f9301c8789b0fde104685ab652f0b2fb875f27a72505c8e904a6ded13c6009"
+  },
+  "dicts\\hr__fi.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\hr__fi.parquet",
+   "bytes": 14319,
+   "sha256": "17e59bc07fa1896a3f4f3fbc9698ed8e89d9e05cc570c68863fc6f984e57363a"
+  },
+  "dicts\\hu__en.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\hu__en.parquet",
+   "bytes": 13305,
+   "sha256": "f85ca7092fab11def9be3e1eae79fdae6b9a776c0a57f746b32db2ff4bae41d7"
+  },
+  "dicts\\hu__id.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\hu__id.parquet",
+   "bytes": 14128,
+   "sha256": "45ebdcc80a0849d2b5cebd28184b144c67a350a4925c1bd0e1ae18d04d7e9758"
+  },
+  "dicts\\hu__ko.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\hu__ko.parquet",
+   "bytes": 14841,
+   "sha256": "fa6efbd5051a54733aaaa14500478d09a8ee54e097b05903f5f50a4cbd9d4d32"
+  },
+  "dicts\\ja__en.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\ja__en.parquet",
+   "bytes": 12082,
+   "sha256": "e1a6d7dc5c957622315ba981dac8145193d7a9f3f8c4677739ecea75d562b955"
+  },
+  "dicts\\ja__hu.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\ja__hu.parquet",
+   "bytes": 13511,
+   "sha256": "aca9852c9b7c98b1df1eb676415addeabe251fbb85d7c64ffec4cdfa0607ee22"
+  },
+  "dicts\\ja__zh.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\ja__zh.parquet",
+   "bytes": 9217,
+   "sha256": "f73188c133862212c53437d8c3fc4f06e5e6eb61ba930e2d8431f0aaf22e4715"
+  },
+  "dicts\\ka__en.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\ka__en.parquet",
+   "bytes": 13456,
+   "sha256": "99d7d84a051fa0cd1fe7d96f04b3fc24f041bcae3705b112c570435f77625ce8"
+  },
+  "dicts\\ka__et.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\ka__et.parquet",
+   "bytes": 14445,
+   "sha256": "58443986bb1f192e1ee9d84a47cc680b3a218f0f480b4ee3653e146d3e44bae8"
+  },
+  "dicts\\ka__hu.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\ka__hu.parquet",
+   "bytes": 14616,
+   "sha256": "9ee3fe588640a764ea4f60492bdf2a3547a584c1df6b10095506cdbcd606d3c9"
+  },
+  "dicts\\kk__en.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\kk__en.parquet",
+   "bytes": 14266,
+   "sha256": "246330f4cc649b72fafa33d1a20dcf642969758655c27475f4512b334611d784"
+  },
+  "dicts\\kk__ja.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\kk__ja.parquet",
+   "bytes": 13461,
+   "sha256": "f327127330e8aecb90fc8caba11733a48016929aa618845933b22ed806484fc7"
+  },
+  "dicts\\kk__tl.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\kk__tl.parquet",
+   "bytes": 15048,
+   "sha256": "96cde69ecda73cef235ccf5c57389c03a9259ee3ae61ed1b7abe66ac7480c1c1"
+  },
+  "dicts\\ko__en.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\ko__en.parquet",
+   "bytes": 13075,
+   "sha256": "b8abf00a37411ed6e075841bd00c0d4d3263f00d10809300b2cead74cd272be0"
+  },
+  "dicts\\ko__fi.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\ko__fi.parquet",
+   "bytes": 13915,
+   "sha256": "6ba291c9045ca5c8747d06474be32ecc0d2de5998990a5f790c9be1b4e3ec158"
+  },
+  "dicts\\ko__hi.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\ko__hi.parquet",
+   "bytes": 14143,
+   "sha256": "b747d2d7a3fd3760e182f444a09d4ebd895a0921210a73c756fb1ca12d3cc255"
+  },
+  "dicts\\ko__tr.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\ko__tr.parquet",
+   "bytes": 14435,
+   "sha256": "8f4da30cc670a19e33044c4f29a9ed3b02e0a2da042b403dc8e792a4751de78d"
+  },
+  "dicts\\mt__ar.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\mt__ar.parquet",
+   "bytes": 15282,
+   "sha256": "21f2cc70d83cfbb55dd0ed46cc28c51d7f3e4365a00580421a8ded98af18ee07"
+  },
+  "dicts\\mt__en.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\mt__en.parquet",
+   "bytes": 12861,
+   "sha256": "b2afedf77b58778c1dc4c4d634fb1446f7bf02f707f322be296891b0405632ba"
+  },
+  "dicts\\mt__hi.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\mt__hi.parquet",
+   "bytes": 14905,
+   "sha256": "451f8a564aff4818e61f86c0b17133df971ba3b4b73d0e1644f310130b75ff6a"
+  },
+  "dicts\\mt__sw.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\mt__sw.parquet",
+   "bytes": 14777,
+   "sha256": "527dbc04749b37c4b760617547280d3271521eb36fc6f8ddd0e3fa4e0e632fe6"
+  },
+  "dicts\\ru__en.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\ru__en.parquet",
+   "bytes": 13165,
+   "sha256": "b652a07d2c795b6942af3f400a4c0953d37ac2d05246fdff25906b2e53b76e49"
+  },
+  "dicts\\ru__fi.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\ru__fi.parquet",
+   "bytes": 14269,
+   "sha256": "dcc94ecb811c64ba1d2813d7464f1c2485ea06f2a85bc61ff4fe4ce9c161622b"
+  },
+  "dicts\\ru__he.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\ru__he.parquet",
+   "bytes": 14565,
+   "sha256": "b0d148572330b9dadebe07a4b8e7623f716f682ca71ce3fe9874d53da40aea9b"
+  },
+  "dicts\\sw__en.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\sw__en.parquet",
+   "bytes": 14569,
+   "sha256": "79d6b2715de75fe14a09ccd36dd2449d6dd43260a0bcb8b5999cf2957ca454c1"
+  },
+  "dicts\\sw__ur.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\sw__ur.parquet",
+   "bytes": 14374,
+   "sha256": "5e16f7316405590d0d1c38cf078b94127affd9b442756a60961148289907a05a"
+  },
+  "dicts\\ta__en.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\ta__en.parquet",
+   "bytes": 14948,
+   "sha256": "89a2a95426ff64803880cd850cf7ff99f1910a213e5f7417e7c5c4851ecbb975"
+  },
+  "dicts\\ta__ga.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\ta__ga.parquet",
+   "bytes": 14628,
+   "sha256": "136a7e1fe754fd29a07c7cb4782c237525efdd0fb07661830b0c755c601d4369"
+  },
+  "dicts\\th__en.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\th__en.parquet",
+   "bytes": 11031,
+   "sha256": "138bde47b0f69e3f209a5142fb21c214d49c6be6aefc1ec50b44e12ae9231ec2"
+  },
+  "dicts\\th__eu.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\th__eu.parquet",
+   "bytes": 9978,
+   "sha256": "f72bd9b732d2a6a4fbc7e587208eeea3a0d1ff852446f994644a8a478c492715"
+  },
+  "dicts\\tl__en.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\tl__en.parquet",
+   "bytes": 14810,
+   "sha256": "024030993fac5fe4fae7384ee028a0cf711fa0b9fa7243e9693b38f49af53444"
+  },
+  "dicts\\tl__zh.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\tl__zh.parquet",
+   "bytes": 9788,
+   "sha256": "c9863f8c79a3ad71eae00d5d48c830749187e23a47d3ac92dccf971803dd6a2e"
+  },
+  "dicts\\tr__en.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\tr__en.parquet",
+   "bytes": 13266,
+   "sha256": "25fe8b3167da26a5e39e82128418ee4e9f7c7d0697dde31ca9feb98ff4241b6a"
+  },
+  "dicts\\tr__eu.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\tr__eu.parquet",
+   "bytes": 12725,
+   "sha256": "4f5a93ca0e550c732d84e31f19594af62d6df9da30781836b3623c99ef32292d"
+  },
+  "dicts\\tr__fi.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\tr__fi.parquet",
+   "bytes": 13734,
+   "sha256": "19f85694c9f687a57a105d4665cdbbf403453d681cb749aa7e7812ee0cc859df"
+  },
+  "dicts\\tr__ga.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\tr__ga.parquet",
+   "bytes": 13737,
+   "sha256": "8f5308d217463bc755accd0387b745b96badba17c3af65d7e6cf52b3ca01af0c"
+  },
+  "dicts\\tr__he.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\tr__he.parquet",
+   "bytes": 13846,
+   "sha256": "97549826b095f01a851da273f741eb57f4c1f3c8f794b5568d27591985dce811"
+  },
+  "dicts\\tr__it.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\tr__it.parquet",
+   "bytes": 13848,
+   "sha256": "90344547b398009d11a6e95fc80c82d036b73e7ea4dbb35cdc5ab291bea692ad"
+  },
+  "dicts\\tr__ru.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\tr__ru.parquet",
+   "bytes": 14079,
+   "sha256": "cb9d18bedad34f16e7a28ea52b223ce60343357d1e788f57165739e61c4af245"
+  },
+  "dicts\\zh__en.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\zh__en.parquet",
+   "bytes": 12710,
+   "sha256": "c1460465513a261020db3827dbc949106d05c736e0d601fafc3a5b6d622c2135"
+  },
+  "dicts\\zh__fi.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\zh__fi.parquet",
+   "bytes": 12406,
+   "sha256": "dfaa90b9a06f4bcfb8af64cbdb079ba29414af0f1206ca86079ac109cdf5a421"
+  },
+  "dicts\\zh__ja.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\zh__ja.parquet",
+   "bytes": 9200,
+   "sha256": "1eac6d9b000877e7b82c65a90422809aeb9a188ae1b3f33476ed0d490ceceff6"
+  },
+  "dicts\\zh__ta.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\dicts\\zh__ta.parquet",
+   "bytes": 13428,
+   "sha256": "3b2eba070d6c198bcc75b60b2ba5786e57d26d69c4d3ca38e56da6a27382abf4"
+  },
+  "folds.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\folds.parquet",
+   "bytes": 34651,
+   "sha256": "9d3dd698e92a189469aae5da572773570071b61a4c33c124def5f81026f05236"
+  },
+  "gold.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\gold.parquet",
+   "bytes": 2227645,
+   "sha256": "ad27397bb9f4db2bc44cee9af7b3ce48748013e65dd1377a2f482e587f984075"
+  },
+  "pairs.csv": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\pairs.csv",
+   "bytes": 830,
+   "sha256": "0ecae4906359915d7a329119208a61c8ba4d584db231e8f3a8decbee754844ad"
+  },
+  "words.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\md\\highres-nllb-a\\words.parquet",
+   "bytes": 265258,
+   "sha256": "91d6fee3f0a3e0641c685f448c54f8a5daeb5727fdd7b2c1a709ddc3c9ac9132"
+  }
+ }
+}

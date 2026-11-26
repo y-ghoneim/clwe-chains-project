@@ -1,0 +1,77 @@
+1. Description: chain gain by bins of r (one unit), distant pairs and stage B
+  distant:
+       mean  size
+bin              
+-2  -0.0475     3
+-1  -0.0148     3
+ 0   0.0288     7
+ 1   0.0195    49
+ 2   0.0282    96
+ 3   0.0304    94
+ 4   0.0263    10
+ 5   0.0415    22
+ 6   0.0351     1
+  B:
+       mean  size
+bin              
+-1  -0.1412     1
+ 0  -0.0143     1
+ 1   0.0497     2
+ 2   0.0378     6
+ 3   0.0499     3
+ 5   0.0605     3
+  stage means (pairs): r, gain
+           r                 gain              
+        mean    min    max   mean    min    max
+stage                                          
+1      3.809  2.828  6.129  0.037  0.003  0.093
+A      2.986  1.374  5.550  0.031 -0.001  0.094
+A2     1.918 -1.805  4.167  0.027 -0.086  0.076
+B      2.821 -0.573  5.439  0.031 -0.141  0.092
+D      1.832 -1.236  3.528 -0.005 -0.038  0.058
+
+2. Fit on distant pairs: gain = a + b r (cluster bootstrap over languages)
+  {'a': np.float64(0.008), 'b': np.float64(0.0066), 'a_ci': (np.float64(-0.0158), np.float64(0.0208)), 'b_ci': (np.float64(0.0031), np.float64(0.0154)), 'r0': np.float64(-1.204), 'r0_ci': (np.float64(-6.2218), np.float64(1.1397)), 'r0_undefined_share': np.float64(0.001), 'n_pairs': np.int64(285), 'n_clusters': np.int64(50)}
+
+3. Relatedness: stage B residuals from the distant fit
+  mean residual 0.0046, 95% [-0.0200, 0.0253] over 16 pairs
+  s  t       r    gain   resid
+mhr fi  5.4161  0.0586  0.0146
+mhr et  5.4393  0.0557  0.0116
+mhr hu  5.4077  0.0671  0.0232
+myv fi  2.0537  0.0060 -0.0157
+myv et  2.2884  0.0196 -0.0036
+myv hu  2.1910  0.0057 -0.0169
+ or hi -0.5735 -0.1412 -0.1454
+ or ur  3.6496  0.0922  0.0599
+ as hi  1.6650  0.0575  0.0384
+ as ur  2.6419  0.0515  0.0260
+ mg id  2.9403  0.0868  0.0592
+ mg tl  3.6517  0.0456  0.0133
+ jv id  0.8430 -0.0143 -0.0279
+ jv tl  1.1656  0.0420  0.0263
+ckb fa  2.6532  0.0575  0.0318
+ yo sw  3.6979  0.0118 -0.0208
+
+4. Secondary
+  chain vs log10(direct pairs): {'a': np.float64(0.1216), 'b': np.float64(-0.0304), 'a_ci': (np.float64(0.0886), np.float64(0.1533)), 'b_ci': (np.float64(-0.0382), np.float64(-0.0221)), 'r0': np.float64(nan), 'r0_ci': (np.float64(nan), np.float64(nan)), 'r0_undefined_share': np.float64(1.0), 'n_pairs': np.int64(285), 'n_clusters': np.int64(50)}
+  joined_mb vs r: {'a': np.float64(0.0082), 'b': np.float64(0.0046), 'a_ci': (np.float64(-0.0052), np.float64(0.0333)), 'b_ci': (np.float64(-0.002), np.float64(0.0094)), 'r0': np.float64(-1.787), 'r0_ci': (np.float64(-19.0732), np.float64(0.767)), 'r0_undefined_share': np.float64(0.057), 'n_pairs': np.int64(245), 'n_clusters': np.int64(10)}
+  combo vs r: {'a': np.float64(0.0457), 'b': np.float64(-0.003), 'a_ci': (np.float64(0.0173), np.float64(0.0714)), 'b_ci': (np.float64(-0.0105), np.float64(0.0054)), 'r0': np.float64(nan), 'r0_ci': (np.float64(nan), np.float64(nan)), 'r0_undefined_share': np.float64(0.717), 'n_pairs': np.int64(285), 'n_clusters': np.int64(50)}
+
+5. Stage means of the gain (pairs), by method
+                   mean  size
+stage method                 
+1     chain      0.0374    77
+      combo      0.0318    77
+      joined_mb  0.0272    77
+A     chain      0.0314   125
+      combo      0.0360   125
+      joined_mb  0.0229   125
+A2    chain      0.0268    43
+      combo      0.0502    43
+      joined_mb  0.0109    43
+B     chain      0.0314    16
+      combo      0.0486    16
+      joined_mb  0.0303    16
+D     chain     -0.0052    40
+      combo      0.0366    40

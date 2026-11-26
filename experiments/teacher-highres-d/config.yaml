@@ -1,0 +1,7 @@
+# Chain-as-teacher on stage D (decisions.md 2026-11-18). See README.md.
+data: d                          # v1/phase6/d, stage D's data unchanged
+methods: [thin, chain, combo]    # references, scored in the same pass as stage D
+alphas: [0.03, 0.1, 0.3, 1]      # teacherd: lambda = alpha x n_direct / d. Stage 1 chose 10 at
+                                 # n < 500, but on stage D's large dictionaries alpha 3-30 returned
+                                 # the chain's own map in the smoke test (en-ar), so the grid is
+                                 # set where the two terms are comparable

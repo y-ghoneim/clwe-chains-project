@@ -1,0 +1,3 @@
+# WikiANN downstream run (part 3). See README.md.
+n_seeds: 3                    # BiLSTM-CRF seeds per labelled language
+n_boot: 1000

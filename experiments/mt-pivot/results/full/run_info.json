@@ -1,0 +1,84 @@
+{
+ "commit": "4390b56313d7f23503d8efc59d45fcd0f058045c",
+ "model": "facebook/nllb-200-3.3B",
+ "system": "nllb",
+ "run": "full",
+ "config": {
+  "model": "facebook/nllb-200-3.3B",
+  "beams": 5,
+  "n_return": 5,
+  "max_new_tokens": 8,
+  "batch": 128,
+  "llm_candidates": 3,
+  "llm_words_per_request": 40,
+  "runs": {
+   "pilot": {
+    "data": "d",
+    "pairs": [
+     "ru-fi",
+     "tr-it",
+     "ja-hu",
+     "ko-tr",
+     "th-eu",
+     "ka-hu",
+     "mt-sw",
+     "kk-tl"
+    ],
+    "words": 200,
+    "select_words": 200,
+    "seed": 0
+   },
+   "pilot2": {
+    "data": "d",
+    "pairs": null,
+    "words": 400,
+    "select_words": 100,
+    "seed": 0
+   },
+   "full": {
+    "data": "d",
+    "pairs": null,
+    "words": 100000,
+    "select_words": 100,
+    "seed": 0
+   },
+   "lowres": {
+    "data": "",
+    "pairs": null,
+    "words": 100000,
+    "select_words": 100,
+    "seed": 0
+   },
+   "llm40": {
+    "data": "d",
+    "pairs": null,
+    "words": 100000,
+    "select_words": 100,
+    "seed": 0,
+    "routes": "basic"
+   },
+   "llmlow": {
+    "data": "",
+    "pairs": null,
+    "words": 100000,
+    "select_words": 100,
+    "seed": 0,
+    "routes": "basic"
+   },
+   "smoke": {
+    "data": "d",
+    "pairs": [
+     "ru-fi"
+    ],
+    "words": 10,
+    "select_words": 5,
+    "seed": 0
+   }
+  }
+ },
+ "pairs_done": 40,
+ "pairs": 40,
+ "new_translations": 373201,
+ "seconds": 2594.3,
+ "words_per_second": 143.9
+}

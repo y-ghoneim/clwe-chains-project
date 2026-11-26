@@ -1,0 +1,4 @@
+method,mean_over_languages,n_languages,n_dirs,n_above,n_below
+chain,0.0195334,15,54,22,2
+combo,0.0540254,15,54,54,0
+joined_mb,0.0260762,15,54,32,0

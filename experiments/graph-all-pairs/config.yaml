@@ -1,0 +1,11 @@
+# Phase 4: the language graph on 40 distant pairs. See README.md (approved before running).
+stages: [A, B, C]
+max_mid: 3                       # at most 3 intermediates (brief 5.5)
+validation: {n: 500}             # concepts outside the list per edge / pair (quality, learned)
+hub: [en, ru]                    # via hub: en, or ru when en is an endpoint
+oracle: {max_mid: 2, shortlist: 10, check_pairs: 2, seed: 0}   # B′ (user, 2026-11-15)
+alt_p: [1.5, 2, 3]               # d^p (p = 1 is stage A)
+cv: {k: 5, seed: 0}              # folds over pairs, stratified by stratum
+bootstrap: {n: 1000, seed: 0}
+learned: {per_measure: 20, n_random: 20, seed: 0}
+lang2vec_codes: {ar: arb}        # override of languages_all.csv iso3 (phase 3: reproduces AUS)

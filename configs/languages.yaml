@@ -1,0 +1,5 @@
+# Candidate languages for the shared-list build: the 32 v0 development languages (brief 5.1).
+# The graph's nodes are the built list's languages (shared_list.list_languages): English + 29,
+# am and vi having fallen below the coverage threshold (2026-11-15).
+nodes: [en, am, ar, de, el, es, et, eu, fa, fi, fr, ga, he, hi, hr, hu, id, it, ja, ka, kk, ko,
+        mt, ru, sw, ta, th, tl, tr, ur, vi, zh]

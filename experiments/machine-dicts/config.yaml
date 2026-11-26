@@ -1,0 +1,12 @@
+# RQ3: machine-made dictionaries (decisions.md 2026-11-18). See README.md.
+methods: [thin, chain, combo]      # stage 1's runner, these methods only
+versions:                          # prep/11 outputs under v1/phase6/md/ (run order: highres first)
+  - highres-list                   # the shared list as every edge's dictionary (reference)
+  - highres-nllb-a                 # every edge from direct NLLB translations of the list words
+  - highres-nllb-b                 # s-t through the hub; chain edges as in -a
+  - low-nllb-a                     # s-t from direct NLLB translations; chain edges natural
+  - low-nllb-b                     # s-t through the hub; chain edges natural
+  - highres-llm-a                  # as highres-nllb-*, with the LLM (prep/12; run when available)
+  - highres-llm-b
+  - low-llm-a
+  - low-llm-b

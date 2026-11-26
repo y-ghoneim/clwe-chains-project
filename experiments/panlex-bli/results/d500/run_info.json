@@ -1,0 +1,3229 @@
+{
+ "commit": "0a217e701401062d8fd5339558732f044061012c",
+ "smoke": false,
+ "direct": 500,
+ "basis": "ours",
+ "normalize_used": [
+  "unit",
+  "center",
+  "unit"
+ ],
+ "eval_commits": [
+  "1565faa7bd92a1e73c274464077b85616a8bd20b"
+ ],
+ "config": {
+  "data": "external/panlex-bli/lexicons/all",
+  "languages": [
+   "bg",
+   "ca",
+   "eo",
+   "et",
+   "eu",
+   "fi",
+   "he",
+   "hu",
+   "id",
+   "ka",
+   "ko",
+   "lt",
+   "no",
+   "th",
+   "tr"
+  ],
+  "direct": [
+   1000,
+   500
+  ],
+  "hub_file": 5000,
+  "n_hubs": 3,
+  "bootstrap": {
+   "n": 1000,
+   "seed": 0
+  },
+  "bases": {
+   "ours": {
+    "normalize": null,
+    "retrieval": "csls"
+   },
+   "paper": {
+    "normalize": [
+     "unit"
+    ],
+    "retrieval": "nn"
+   }
+  },
+  "block_rows": 256,
+  "published_mrr_1k": {
+   "orthogonal": 0.071,
+   "orthogonal_self_learning": 0.132,
+   "vecmap_pipeline": 0.101,
+   "best_self_learning": 0.274,
+   "unsupervised": 0.14
+  }
+ },
+ "eval": {
+  "k": 10,
+  "block": 256,
+  "half": true,
+  "retrieval": "csls"
+ },
+ "normalize": [
+  "unit",
+  "center",
+  "unit"
+ ],
+ "n_directions": 210,
+ "gpu": "NVIDIA GeForce RTX 4050 Laptop GPU",
+ "inputs": {
+  "bg-ca.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\bg-ca\\bg-ca.train.500.cc.trans",
+   "bytes": 9713,
+   "sha256": "d8e1bb48be18e271c5e5eca1d72744a902fb19714633106789cce126ce253fe0"
+  },
+  "bg-ca.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\bg-ca\\bg-ca.train.5000.cc.trans",
+   "bytes": 113668,
+   "sha256": "cc5d029546522b56c73f109d0e74633f14c0b177656bd3fcdbc15e90126943a2"
+  },
+  "bg-ca.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\bg-ca\\bg-ca.test.2000.cc.trans",
+   "bytes": 47976,
+   "sha256": "752094989f7878973d52c8fb722e57d3b049c7d87ce5022527cc585fca2ba6ad"
+  },
+  "bg-eo.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\bg-eo\\bg-eo.train.500.cc.trans",
+   "bytes": 9639,
+   "sha256": "ae6c8c040d47f71265a6bbc40fb58209c375cea52a42d309e0413bbc3a418675"
+  },
+  "bg-eo.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\bg-eo\\bg-eo.train.5000.cc.trans",
+   "bytes": 111703,
+   "sha256": "72decd9a0ca08d4e6ed3ff0b9661551c0afc942c9a4324d90c80278d878f73bc"
+  },
+  "bg-eo.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\bg-eo\\bg-eo.test.2000.cc.trans",
+   "bytes": 46766,
+   "sha256": "a821f038ffe2a91e92ee7887e068cf2d08b4b787ae6d08502c180967ff53ec9c"
+  },
+  "bg-et.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\bg-et\\bg-et.train.500.cc.trans",
+   "bytes": 9234,
+   "sha256": "d2fddbac6568762c2c64b8287c96441e0e8e8def5f53e0467717c05fd47f02f9"
+  },
+  "bg-et.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\bg-et\\bg-et.train.5000.cc.trans",
+   "bytes": 110680,
+   "sha256": "228675d00bf8a0f9ca4884f590f7673210b87a366fb1d1c5beaf9c9aa0679df3"
+  },
+  "bg-et.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\bg-et\\bg-et.test.2000.cc.trans",
+   "bytes": 47745,
+   "sha256": "435fc59587407e3890577801b13a4c11f9ef127c220553b43bc3f6c4e41b8ae0"
+  },
+  "bg-eu.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\bg-eu\\bg-eu.train.500.cc.trans",
+   "bytes": 10446,
+   "sha256": "149080828b170ced50f04780995ac4aae1cbf9bc3d452bad53871c9460224cb5"
+  },
+  "bg-eu.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\bg-eu\\bg-eu.train.5000.cc.trans",
+   "bytes": 112564,
+   "sha256": "b47a0431afd042b0473a374f43d40196000af54eeabed77fcd307e806699c8b9"
+  },
+  "bg-eu.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\bg-eu\\bg-eu.test.2000.cc.trans",
+   "bytes": 46828,
+   "sha256": "df904ba248245ea32a015bd4f726fe5f9dae48a7d7246aa8f8eddf4caaf3e25b"
+  },
+  "bg-fi.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\bg-fi\\bg-fi.train.500.cc.trans",
+   "bytes": 10022,
+   "sha256": "85ed1b8de630730b636b003d7e6ce3b1c3d1fccb0686f08a814cdb9c989226bd"
+  },
+  "bg-fi.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\bg-fi\\bg-fi.train.5000.cc.trans",
+   "bytes": 116170,
+   "sha256": "ed938648c17ae6e6b6f8bb2854f5148c77c56c86740f0ad5e5c8a1dcd6555db1"
+  },
+  "bg-fi.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\bg-fi\\bg-fi.test.2000.cc.trans",
+   "bytes": 49001,
+   "sha256": "a056163abb4a6a7f8c4f062d4f884dd0d1f27a0f60c2e3f63e4c46e64845182e"
+  },
+  "bg-he.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\bg-he\\bg-he.train.500.cc.trans",
+   "bytes": 10453,
+   "sha256": "8dff679e17c2d4e568315330c02aff36510debdfd7cab20fa87b31198f9148fe"
+  },
+  "bg-he.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\bg-he\\bg-he.train.5000.cc.trans",
+   "bytes": 120885,
+   "sha256": "2db508661fdf9090d0f3d4fbb19daa51790493f140323febf285b206f966b3ef"
+  },
+  "bg-he.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\bg-he\\bg-he.test.2000.cc.trans",
+   "bytes": 52570,
+   "sha256": "126bb5809bacda6106358844eddb93b12972b93db1c7a8c3401c378b9370bc61"
+  },
+  "bg-hu.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\bg-hu\\bg-hu.train.500.cc.trans",
+   "bytes": 9771,
+   "sha256": "27b7d728a93acbb147aaa74d86d5ff773900dac0fa6e405554714da48da8a777"
+  },
+  "bg-hu.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\bg-hu\\bg-hu.train.5000.cc.trans",
+   "bytes": 115407,
+   "sha256": "a8ff670f22dfdc6f04ad8df350f3bf5f0f4f6071e11af1db20cf9365c076fc6c"
+  },
+  "bg-hu.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\bg-hu\\bg-hu.test.2000.cc.trans",
+   "bytes": 48042,
+   "sha256": "25abe6e4268f1e60b678828c75bababbdce90ca7162028746e0cfc9264fd3248"
+  },
+  "bg-id.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\bg-id\\bg-id.train.500.cc.trans",
+   "bytes": 10000,
+   "sha256": "02fce341c9e07fefba9335f6ef5c52dc3d16be0f2f551f44e01dfe57b471e621"
+  },
+  "bg-id.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\bg-id\\bg-id.train.5000.cc.trans",
+   "bytes": 112587,
+   "sha256": "8a3f0f2577391babe1611ec5dff656c3b5192ddba746e46e1f160ee4d44ba18c"
+  },
+  "bg-id.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\bg-id\\bg-id.test.2000.cc.trans",
+   "bytes": 46985,
+   "sha256": "703c8a50b2ffec8607acf0d0032140f877f1f4160b785cce68f1503ab6f5d509"
+  },
+  "bg-ka.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\bg-ka\\bg-ka.train.500.cc.trans",
+   "bytes": 16039,
+   "sha256": "5638869a09719391dff5d7a008ed18c145512eb7d610c148c36cf0c0b2e52742"
+  },
+  "bg-ka.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\bg-ka\\bg-ka.train.5000.cc.trans",
+   "bytes": 183788,
+   "sha256": "c1f9e9a888334f75c15c964f42c4bfd36c90c5d2e87529318719de092c2fa59a"
+  },
+  "bg-ka.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\bg-ka\\bg-ka.test.2000.cc.trans",
+   "bytes": 76820,
+   "sha256": "b9273aa80d8d13461be5ce42ef60b390ce962692d09c2d32923e3361ecfeee48"
+  },
+  "bg-ko.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\bg-ko\\bg-ko.train.500.cc.trans",
+   "bytes": 11190,
+   "sha256": "7609a85232ad1f460a0ff25ad3890a9004257cc0a9d4a36c2406293df9244857"
+  },
+  "bg-ko.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\bg-ko\\bg-ko.train.5000.cc.trans",
+   "bytes": 116526,
+   "sha256": "51d8bae704e0260905a35ecdb9aacc96ebd906b7b4535c3f03bfe6e000cc5cfd"
+  },
+  "bg-ko.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\bg-ko\\bg-ko.test.2000.cc.trans",
+   "bytes": 48711,
+   "sha256": "3f994af0ef64f1ec673a211377783e18e3fce3054f576ac27ba72f6d7bc6a43d"
+  },
+  "bg-lt.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\bg-lt\\bg-lt.train.500.cc.trans",
+   "bytes": 10512,
+   "sha256": "3f722abcf179a0147bb9c72619bc5622f5743bb13e175a62e552ece8a5f73f9f"
+  },
+  "bg-lt.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\bg-lt\\bg-lt.train.5000.cc.trans",
+   "bytes": 114290,
+   "sha256": "72371c2b2dbcadcd5022146a1236d91583138d397ca382e470b443619a80ba0e"
+  },
+  "bg-lt.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\bg-lt\\bg-lt.test.2000.cc.trans",
+   "bytes": 48128,
+   "sha256": "ccc485e33aa863f97ff150e68b44951d430859c1e8d2b21fa65583be8ec3db53"
+  },
+  "bg-no.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\bg-no\\bg-no.train.500.cc.trans",
+   "bytes": 9354,
+   "sha256": "b5955b7fce9139d033fcc27c3536acb912027925d41cb03ba24a11474658f851"
+  },
+  "bg-no.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\bg-no\\bg-no.train.5000.cc.trans",
+   "bytes": 111344,
+   "sha256": "6ac8b5c4cb5b16a0ab673c69f433f36e1b23ac4a85a013aac094d6aa25a82466"
+  },
+  "bg-no.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\bg-no\\bg-no.test.2000.cc.trans",
+   "bytes": 47069,
+   "sha256": "661c3e2aa42b39606956fac33a42de2550327cbf3f0c38e8c36ae4412b0ebc7f"
+  },
+  "bg-th.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\bg-th\\bg-th.train.500.cc.trans",
+   "bytes": 12638,
+   "sha256": "709d169dece336615ed7c138d1a67c3ec7648c2381366808162ce1d35b8a459c"
+  },
+  "bg-th.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\bg-th\\bg-th.train.5000.cc.trans",
+   "bytes": 132322,
+   "sha256": "e32836b0f8b4ff275fa4c0c4993326b859965cc4eb55d37e8d7395032b771dac"
+  },
+  "bg-th.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\bg-th\\bg-th.test.2000.cc.trans",
+   "bytes": 33385,
+   "sha256": "ce7f65180f6d884a16a51fb131216564ebac52d17a45fa329040e7017f7f0132"
+  },
+  "bg-tr.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\bg-tr\\bg-tr.train.500.cc.trans",
+   "bytes": 9820,
+   "sha256": "5248432f149841e7a2a9843445c22cc98b147d475e480bc550c4e7c35c63d0e8"
+  },
+  "bg-tr.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\bg-tr\\bg-tr.train.5000.cc.trans",
+   "bytes": 109468,
+   "sha256": "bb939d5db40cb806650be4553d105a1e28014bfea44187723c34519c192b957a"
+  },
+  "bg-tr.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\bg-tr\\bg-tr.test.2000.cc.trans",
+   "bytes": 46310,
+   "sha256": "9400cce1319d6ce571a6fd8894b1bf8dc2376d98c68af3105b91c812068515d2"
+  },
+  "ca-bg.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ca-bg\\ca-bg.train.500.cc.trans",
+   "bytes": 9737,
+   "sha256": "707732772e6d7cec284b435375d9610958412cde119a7a2b5c11153f1b4abb95"
+  },
+  "ca-bg.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ca-bg\\ca-bg.train.5000.cc.trans",
+   "bytes": 111138,
+   "sha256": "6232af92c748a4b2f0080d2cbdbdceaad169cc2efc606235a8cbd425e4d78c46"
+  },
+  "ca-bg.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ca-bg\\ca-bg.test.2000.cc.trans",
+   "bytes": 46699,
+   "sha256": "b619ebd17c728a0ec3f5fa84442d4f87871ccf6113ec27d385c9262ef9d2d2ad"
+  },
+  "ca-eo.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ca-eo\\ca-eo.train.500.cc.trans",
+   "bytes": 6840,
+   "sha256": "bc800b0dd80650bd75414115e2e778226c23e4603e9f44b94a385ac72a6904fd"
+  },
+  "ca-eo.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ca-eo\\ca-eo.train.5000.cc.trans",
+   "bytes": 77186,
+   "sha256": "fcbc60de26c4193582741ad4d8604c9d3cc11919b889f44dbfa22011d0fbfcf9"
+  },
+  "ca-eo.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ca-eo\\ca-eo.test.2000.cc.trans",
+   "bytes": 31849,
+   "sha256": "8a240d4b150c60b44094042704938424333f21574c5319670ec04c8fba0b2643"
+  },
+  "ca-et.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ca-et\\ca-et.train.500.cc.trans",
+   "bytes": 6697,
+   "sha256": "1ae2ad0fafedd065eaf2b911e43d2eede34b466459ecde0ff75898bc86f0b59e"
+  },
+  "ca-et.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ca-et\\ca-et.train.5000.cc.trans",
+   "bytes": 77081,
+   "sha256": "ceddc52c75cea72f73b1649425de1461ad099fbe8c9d6d04bb82041c05e5c693"
+  },
+  "ca-et.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ca-et\\ca-et.test.2000.cc.trans",
+   "bytes": 33255,
+   "sha256": "027554e72bfc762c2bf6b8e81e56e97e4ddff303ab60d1763c2b61b230820fdd"
+  },
+  "ca-eu.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ca-eu\\ca-eu.train.500.cc.trans",
+   "bytes": 7153,
+   "sha256": "ca6f060a0ffba14384d64ea6334ed8f21fc3adc507bef5c8f280843c179b93de"
+  },
+  "ca-eu.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ca-eu\\ca-eu.train.5000.cc.trans",
+   "bytes": 79740,
+   "sha256": "1cfbede640d4cafc042eb29d144b52fd667d7374fec79d36508934ad9f6ecc07"
+  },
+  "ca-eu.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ca-eu\\ca-eu.test.2000.cc.trans",
+   "bytes": 33856,
+   "sha256": "44c92019b0b0382599bd4359fa8057e61460afe87da447e9c6abbdf73a1705dc"
+  },
+  "ca-fi.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ca-fi\\ca-fi.train.500.cc.trans",
+   "bytes": 6937,
+   "sha256": "c1fe645565c3823e3f0c68922df38d318fd77485ed833ebea7ad04052f5d6633"
+  },
+  "ca-fi.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ca-fi\\ca-fi.train.5000.cc.trans",
+   "bytes": 82313,
+   "sha256": "3bc60c3643d63789fed013b647641474014801d995df62e67c0a889ce361af9c"
+  },
+  "ca-fi.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ca-fi\\ca-fi.test.2000.cc.trans",
+   "bytes": 34851,
+   "sha256": "00ed457d7462c8942269fd8f029f54c238fe1a60ab247c4ff8ca352d85ffb2eb"
+  },
+  "ca-he.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ca-he\\ca-he.train.500.cc.trans",
+   "bytes": 7642,
+   "sha256": "e52ee5a65c429ad5f0f51450bff0ffed1c88d8e1fdc00a3b773a470121b06f59"
+  },
+  "ca-he.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ca-he\\ca-he.train.5000.cc.trans",
+   "bytes": 87564,
+   "sha256": "e902c70e1eb59630080f85d92954e111df91b2e0cfffac4b5b60d61cedc732d8"
+  },
+  "ca-he.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ca-he\\ca-he.test.2000.cc.trans",
+   "bytes": 38670,
+   "sha256": "847c6916f736b464c478496e421194db42dbb06b407c970c58f3eb21951a29b2"
+  },
+  "ca-hu.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ca-hu\\ca-hu.train.500.cc.trans",
+   "bytes": 7189,
+   "sha256": "2820834ad37a4f7625b5071761be9c726e42d3199d8710496d4fdb1c98a3bd2a"
+  },
+  "ca-hu.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ca-hu\\ca-hu.train.5000.cc.trans",
+   "bytes": 82153,
+   "sha256": "f19135ee0e16b542bb4df56ca6c2f50cc87ff0aae8f1998106301dd529d65578"
+  },
+  "ca-hu.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ca-hu\\ca-hu.test.2000.cc.trans",
+   "bytes": 34945,
+   "sha256": "e2c8cdc7110193e628b63658a3e219b8c42b83d642dcbc118993c70747cb79fe"
+  },
+  "ca-id.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ca-id\\ca-id.train.500.cc.trans",
+   "bytes": 7239,
+   "sha256": "a762c1a6a1980876de1a77717cc7d164116c0fda936836919959589137db32de"
+  },
+  "ca-id.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ca-id\\ca-id.train.5000.cc.trans",
+   "bytes": 79508,
+   "sha256": "4b05948fd3371e6696e2570174496de09237444b9f1697a224c2b512c485c6e4"
+  },
+  "ca-id.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ca-id\\ca-id.test.2000.cc.trans",
+   "bytes": 33641,
+   "sha256": "7b69aba9a27d07c031918adb35a696adb8de2377239c71084c63a69821a817d0"
+  },
+  "ca-ka.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ca-ka\\ca-ka.train.500.cc.trans",
+   "bytes": 13750,
+   "sha256": "157cd419401d5ce2fe9ff28c5e2ff8b68ac6948017cbcff28a520bbea13a5c2b"
+  },
+  "ca-ka.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ca-ka\\ca-ka.train.5000.cc.trans",
+   "bytes": 151398,
+   "sha256": "03fa232159e490224b7d7d402be1e21914cb6f57cf394773304d9dc68886cfd8"
+  },
+  "ca-ka.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ca-ka\\ca-ka.test.2000.cc.trans",
+   "bytes": 62044,
+   "sha256": "99c5cc2e1e7d06b61744151674d95e722d71046a8ec9d0c5c4caa5e5b85178af"
+  },
+  "ca-ko.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ca-ko\\ca-ko.train.500.cc.trans",
+   "bytes": 7915,
+   "sha256": "e77c7cbbc7db13384fc9d2a1c80cc581b0e0e244beaad7228777857e4da114c2"
+  },
+  "ca-ko.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ca-ko\\ca-ko.train.5000.cc.trans",
+   "bytes": 85407,
+   "sha256": "5807b3649e2f89484f3c3c104b745e676a312e0da783359d35dfce9cbd37bc35"
+  },
+  "ca-ko.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ca-ko\\ca-ko.test.2000.cc.trans",
+   "bytes": 35924,
+   "sha256": "ad5144ff9ef731a3ec7e73d0e9406f63e491a76bbb3bf4ce7333b37086e1c972"
+  },
+  "ca-lt.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ca-lt\\ca-lt.train.500.cc.trans",
+   "bytes": 7625,
+   "sha256": "5393f1c9939145ec07fede1e8a82647a82b1b8d858d992983eb3f939feda904d"
+  },
+  "ca-lt.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ca-lt\\ca-lt.train.5000.cc.trans",
+   "bytes": 82283,
+   "sha256": "1f4236ba141c8d99b2ad18c187cf83aef53cc09d1236076d2db54b857e6c597b"
+  },
+  "ca-lt.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ca-lt\\ca-lt.test.2000.cc.trans",
+   "bytes": 34391,
+   "sha256": "e71ec9ccf09614858df56201b8088e378ec404a9c31a70e3163feb7cf405ca0a"
+  },
+  "ca-no.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ca-no\\ca-no.train.500.cc.trans",
+   "bytes": 6478,
+   "sha256": "05b55cf555f4750ffa7a8038e80dff85444484ce07dd6dcfa3476656d4dd4f74"
+  },
+  "ca-no.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ca-no\\ca-no.train.5000.cc.trans",
+   "bytes": 77488,
+   "sha256": "de2e33ce4fdedd206b8fe611514c43b4f6204f51d518e479ba41e8e6a0d386c1"
+  },
+  "ca-no.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ca-no\\ca-no.test.2000.cc.trans",
+   "bytes": 32407,
+   "sha256": "906aba02aa82a98c40fbae3cc8eeed5b43e6031d6301c246adb064a8e5580523"
+  },
+  "ca-th.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ca-th\\ca-th.train.500.cc.trans",
+   "bytes": 9794,
+   "sha256": "a92f46270dff7f6a85f1ef1b54314a1ffbe91e16b6603bb1b829446db6c6af45"
+  },
+  "ca-th.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ca-th\\ca-th.train.5000.cc.trans",
+   "bytes": 116397,
+   "sha256": "d9de18776999560ffaacfbdfc9e96762876075a4261f2891ca4c6da4b83bf3cb"
+  },
+  "ca-th.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ca-th\\ca-th.test.2000.cc.trans",
+   "bytes": 52114,
+   "sha256": "62a340e29ff0a3e9c7d5bae358361eabfe4e681ee9d454e54d16a2f3623287f7"
+  },
+  "ca-tr.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ca-tr\\ca-tr.train.500.cc.trans",
+   "bytes": 6986,
+   "sha256": "ea9b0a1604a12c8ff31a4a4fed122edf9b3c24cb00ae0f751f66f420a8d0e42b"
+  },
+  "ca-tr.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ca-tr\\ca-tr.train.5000.cc.trans",
+   "bytes": 77068,
+   "sha256": "839d1859b3597de38e49c642c801d4e0736956e478001c4c8efd02d38da0d342"
+  },
+  "ca-tr.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ca-tr\\ca-tr.test.2000.cc.trans",
+   "bytes": 33139,
+   "sha256": "4f0d0d686208fa948d0550f0297aa9da29738535ae9cc935462bcda61ab52f97"
+  },
+  "eo-bg.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eo-bg\\eo-bg.train.500.cc.trans",
+   "bytes": 9160,
+   "sha256": "906277a3547977fbba3625a2e5f8887ea2f6f21cbaebd461af8409de3c2c44ba"
+  },
+  "eo-bg.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eo-bg\\eo-bg.train.5000.cc.trans",
+   "bytes": 109283,
+   "sha256": "b5f76973fd55ff4f4fbc161940c2e16e3ae0810bd364c6038f557467d8ebb484"
+  },
+  "eo-bg.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eo-bg\\eo-bg.test.2000.cc.trans",
+   "bytes": 45972,
+   "sha256": "bdb5ac4d4757e1c229f148bc58ea8bc67d070cf96b5935bacf7e10bc7f47b7de"
+  },
+  "eo-ca.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eo-ca\\eo-ca.train.500.cc.trans",
+   "bytes": 6462,
+   "sha256": "ff50aa3772f26f760dc414da50f341ec0b68b206724355cf53e10bc73f880bf7"
+  },
+  "eo-ca.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eo-ca\\eo-ca.train.5000.cc.trans",
+   "bytes": 76199,
+   "sha256": "8659dbfe3386e80acf9dbc6b213cd6aaa7c2eabe4e7e7209cdb0630bbe7c1413"
+  },
+  "eo-ca.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eo-ca\\eo-ca.test.2000.cc.trans",
+   "bytes": 32523,
+   "sha256": "652c705176c394cdfb713ec9ec4b637cbe8f1ba4f48029cd0ef4a28ac7f2d0c9"
+  },
+  "eo-et.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eo-et\\eo-et.train.500.cc.trans",
+   "bytes": 6685,
+   "sha256": "7f0dd46d26dce5001b6a684c45747ff2943ab8adc0795ecba345550893de3c1f"
+  },
+  "eo-et.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eo-et\\eo-et.train.5000.cc.trans",
+   "bytes": 78388,
+   "sha256": "ea40f7b4a1f13ed229eb64b30d459af0c81d5dbec3116d10a73459572371ac2c"
+  },
+  "eo-et.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eo-et\\eo-et.test.2000.cc.trans",
+   "bytes": 33606,
+   "sha256": "1f8c0081dadfb5e2b4984235364380afc37ae05c258c912debe4abceb1fe4bed"
+  },
+  "eo-eu.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eo-eu\\eo-eu.train.500.cc.trans",
+   "bytes": 7072,
+   "sha256": "bc70614d49314b965facea5850b8f6f90932dda0cd6b470a364e7fc9f9211330"
+  },
+  "eo-eu.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eo-eu\\eo-eu.train.5000.cc.trans",
+   "bytes": 79379,
+   "sha256": "347f0748cbdb099bef51f40f0c4d991ec2d68fb9f69b812e88a934d20b75314f"
+  },
+  "eo-eu.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eo-eu\\eo-eu.test.2000.cc.trans",
+   "bytes": 33256,
+   "sha256": "80d4bdb1b187a0eace39e814f5bbd4d963ff864b120cc0d8389de31461bf0cfc"
+  },
+  "eo-fi.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eo-fi\\eo-fi.train.500.cc.trans",
+   "bytes": 6751,
+   "sha256": "8806e05e358ea583a7a1e2415cdbdd111f5c85c0a3e3dbd25eb0466b8901c810"
+  },
+  "eo-fi.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eo-fi\\eo-fi.train.5000.cc.trans",
+   "bytes": 80876,
+   "sha256": "b1c6f7599736833b88376e67d7f29289f433da661487e4e2e836dc5b19893de0"
+  },
+  "eo-fi.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eo-fi\\eo-fi.test.2000.cc.trans",
+   "bytes": 34913,
+   "sha256": "1fc12781d3b596c11e757bfbfc2583c54cda9cdb15ac2e9d74b93a6c409e22de"
+  },
+  "eo-he.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eo-he\\eo-he.train.500.cc.trans",
+   "bytes": 7594,
+   "sha256": "ade4be2af84896dd31a6ceb253eca6564b1fbe7b489c1a992cf26c9aab4ed3d4"
+  },
+  "eo-he.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eo-he\\eo-he.train.5000.cc.trans",
+   "bytes": 87693,
+   "sha256": "fb4e813dc80f6de0a07ab24a4349533108b9cb8280bfcb9ebfb3e6550338a72a"
+  },
+  "eo-he.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eo-he\\eo-he.test.2000.cc.trans",
+   "bytes": 38815,
+   "sha256": "d8064dcb1baa1b79e3dc3da7aa3bae7985d3b76b7d41c4306918adda5d89741a"
+  },
+  "eo-hu.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eo-hu\\eo-hu.train.500.cc.trans",
+   "bytes": 6810,
+   "sha256": "e1381405ae6f906da95af2cb6ade9dea12d6a07c03dae39179451dd653050263"
+  },
+  "eo-hu.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eo-hu\\eo-hu.train.5000.cc.trans",
+   "bytes": 81040,
+   "sha256": "dc9932eccade7404f3f96779f40193a16cb540dd0fbdb2009a7fcb053aac5a73"
+  },
+  "eo-hu.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eo-hu\\eo-hu.test.2000.cc.trans",
+   "bytes": 34934,
+   "sha256": "060329fe74e268da6367cb13c310309ab0a96d5f1eeed3da261547b9a6b27e8c"
+  },
+  "eo-id.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eo-id\\eo-id.train.500.cc.trans",
+   "bytes": 6826,
+   "sha256": "e37ba438f0900b59fd0c35db0cd0ccdc113e1d62011b48bb953005aa004f08ce"
+  },
+  "eo-id.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eo-id\\eo-id.train.5000.cc.trans",
+   "bytes": 77774,
+   "sha256": "e4a9236b4b22d0ae813752e7a2e42e82a42f3130742da4e2b10e7da30d4fbd53"
+  },
+  "eo-id.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eo-id\\eo-id.test.2000.cc.trans",
+   "bytes": 32957,
+   "sha256": "77b6a509c76fe1226d124ac59fe8f092e4dcc83a7a3605336e22866d0beb3ed9"
+  },
+  "eo-ka.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eo-ka\\eo-ka.train.500.cc.trans",
+   "bytes": 13667,
+   "sha256": "7b47aa1d604aa539bdc21240ca362d406eb3be06e538617d409bcc507440eb49"
+  },
+  "eo-ka.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eo-ka\\eo-ka.train.5000.cc.trans",
+   "bytes": 151151,
+   "sha256": "4524bcda8131cc31e5b27530d227eede41a4094a2ba9560b7bc7b320dac5fb32"
+  },
+  "eo-ka.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eo-ka\\eo-ka.test.2000.cc.trans",
+   "bytes": 62708,
+   "sha256": "36c00b2cc1ef683112d202dd0e6e2d890fe98f772b2631f96fe86b90b7805b76"
+  },
+  "eo-ko.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eo-ko\\eo-ko.train.500.cc.trans",
+   "bytes": 7656,
+   "sha256": "d62304dfef2e53dfc6230caa9a855ff51dc2cb60ae3398248dbd90e0a21abde3"
+  },
+  "eo-ko.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eo-ko\\eo-ko.train.5000.cc.trans",
+   "bytes": 83430,
+   "sha256": "b53101a5a3af3a957cc8aff1c4599840631b573d2f144574c8605c98dda11149"
+  },
+  "eo-ko.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eo-ko\\eo-ko.test.2000.cc.trans",
+   "bytes": 35408,
+   "sha256": "03b237bce3174d73003fe88f8de5d49a5f6ca6939accf641d38cda4236fb4fae"
+  },
+  "eo-lt.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eo-lt\\eo-lt.train.500.cc.trans",
+   "bytes": 7117,
+   "sha256": "a4bc49751d9f32b4facfd1245e06d1d100e662ca4424e1f237fec58313768e9c"
+  },
+  "eo-lt.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eo-lt\\eo-lt.train.5000.cc.trans",
+   "bytes": 82253,
+   "sha256": "e5333a6f8a83aefd88b311fbf4ab913a59ec7a0ada5af881c888416d09b663fd"
+  },
+  "eo-lt.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eo-lt\\eo-lt.test.2000.cc.trans",
+   "bytes": 34419,
+   "sha256": "a39c787d6a2d2d7d8d50093d0d957cb280438857f076b689493b9b71205b49b0"
+  },
+  "eo-no.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eo-no\\eo-no.train.500.cc.trans",
+   "bytes": 6284,
+   "sha256": "ee8ed4ec775dcb5bbd330e3d12ddd109d5ef68a75c613194270da5ebe7f1713f"
+  },
+  "eo-no.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eo-no\\eo-no.train.5000.cc.trans",
+   "bytes": 77027,
+   "sha256": "60d9027e23db245a92b815a4993a8f0d90607607abba8999b8c5c20f50b70738"
+  },
+  "eo-no.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eo-no\\eo-no.test.2000.cc.trans",
+   "bytes": 33056,
+   "sha256": "8900f9389424d6c37989015279cd94c8ddee9f0255e18a4880f5e5c59e086759"
+  },
+  "eo-th.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eo-th\\eo-th.train.500.cc.trans",
+   "bytes": 9894,
+   "sha256": "59e2a4d0f3880fb412455361109d15a8b7f9c246cee3c9077dc8eaa08e0566ed"
+  },
+  "eo-th.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eo-th\\eo-th.train.5000.cc.trans",
+   "bytes": 120066,
+   "sha256": "896bc080673089288ea795a5c06ceb4c009246853ee9be78753125cf3cc16f93"
+  },
+  "eo-th.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eo-th\\eo-th.test.2000.cc.trans",
+   "bytes": 27934,
+   "sha256": "d83bd68e442ff630cce4a7b5eb22fa4dbba0c6a1aee47a90290f222062a5a805"
+  },
+  "eo-tr.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eo-tr\\eo-tr.train.500.cc.trans",
+   "bytes": 6831,
+   "sha256": "780a1f388a071284ad8a7a728382209a522e083224dfda31599b42bff57a7f6d"
+  },
+  "eo-tr.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eo-tr\\eo-tr.train.5000.cc.trans",
+   "bytes": 75515,
+   "sha256": "36e6fc10813a305ec3326f31bd40a7e790e0c3288d5aeb5a25d2962b09d03604"
+  },
+  "eo-tr.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eo-tr\\eo-tr.test.2000.cc.trans",
+   "bytes": 32607,
+   "sha256": "7f213bb303d1ce75e2be84970a67d1bab40f207741c0e8c5ec3587e2e832684e"
+  },
+  "et-bg.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\et-bg\\et-bg.train.500.cc.trans",
+   "bytes": 9634,
+   "sha256": "263434822df4f4b17f61669daa26c00a6d33ddb91620d0bd2ab2e3c9ca2a36dd"
+  },
+  "et-bg.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\et-bg\\et-bg.train.5000.cc.trans",
+   "bytes": 109850,
+   "sha256": "8621d6c0c87fdb2dc9bf30a599019b7f7c001e17ed5de6db530aecb0691f60da"
+  },
+  "et-bg.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\et-bg\\et-bg.test.2000.cc.trans",
+   "bytes": 46503,
+   "sha256": "852e148ec3f4ce45de293a818b8e6cf75b4078e19685e1b5c6e16c6c664f1945"
+  },
+  "et-ca.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\et-ca\\et-ca.train.500.cc.trans",
+   "bytes": 6728,
+   "sha256": "0db81f861d2adb069bb1207a4b13214db33767bde8afafc0e248acc1f05224c1"
+  },
+  "et-ca.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\et-ca\\et-ca.train.5000.cc.trans",
+   "bytes": 78469,
+   "sha256": "cc796b2765f8b946a2d4e6975fbf52ff67a1917dc7b575240b363e9c48758e71"
+  },
+  "et-ca.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\et-ca\\et-ca.test.2000.cc.trans",
+   "bytes": 32975,
+   "sha256": "52960e1db2743e89cd4e045e43a580d71efcec374af8383d4ba299dca1e9cb68"
+  },
+  "et-eo.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\et-eo\\et-eo.train.500.cc.trans",
+   "bytes": 7050,
+   "sha256": "d20ab7984234ee0b9068039083ab3349249259455f2ed7644060ea1894a8bbc6"
+  },
+  "et-eo.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\et-eo\\et-eo.train.5000.cc.trans",
+   "bytes": 78892,
+   "sha256": "3bc70f28c491751cb2d51a30af58956a4b11252ad949a5ef576f828a53a65928"
+  },
+  "et-eo.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\et-eo\\et-eo.test.2000.cc.trans",
+   "bytes": 33477,
+   "sha256": "c8b8aa2195f60c63b686cd41056aec53ad44c704b3314b78dfda7b78f5abe29d"
+  },
+  "et-eu.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\et-eu\\et-eu.train.500.cc.trans",
+   "bytes": 7229,
+   "sha256": "6fa82b16bc3e99eb76d02bc96bf2a86b323ff2e62428d340067a6f69da622780"
+  },
+  "et-eu.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\et-eu\\et-eu.train.5000.cc.trans",
+   "bytes": 79183,
+   "sha256": "3cbe64be0eac2c8dd6f76ee7a99001d080d4f611cb0d42e48aed0819830d861e"
+  },
+  "et-eu.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\et-eu\\et-eu.test.2000.cc.trans",
+   "bytes": 30008,
+   "sha256": "133e6c556218051ec2ad802d71228fd94aab20fdba4542d51777ecb982907374"
+  },
+  "et-fi.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\et-fi\\et-fi.train.500.cc.trans",
+   "bytes": 7094,
+   "sha256": "421bc2e592ed97da2c191f4b3ea9bcc66fe15c8bae9844a07d2fef634d6ae8cd"
+  },
+  "et-fi.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\et-fi\\et-fi.train.5000.cc.trans",
+   "bytes": 82048,
+   "sha256": "c1333f0bb57ee44163a28ef48fad53a879a7eceb131854446bf053db02df2466"
+  },
+  "et-fi.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\et-fi\\et-fi.test.2000.cc.trans",
+   "bytes": 35803,
+   "sha256": "cf5adcf4fcbad3f12e997f26ff9ecfba897c0e4b1395d976e8b4e9b8f564deb9"
+  },
+  "et-he.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\et-he\\et-he.train.500.cc.trans",
+   "bytes": 7735,
+   "sha256": "a559cb652ded794bd9c162a5f4c2fa8652c3aeafdae6924b6c1085b80a58ff22"
+  },
+  "et-he.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\et-he\\et-he.train.5000.cc.trans",
+   "bytes": 89994,
+   "sha256": "65f8a0b031b02bee91716534fadb28c15c1c126edd6d76a8c2ed5587f2414653"
+  },
+  "et-he.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\et-he\\et-he.test.2000.cc.trans",
+   "bytes": 37874,
+   "sha256": "28ada70ca0b934676648f19b60883529a138d3f46dd3f82a874027e9df310ec4"
+  },
+  "et-hu.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\et-hu\\et-hu.train.500.cc.trans",
+   "bytes": 6937,
+   "sha256": "aa7bdb548798546a99d7c0b2a9d197845fb0276b994f592bb1949eaee7263804"
+  },
+  "et-hu.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\et-hu\\et-hu.train.5000.cc.trans",
+   "bytes": 81586,
+   "sha256": "094210530e1b18686b7b960684995dd88603d147359a0af3cef040d68ed5d4a0"
+  },
+  "et-hu.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\et-hu\\et-hu.test.2000.cc.trans",
+   "bytes": 35236,
+   "sha256": "bb968e3e66cebfa804d280a1a8441b73e41c3d5b62b962b8a2e556a66fc7a3d4"
+  },
+  "et-id.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\et-id\\et-id.train.500.cc.trans",
+   "bytes": 6827,
+   "sha256": "3fee2875cf616461799268ec1f1a0b4cc6a1d5061a8e2bc2b24aa6758ae3c0b8"
+  },
+  "et-id.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\et-id\\et-id.train.5000.cc.trans",
+   "bytes": 76477,
+   "sha256": "f361d78444ef667509409947fca580d3af64bb08adaf05a7f72918b3f07ad588"
+  },
+  "et-id.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\et-id\\et-id.test.2000.cc.trans",
+   "bytes": 24299,
+   "sha256": "74c4e09c6861e0f451c668aa6877ab6168d3e5c5bf26e0975006ff67328d0cc1"
+  },
+  "et-ka.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\et-ka\\et-ka.train.500.cc.trans",
+   "bytes": 13695,
+   "sha256": "c60ef12ace0eb35e817153d8cc9481c6bf76490473a35e0ee7c08fbb744636cb"
+  },
+  "et-ka.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\et-ka\\et-ka.train.5000.cc.trans",
+   "bytes": 148820,
+   "sha256": "c839811d88388c8853b2ce431e3bd3b33319a83b6f36eb74bd07d72dfe4e5142"
+  },
+  "et-ka.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\et-ka\\et-ka.test.2000.cc.trans",
+   "bytes": 57690,
+   "sha256": "18ee4050dd6c31d6e1aac7f5c66202ce7acdcb827fe5b08213038560791315ae"
+  },
+  "et-ko.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\et-ko\\et-ko.train.500.cc.trans",
+   "bytes": 7774,
+   "sha256": "2e2f14b7282d2085e396e7d7fa3a5860be78bef013e5c01538e4c1ec40f83e47"
+  },
+  "et-ko.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\et-ko\\et-ko.train.5000.cc.trans",
+   "bytes": 83881,
+   "sha256": "fdee5067405c4bfddae78fde63840bec4c64030b476e47a58edee6e1c9799b9b"
+  },
+  "et-ko.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\et-ko\\et-ko.test.2000.cc.trans",
+   "bytes": 36125,
+   "sha256": "e47de0a42e246036cea65618559f56a67f9f00f9a937d92d0f16729be160b04b"
+  },
+  "et-lt.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\et-lt\\et-lt.train.500.cc.trans",
+   "bytes": 7486,
+   "sha256": "644b9b79f70686c65d403fca7c0540e4ba41a210ef6ea4df35ba32212ee1f249"
+  },
+  "et-lt.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\et-lt\\et-lt.train.5000.cc.trans",
+   "bytes": 82124,
+   "sha256": "88b3f3b96c5f217d92cff7c2051170eb05fc2181eb215531f1d28b0b33cf9ceb"
+  },
+  "et-lt.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\et-lt\\et-lt.test.2000.cc.trans",
+   "bytes": 34631,
+   "sha256": "22eb24436fb1b328dc3fda4eb1d3afb1faed6e781f22601cc21b1bde876ae1a8"
+  },
+  "et-no.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\et-no\\et-no.train.500.cc.trans",
+   "bytes": 6429,
+   "sha256": "4ef5aee56d8f4bc40bdd8e4d8765c92692b271b5e5686672d89bfbe0f934b5f4"
+  },
+  "et-no.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\et-no\\et-no.train.5000.cc.trans",
+   "bytes": 76222,
+   "sha256": "be3939d7740001959bc6b77856fc04a8e707fba9e591f4f8a4101f16e55d25a1"
+  },
+  "et-no.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\et-no\\et-no.test.2000.cc.trans",
+   "bytes": 32284,
+   "sha256": "1aa1523a572e8c106170d54730976d4b1f4e1a09bca6aa18ff13e7067241fb4d"
+  },
+  "et-th.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\et-th\\et-th.train.500.cc.trans",
+   "bytes": 10048,
+   "sha256": "aae321e03e8ddb271fa99a5bcfa72aaeca33b8a864fc8cccd4199f9e87e938d6"
+  },
+  "et-th.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\et-th\\et-th.train.5000.cc.trans",
+   "bytes": 72166,
+   "sha256": "c69da73463f80c5b9b8a485b75659218ee58c38ebe84291a469d94b97ebe489b"
+  },
+  "et-th.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\et-th\\et-th.test.2000.cc.trans",
+   "bytes": 24062,
+   "sha256": "dc138fa525b0407dd421a8981f14db31fe57fe91dd6f7730e4b47a8ecc8730a8"
+  },
+  "et-tr.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\et-tr\\et-tr.train.500.cc.trans",
+   "bytes": 6903,
+   "sha256": "b4679ea72c6bd015e21aed16c0327baac35f403518afbbff2bed9b581e3c26c4"
+  },
+  "et-tr.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\et-tr\\et-tr.train.5000.cc.trans",
+   "bytes": 75139,
+   "sha256": "f3aae5bda1583b15e168c4da36b45b9c37f7a800142e68f593fd8a31a75250de"
+  },
+  "et-tr.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\et-tr\\et-tr.test.2000.cc.trans",
+   "bytes": 31933,
+   "sha256": "d42f5e60d55924e194e015250aac5aafd24ec7925bde8f8bb27706353a35a644"
+  },
+  "eu-bg.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eu-bg\\eu-bg.train.500.cc.trans",
+   "bytes": 9778,
+   "sha256": "9eec3bbd9d48a017577a42637771b0d7d01817192a3df0ff7c4c0792d2b2e371"
+  },
+  "eu-bg.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eu-bg\\eu-bg.train.5000.cc.trans",
+   "bytes": 111291,
+   "sha256": "e9767a55a6e1df32608258c32b47654e6f0febcfea21a0b2fad26857698dad13"
+  },
+  "eu-bg.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eu-bg\\eu-bg.test.2000.cc.trans",
+   "bytes": 46536,
+   "sha256": "8d0851fcbc02ffefccdad494a48cd077979dfaf479140f6c936fcd9b6d7ebaa0"
+  },
+  "eu-ca.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eu-ca\\eu-ca.train.500.cc.trans",
+   "bytes": 6704,
+   "sha256": "9174f3ef163c67f5518cb916c5d4317014469cae3b06d48e4604e982e24ce908"
+  },
+  "eu-ca.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eu-ca\\eu-ca.train.5000.cc.trans",
+   "bytes": 80139,
+   "sha256": "4ed13b7f40d857eaf3ddcea5d46337ff96342f644f3d114c23daac13c96b2126"
+  },
+  "eu-ca.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eu-ca\\eu-ca.test.2000.cc.trans",
+   "bytes": 34158,
+   "sha256": "fc68f49ea51ccff5c09d77473a1be992b1b59e6b51412457d0db33bc062e38ae"
+  },
+  "eu-eo.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eu-eo\\eu-eo.train.500.cc.trans",
+   "bytes": 7202,
+   "sha256": "33e54b7cbf3a7db68ebe0eba3635a1c2211a058bf9cc3312765c42b33d579bde"
+  },
+  "eu-eo.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eu-eo\\eu-eo.train.5000.cc.trans",
+   "bytes": 79657,
+   "sha256": "0b08ba9e5028f117963bcbee6658d9445da383d58428e212b1c1caad20ce378b"
+  },
+  "eu-eo.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eu-eo\\eu-eo.test.2000.cc.trans",
+   "bytes": 33156,
+   "sha256": "e563c7e2a92716c84710260f73513aa758d722aeca46b338caa511a4f1bf0f01"
+  },
+  "eu-et.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eu-et\\eu-et.train.500.cc.trans",
+   "bytes": 6800,
+   "sha256": "e477b6ed9f486476e579563e60ea1ddaa9b916fcdc3bddc3a7c0a6135b21719b"
+  },
+  "eu-et.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eu-et\\eu-et.train.5000.cc.trans",
+   "bytes": 79436,
+   "sha256": "5374bfd59071c6bfd544b992734682b6cdb43d3f1059ce8a4e7e3d459621a840"
+  },
+  "eu-et.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eu-et\\eu-et.test.2000.cc.trans",
+   "bytes": 28889,
+   "sha256": "ff26e291a2ae04de3f165b8cbaee5156884424d9b61a660420e0d2f9fee45d35"
+  },
+  "eu-fi.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eu-fi\\eu-fi.train.500.cc.trans",
+   "bytes": 7170,
+   "sha256": "37292fcb9a8dce189ba3adb4a296b5fff94efca4ebb55a158ab53a86966c2f93"
+  },
+  "eu-fi.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eu-fi\\eu-fi.train.5000.cc.trans",
+   "bytes": 82077,
+   "sha256": "9ae919daf4e4517642c6ac536bd3fdadde0f342f4578f25551d64163d6e1caf9"
+  },
+  "eu-fi.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eu-fi\\eu-fi.test.2000.cc.trans",
+   "bytes": 35126,
+   "sha256": "94bba950958e9ef49e7acd439de1798a059461388c54fcf8a75c8551ec4e7333"
+  },
+  "eu-he.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eu-he\\eu-he.train.500.cc.trans",
+   "bytes": 7914,
+   "sha256": "896c701b70a81bdb754b8088e4b047de3f0f13e48aa37a7678b049d468ad67a8"
+  },
+  "eu-he.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eu-he\\eu-he.train.5000.cc.trans",
+   "bytes": 91599,
+   "sha256": "c35388587e6d2535b29215acc7dc26344d3e3131c64bbdb45469f7c9c19f193d"
+  },
+  "eu-he.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eu-he\\eu-he.test.2000.cc.trans",
+   "bytes": 25582,
+   "sha256": "f8454dcff5ff90d66d41db627f5af7df67b6ff907aaf955f397e89a9b0615085"
+  },
+  "eu-hu.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eu-hu\\eu-hu.train.500.cc.trans",
+   "bytes": 7299,
+   "sha256": "af2efa54b8056fbdc5058621d934c689291d3d04fe642ef4b24872782b511ef3"
+  },
+  "eu-hu.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eu-hu\\eu-hu.train.5000.cc.trans",
+   "bytes": 83158,
+   "sha256": "5032c60b339b0ece7da78f972ee4c0dddadb4c5647ed05eaa175a7dfbd46f5c4"
+  },
+  "eu-hu.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eu-hu\\eu-hu.test.2000.cc.trans",
+   "bytes": 35084,
+   "sha256": "6d720489369ef0b27a91d89bde09ad0626fcc05e419bcf3045e6adf73367cd1a"
+  },
+  "eu-id.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eu-id\\eu-id.train.500.cc.trans",
+   "bytes": 7050,
+   "sha256": "2c0d449dbd4d98482e8712c7d74bd40a97d1be4da5986dc7db49376ca5f405c7"
+  },
+  "eu-id.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eu-id\\eu-id.train.5000.cc.trans",
+   "bytes": 78798,
+   "sha256": "cacdb4f8ab609f9e001e976ad62c4f19fd8906b993a105755b503501d1d83d83"
+  },
+  "eu-id.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eu-id\\eu-id.test.2000.cc.trans",
+   "bytes": 33487,
+   "sha256": "9d49302fa15ad55a1fb88afcf38fec58d7f003089ad799c1b20587b03ae0e8f9"
+  },
+  "eu-ka.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eu-ka\\eu-ka.train.500.cc.trans",
+   "bytes": 13730,
+   "sha256": "b81372b6cca2ef0d12c31ea519d1b149a28c0785e4b7176d0567bb97f7a4d0b2"
+  },
+  "eu-ka.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eu-ka\\eu-ka.train.5000.cc.trans",
+   "bytes": 151438,
+   "sha256": "746ebc8451edc96b7908059113b0d7ef524decae5403652abc7e5a86d212ec0f"
+  },
+  "eu-ka.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eu-ka\\eu-ka.test.2000.cc.trans",
+   "bytes": 37308,
+   "sha256": "7e0a2994f8910a830375b388fb2c1668db37a2c935a114d5c4c4d258866e4507"
+  },
+  "eu-ko.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eu-ko\\eu-ko.train.500.cc.trans",
+   "bytes": 7837,
+   "sha256": "39902a3cf61ff50a2737e98bd1bd2c369baeb1a41e116857a7843e5f356a5b5b"
+  },
+  "eu-ko.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eu-ko\\eu-ko.train.5000.cc.trans",
+   "bytes": 85140,
+   "sha256": "e494dc53fe5350f6e9dd2d28ddc00ec9c917d7d7fe318ede5db6a02bcc1473ff"
+  },
+  "eu-ko.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eu-ko\\eu-ko.test.2000.cc.trans",
+   "bytes": 36330,
+   "sha256": "bc1538899271d1dde87f95f13f404f1760926014da27c1a00f5c7b12533b48b9"
+  },
+  "eu-lt.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eu-lt\\eu-lt.train.500.cc.trans",
+   "bytes": 7696,
+   "sha256": "6f220cd5ed0f07a32ce27b76258ed28f01791403465c7fc6520d45d299a037d1"
+  },
+  "eu-lt.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eu-lt\\eu-lt.train.5000.cc.trans",
+   "bytes": 83100,
+   "sha256": "6a8a79e7f36a8c033f460a248cac388d5556076b9e6815dcf770b2cfe338f7d8"
+  },
+  "eu-lt.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eu-lt\\eu-lt.test.2000.cc.trans",
+   "bytes": 27941,
+   "sha256": "0697f7c781b9b78a18d2c669603e733cef36a3fe2a24214170d62d5919114424"
+  },
+  "eu-no.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eu-no\\eu-no.train.500.cc.trans",
+   "bytes": 6588,
+   "sha256": "d1919f8b460669db5569dacca8969e0a7bd238547ca61fbe49425eb95806eaab"
+  },
+  "eu-no.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eu-no\\eu-no.train.5000.cc.trans",
+   "bytes": 77957,
+   "sha256": "e52bd706153d0b19008fd75fd9ed13a5bc7444814242d8a8fe1505159e7d8c3d"
+  },
+  "eu-no.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eu-no\\eu-no.test.2000.cc.trans",
+   "bytes": 32907,
+   "sha256": "0cc4f728796961bf0aedf5dcf5d3a6c96616aa8180a548de8b5d5002dd3ce75a"
+  },
+  "eu-th.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eu-th\\eu-th.train.500.cc.trans",
+   "bytes": 10047,
+   "sha256": "0fdf6779c029595b88b525762c0953e8f7b837162186f3acd6dab6c3256d9fee"
+  },
+  "eu-th.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eu-th\\eu-th.train.5000.cc.trans",
+   "bytes": 119652,
+   "sha256": "d215374d9eabd0c240bb7cd8dd670a55d8f326a147fb9c5842e9c62ff3a86a90"
+  },
+  "eu-th.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eu-th\\eu-th.test.2000.cc.trans",
+   "bytes": 46416,
+   "sha256": "6b0ccac6a2d269feaa62e2f794588d58cc0a9d101e29ef7034f8049fa46d9377"
+  },
+  "eu-tr.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eu-tr\\eu-tr.train.500.cc.trans",
+   "bytes": 7093,
+   "sha256": "d010d78257ca2fa7f6a6d07f2ebd3f5b414de2d898d5d433e20e82cb79f706ac"
+  },
+  "eu-tr.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eu-tr\\eu-tr.train.5000.cc.trans",
+   "bytes": 77895,
+   "sha256": "df02969f3b2e46d3526dc7b799dacec504651622e31d9deb302ef91b19a6127b"
+  },
+  "eu-tr.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\eu-tr\\eu-tr.test.2000.cc.trans",
+   "bytes": 32947,
+   "sha256": "d470c5bcbb49520f3b852cf3e9de41a3fbef16a43890eedb16f3f5419da73c43"
+  },
+  "fi-bg.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\fi-bg\\fi-bg.train.500.cc.trans",
+   "bytes": 9567,
+   "sha256": "4be0bc42fd8121c6ac70e11b5ed940e574fac6c206bffc8f4b22e7e004a0fe68"
+  },
+  "fi-bg.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\fi-bg\\fi-bg.train.5000.cc.trans",
+   "bytes": 113427,
+   "sha256": "316768f226bbb2ff2f879f4d1fdc3332a59af781d41b1bf2a9632fe80533c23d"
+  },
+  "fi-bg.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\fi-bg\\fi-bg.test.2000.cc.trans",
+   "bytes": 48807,
+   "sha256": "f8d18db4c370f3008f0927a0139e6d354635f85dc6fe309d4d94f47d41cc3389"
+  },
+  "fi-ca.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\fi-ca\\fi-ca.train.500.cc.trans",
+   "bytes": 6657,
+   "sha256": "671d38bffa5ab993afe8ea95ed30600b8cb1d8466d76d64c8608e7c11ce74a5c"
+  },
+  "fi-ca.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\fi-ca\\fi-ca.train.5000.cc.trans",
+   "bytes": 82675,
+   "sha256": "963e7a6b15b0c0083f43d6681a9b371129e230e174f437bbb3f0b5f3ddbf9b16"
+  },
+  "fi-ca.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\fi-ca\\fi-ca.test.2000.cc.trans",
+   "bytes": 35370,
+   "sha256": "db0c22fba9987707ce2e9912847ef0e9360fc5b3734631e04f2cea58cec061be"
+  },
+  "fi-eo.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\fi-eo\\fi-eo.train.500.cc.trans",
+   "bytes": 7100,
+   "sha256": "cea5e5d36b7735b21bf40e1c348bc4d5810dd68cda9d3424d2b385393ae98fe2"
+  },
+  "fi-eo.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\fi-eo\\fi-eo.train.5000.cc.trans",
+   "bytes": 82815,
+   "sha256": "6e5c3035389e653e1fe7124e0f819afb3e9c8cf91b148c8b119979c7a01460ad"
+  },
+  "fi-eo.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\fi-eo\\fi-eo.test.2000.cc.trans",
+   "bytes": 34767,
+   "sha256": "d7d7f038cc791cdc86bab43881fc4477259e1a91dab48a4031df155cba4b9062"
+  },
+  "fi-et.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\fi-et\\fi-et.train.500.cc.trans",
+   "bytes": 6895,
+   "sha256": "fb47dd3bcf68881ec16869cb227f8066a009c19d5456abc271752c7c0fd538dc"
+  },
+  "fi-et.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\fi-et\\fi-et.train.5000.cc.trans",
+   "bytes": 81492,
+   "sha256": "7c00f1a6010748897e9a0c89da8dba12beae0dec0ed0614dc45b5f0efa92257d"
+  },
+  "fi-et.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\fi-et\\fi-et.test.2000.cc.trans",
+   "bytes": 35967,
+   "sha256": "b5ad91306b36a933f56393bf1afd76de0bacaa8ad1a76587f89b272971541324"
+  },
+  "fi-eu.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\fi-eu\\fi-eu.train.500.cc.trans",
+   "bytes": 7408,
+   "sha256": "76e362382f2959469db0f8cbb980b889ec30d1b5a3dae18ce11c58e74af93910"
+  },
+  "fi-eu.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\fi-eu\\fi-eu.train.5000.cc.trans",
+   "bytes": 82471,
+   "sha256": "9ffc1517fede9e93aac8a2d3d46251ad7357b0e40ee4573cc0b188ebddb0fb5f"
+  },
+  "fi-eu.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\fi-eu\\fi-eu.test.2000.cc.trans",
+   "bytes": 34869,
+   "sha256": "dc8079654a82fad0d142ebf1212c2e395cad64b3b738a9fae35abdfd427cdcaf"
+  },
+  "fi-he.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\fi-he\\fi-he.train.500.cc.trans",
+   "bytes": 8096,
+   "sha256": "dc6e3482ffb4a4b240f0a5c049149b2a4a6269d53f833e747c3d4154e68cfa65"
+  },
+  "fi-he.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\fi-he\\fi-he.train.5000.cc.trans",
+   "bytes": 90964,
+   "sha256": "47d888bde4b9a74674dfe49c7db7c6a8089adc2c50f6bfeed52cd7f4957dbab2"
+  },
+  "fi-he.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\fi-he\\fi-he.test.2000.cc.trans",
+   "bytes": 39748,
+   "sha256": "173993ba21e59d5840e5d2c7d388ba655ed62c957340f5acd8d88b4f2c0cc331"
+  },
+  "fi-hu.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\fi-hu\\fi-hu.train.500.cc.trans",
+   "bytes": 7304,
+   "sha256": "58ff64f6f5346fa001b2958f084e1448290a77ae3f2b7479322c1fc893939b45"
+  },
+  "fi-hu.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\fi-hu\\fi-hu.train.5000.cc.trans",
+   "bytes": 86515,
+   "sha256": "c4f11eb36aaec37922363d1d7ad32f9e5f995ccc12eb8625e99cd703589bba5a"
+  },
+  "fi-hu.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\fi-hu\\fi-hu.test.2000.cc.trans",
+   "bytes": 36870,
+   "sha256": "8af6d96557e30f9713735c79fc4745428d56e68195deea73a091ec1f7faf80cf"
+  },
+  "fi-id.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\fi-id\\fi-id.train.500.cc.trans",
+   "bytes": 7347,
+   "sha256": "594667dd54645d9bb4e551ca728ce21f63774b2d40233923d5ec86ffca645f24"
+  },
+  "fi-id.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\fi-id\\fi-id.train.5000.cc.trans",
+   "bytes": 82059,
+   "sha256": "cf6ba43a7380651c9891fc0c716ed849a8b58d45743edcf19262447c325db301"
+  },
+  "fi-id.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\fi-id\\fi-id.test.2000.cc.trans",
+   "bytes": 34424,
+   "sha256": "cec69f85ef3283682d447dd61191927edb7f3294d4c0c356403deb559835051c"
+  },
+  "fi-ka.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\fi-ka\\fi-ka.train.500.cc.trans",
+   "bytes": 14070,
+   "sha256": "73768546a814aea70dbd40fc7a5c7cf46a9993366f42f8328ffc3a2c0e4b7073"
+  },
+  "fi-ka.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\fi-ka\\fi-ka.train.5000.cc.trans",
+   "bytes": 156376,
+   "sha256": "6d6323693914075846c5ea6861b9744762a6846e9be3e7964f0085c253d0494a"
+  },
+  "fi-ka.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\fi-ka\\fi-ka.test.2000.cc.trans",
+   "bytes": 63522,
+   "sha256": "49bb8c4dddccd8a3edb0acc3217175e7c9b852f1bab8b3a4d88610a04e5df15f"
+  },
+  "fi-ko.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\fi-ko\\fi-ko.train.500.cc.trans",
+   "bytes": 8195,
+   "sha256": "f5610c5382317594f185ed713cbbe8abd78227494422899c2f917ae413d52c96"
+  },
+  "fi-ko.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\fi-ko\\fi-ko.train.5000.cc.trans",
+   "bytes": 87357,
+   "sha256": "1c8606d7b18ff4835a9e77918588e3d82f3df311fa1467c9cc454bd81730bf5e"
+  },
+  "fi-ko.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\fi-ko\\fi-ko.test.2000.cc.trans",
+   "bytes": 37055,
+   "sha256": "d937656441fa671a4467b09690d679e90a39ee06815da9542358cc04a28bf74b"
+  },
+  "fi-lt.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\fi-lt\\fi-lt.train.500.cc.trans",
+   "bytes": 7768,
+   "sha256": "edb1cc0b22b9af29f5b973e0029f4eeaafe179e605546cbc038b2dcdcf7dbbc1"
+  },
+  "fi-lt.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\fi-lt\\fi-lt.train.5000.cc.trans",
+   "bytes": 85560,
+   "sha256": "08e685498735c6fbe5f1706a9569e6e68d1e5a5e2f8c86b8be8b250125b81470"
+  },
+  "fi-lt.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\fi-lt\\fi-lt.test.2000.cc.trans",
+   "bytes": 35879,
+   "sha256": "41c6f755e41fd43e6518d28eca0a4ade01f3eff405644640f0369ad4e387308f"
+  },
+  "fi-no.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\fi-no\\fi-no.train.500.cc.trans",
+   "bytes": 6728,
+   "sha256": "10fb0bcaed95c6f4ef1b67ba24f27b33cf040f6369985976c5ec716400c2c7ad"
+  },
+  "fi-no.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\fi-no\\fi-no.train.5000.cc.trans",
+   "bytes": 80075,
+   "sha256": "fd741c69a5dd6126b7e9fdca97ba6db942b2fa87b87aff92e11b2dcde362688f"
+  },
+  "fi-no.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\fi-no\\fi-no.test.2000.cc.trans",
+   "bytes": 34157,
+   "sha256": "1bee3003ab13fe0fb587051bbc93ee1efce97353814155e92b8160cb1439fe73"
+  },
+  "fi-th.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\fi-th\\fi-th.train.500.cc.trans",
+   "bytes": 9890,
+   "sha256": "a3bafd33d4d5249594ba40dcd421fa47a40aefce7493b016375efde08e6c1246"
+  },
+  "fi-th.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\fi-th\\fi-th.train.5000.cc.trans",
+   "bytes": 118531,
+   "sha256": "2e043affb08793cde4ac91f8b5e888ed51d979bd517a10f470eb77f5028b7c12"
+  },
+  "fi-th.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\fi-th\\fi-th.test.2000.cc.trans",
+   "bytes": 53144,
+   "sha256": "7f77d231e7a98c83c8db3d7b399ec4f7134a0dbff541a5b4c217227192c9f7af"
+  },
+  "fi-tr.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\fi-tr\\fi-tr.train.500.cc.trans",
+   "bytes": 7356,
+   "sha256": "938f1c4dcbfcc7ee9818f14c8ff5e66db2eae24879ab19912be6af0c0cdd199e"
+  },
+  "fi-tr.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\fi-tr\\fi-tr.train.5000.cc.trans",
+   "bytes": 80052,
+   "sha256": "919fdae16c79c1dfefdf3e296172a376c8a7d3683075b1ce57b06da60c44fa26"
+  },
+  "fi-tr.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\fi-tr\\fi-tr.test.2000.cc.trans",
+   "bytes": 33640,
+   "sha256": "6ac0d4ed9fa8c406614b4dd5ceb76f08db62b5ed09fa344473e1fa1d71a084dd"
+  },
+  "he-bg.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\he-bg\\he-bg.train.500.cc.trans",
+   "bytes": 10773,
+   "sha256": "d7bc55266b266fa07159c867cc355d1bf3e60b17ab22e6037a47f442a59cf925"
+  },
+  "he-bg.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\he-bg\\he-bg.train.5000.cc.trans",
+   "bytes": 121092,
+   "sha256": "d77cfa49d34cc6068a02d428a1c1310c71f634f589c8896293e496517464c0db"
+  },
+  "he-bg.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\he-bg\\he-bg.test.2000.cc.trans",
+   "bytes": 51761,
+   "sha256": "50f5935892eb505af778ac1840a2b45c7b701be4483f8426c395bdcb9795f0f7"
+  },
+  "he-ca.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\he-ca\\he-ca.train.500.cc.trans",
+   "bytes": 7860,
+   "sha256": "918feccf55f4af680e0c9944a29c7bea558c9e1edf750913024bfe26f52821cb"
+  },
+  "he-ca.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\he-ca\\he-ca.train.5000.cc.trans",
+   "bytes": 90498,
+   "sha256": "2dbc080be5c0d90ff20b5fb4dafff8a3e4787558f66bd26f30d45988cd064617"
+  },
+  "he-ca.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\he-ca\\he-ca.test.2000.cc.trans",
+   "bytes": 38270,
+   "sha256": "c92d37766544b2ffdb2bab603672f1e947dfe609a0c8276e8c5db0250d8f3e63"
+  },
+  "he-eo.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\he-eo\\he-eo.train.500.cc.trans",
+   "bytes": 8210,
+   "sha256": "cf70afce91282656867ebdb8037578ae9f49dd6e05ff2b76d3cc16c2c03c77b4"
+  },
+  "he-eo.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\he-eo\\he-eo.train.5000.cc.trans",
+   "bytes": 91041,
+   "sha256": "337c16b3fde0d28309a9f7b048c1d3b047c53b9fd1cb869f587a50404942b218"
+  },
+  "he-eo.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\he-eo\\he-eo.test.2000.cc.trans",
+   "bytes": 38433,
+   "sha256": "a491ff95b7565159e76d6ae91242aad3948e8d07722e4d0eed52edafe6c24ea4"
+  },
+  "he-et.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\he-et\\he-et.train.500.cc.trans",
+   "bytes": 8070,
+   "sha256": "35a3a1c4d28241bc4b34e5d2c25e1434dfb177d3fbdf58b146d77375c28f88a6"
+  },
+  "he-et.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\he-et\\he-et.train.5000.cc.trans",
+   "bytes": 90041,
+   "sha256": "48342d06a3686f7122d215014e0f571230f2f13036bcd3b6ece70e3c72a46972"
+  },
+  "he-et.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\he-et\\he-et.test.2000.cc.trans",
+   "bytes": 39773,
+   "sha256": "a2fd03b0b0424b1c394b51fc04f2b54cb77091d65494c655d1d2507b61a87d7b"
+  },
+  "he-eu.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\he-eu\\he-eu.train.500.cc.trans",
+   "bytes": 8207,
+   "sha256": "15b297a5f2a3d267110758dc8dc906647ad36548169fe7f4dad808aaa4ff411a"
+  },
+  "he-eu.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\he-eu\\he-eu.train.5000.cc.trans",
+   "bytes": 91794,
+   "sha256": "7a58bbf917531daad1fd2b0c5c8359bb444dd05d41daa02a80648046cccdde6e"
+  },
+  "he-eu.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\he-eu\\he-eu.test.2000.cc.trans",
+   "bytes": 28966,
+   "sha256": "70495ad43fc6841e12e3a08634df56683aa1fcf78941e20b86d1603384afadaf"
+  },
+  "he-fi.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\he-fi\\he-fi.train.500.cc.trans",
+   "bytes": 8251,
+   "sha256": "d7ac43e761725ff8f53e0d0c5bf38ad18689964cc8ce2a2f8f7a24b7e3ee64d3"
+  },
+  "he-fi.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\he-fi\\he-fi.train.5000.cc.trans",
+   "bytes": 91002,
+   "sha256": "46437ec492fb6715b1f394fb1a1b46f95eebd24f7556b39e76ed6a0ea311cfd1"
+  },
+  "he-fi.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\he-fi\\he-fi.test.2000.cc.trans",
+   "bytes": 38271,
+   "sha256": "9b445fdd9040aafe83c9057bbbee4d93885b931d51bea4b65c67bb6f92cca63d"
+  },
+  "he-hu.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\he-hu\\he-hu.train.500.cc.trans",
+   "bytes": 8113,
+   "sha256": "1c51f1e995568c1ee7b40f716148b97526aeb74073c57dfe271e6bc25917d462"
+  },
+  "he-hu.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\he-hu\\he-hu.train.5000.cc.trans",
+   "bytes": 91900,
+   "sha256": "0dab220fe864a63a7efe4bb56ed6944828a39b02f4d30bed7438396ec5f35e28"
+  },
+  "he-hu.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\he-hu\\he-hu.test.2000.cc.trans",
+   "bytes": 38396,
+   "sha256": "a7cfad443a67944b3855bcfe5b10a01d0800471f65dbf4cd5cd4638d77cd9c73"
+  },
+  "he-id.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\he-id\\he-id.train.500.cc.trans",
+   "bytes": 7928,
+   "sha256": "6b059fcedc63b23ac5328bebb88ba796099923be21f60d9deb1a884534b7423e"
+  },
+  "he-id.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\he-id\\he-id.train.5000.cc.trans",
+   "bytes": 89262,
+   "sha256": "34a15e928c4f1d531c57e5f264a8a5b7e0d8603b1700c02edfda62de8bfdaa1d"
+  },
+  "he-id.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\he-id\\he-id.test.2000.cc.trans",
+   "bytes": 29181,
+   "sha256": "6cf92a8a09f729f61cb7d3e6c0050c897d43407930581709127ddf3a63513371"
+  },
+  "he-ka.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\he-ka\\he-ka.train.500.cc.trans",
+   "bytes": 14587,
+   "sha256": "6919601e9341b64e1af7dd5ca9f9b638cdf90138079b6e7daef6bf04af04ffbf"
+  },
+  "he-ka.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\he-ka\\he-ka.train.5000.cc.trans",
+   "bytes": 161725,
+   "sha256": "9f1cbad5572525df000d771d2ac7f7ab7259827b1cb7d1bd7a7ee83c9daa4d08"
+  },
+  "he-ka.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\he-ka\\he-ka.test.2000.cc.trans",
+   "bytes": 57367,
+   "sha256": "1f7e60d8fc554a4c83fac5847ba10579b2b8181f9aa7a94dc51a21769d6ab51c"
+  },
+  "he-ko.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\he-ko\\he-ko.train.500.cc.trans",
+   "bytes": 8865,
+   "sha256": "20331f456cb58f1254672f088c8fd0acfec2cb4be9c3a683e68be7ea05490932"
+  },
+  "he-ko.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\he-ko\\he-ko.train.5000.cc.trans",
+   "bytes": 95694,
+   "sha256": "d6f724e84e63b4f4cfcd8ee10cd615eb7e6295bbc5dc03b6bdf00ee88c8b9875"
+  },
+  "he-ko.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\he-ko\\he-ko.test.2000.cc.trans",
+   "bytes": 41466,
+   "sha256": "938eb63318889c4a55e074336a9a4bf57984466b2f1ac7dbde33eff76cabf697"
+  },
+  "he-lt.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\he-lt\\he-lt.train.500.cc.trans",
+   "bytes": 8768,
+   "sha256": "45a7b4ecec6996e26da5d146664773d1021ceb3251050ffa08fc7200f34ec902"
+  },
+  "he-lt.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\he-lt\\he-lt.train.5000.cc.trans",
+   "bytes": 93705,
+   "sha256": "83e8efe7ba06d95a8c6e0fba926cedf68767625844d89bd2fbeb06bb4eccf8f9"
+  },
+  "he-lt.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\he-lt\\he-lt.test.2000.cc.trans",
+   "bytes": 40553,
+   "sha256": "815b85275deb30eccbb656e3f41b9be32c0763052b32afd0ef115d6adfe9da8c"
+  },
+  "he-no.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\he-no\\he-no.train.500.cc.trans",
+   "bytes": 7601,
+   "sha256": "73b283972ac22f02ee5365cef63bcc72c6b6734e32183dc7d5855b8f0135954e"
+  },
+  "he-no.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\he-no\\he-no.train.5000.cc.trans",
+   "bytes": 89125,
+   "sha256": "2c4e1e2c92a5c86bd6e4bc621d27a2744d99fb521b6a401c77df3e3b2708573a"
+  },
+  "he-no.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\he-no\\he-no.test.2000.cc.trans",
+   "bytes": 38262,
+   "sha256": "8ca304398d52f25450c5a6fb719879b571b4db3dda03145517abb405d75c105e"
+  },
+  "he-th.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\he-th\\he-th.train.500.cc.trans",
+   "bytes": 11003,
+   "sha256": "ff22594d11c38fe3a80a5f7a423500afeaee639d0e7287e6d9b1c5c6bb85768c"
+  },
+  "he-th.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\he-th\\he-th.train.5000.cc.trans",
+   "bytes": 75414,
+   "sha256": "3d0b7c2f25c9a25b8a69706cdce55d8499e29081851631497f5c2aab3a8e01fc"
+  },
+  "he-th.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\he-th\\he-th.test.2000.cc.trans",
+   "bytes": 25683,
+   "sha256": "313542111110303d3ebf48a9316e8f26586d79f3600284afbc84fd287af8d76c"
+  },
+  "he-tr.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\he-tr\\he-tr.train.500.cc.trans",
+   "bytes": 7964,
+   "sha256": "ffa3f696107ab42fb48f760a585dde87ca929abfafc9ae89b17082dead4059bf"
+  },
+  "he-tr.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\he-tr\\he-tr.train.5000.cc.trans",
+   "bytes": 86684,
+   "sha256": "80d84eb9c589842f61700d0d50dadd68ee43e30e17a6343cf76c69362ff49fe6"
+  },
+  "he-tr.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\he-tr\\he-tr.test.2000.cc.trans",
+   "bytes": 37063,
+   "sha256": "0b1c0578fa903bc5cc96d1dd50d903a31aca9970cb41927969cc5b97c6c63c1a"
+  },
+  "hu-bg.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\hu-bg\\hu-bg.train.500.cc.trans",
+   "bytes": 9881,
+   "sha256": "59cd0681aba46c35824c1905bb1f91278559a9c47c0ad6ae5d91c71c5b474c52"
+  },
+  "hu-bg.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\hu-bg\\hu-bg.train.5000.cc.trans",
+   "bytes": 113274,
+   "sha256": "bf4321f5e792456a71f8dd04f99a9d9e3fe5d8d153df4167085beaf4ccab2dc1"
+  },
+  "hu-bg.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\hu-bg\\hu-bg.test.2000.cc.trans",
+   "bytes": 47528,
+   "sha256": "d53b39b3b0e50a29f4df12867eaee47f195ecd38094b15b8db54da455b1f1a20"
+  },
+  "hu-ca.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\hu-ca\\hu-ca.train.500.cc.trans",
+   "bytes": 6908,
+   "sha256": "f26926fb8b7ff644defe2f68dc586040420929c7c289435f7fcb514245de62db"
+  },
+  "hu-ca.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\hu-ca\\hu-ca.train.5000.cc.trans",
+   "bytes": 82795,
+   "sha256": "75cab0793ae480e9dd998e8a2f4980da4569b1802c07111f81bf21ba2d03a419"
+  },
+  "hu-ca.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\hu-ca\\hu-ca.test.2000.cc.trans",
+   "bytes": 35219,
+   "sha256": "7549301649ac860f9ac471efd1a90251f0a1274f0db5d0eeae701b1e127b77a2"
+  },
+  "hu-eo.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\hu-eo\\hu-eo.train.500.cc.trans",
+   "bytes": 7085,
+   "sha256": "117369f88e3275f1fe32181ff06bb3126c812222f70a0a6a5c05c4eb3b78a818"
+  },
+  "hu-eo.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\hu-eo\\hu-eo.train.5000.cc.trans",
+   "bytes": 82627,
+   "sha256": "601cf0dff651a446e7d57c1fb465f8c937ab7af53d97c773490ad2b2c78e6f31"
+  },
+  "hu-eo.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\hu-eo\\hu-eo.test.2000.cc.trans",
+   "bytes": 34585,
+   "sha256": "cdfc2fda4e28efdb21a78e3936141d9462aa5ee89740bad2d71fb061785d6aac"
+  },
+  "hu-et.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\hu-et\\hu-et.train.500.cc.trans",
+   "bytes": 6971,
+   "sha256": "c4ae2a79cc7404952ce360507ad430fc2e2fca4a7dcdcaecf43c9fccdf27a088"
+  },
+  "hu-et.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\hu-et\\hu-et.train.5000.cc.trans",
+   "bytes": 81503,
+   "sha256": "42490dcf220f566f5ad3b0e48543f3914bb5958d457d5075ff85cb85dde4c54d"
+  },
+  "hu-et.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\hu-et\\hu-et.test.2000.cc.trans",
+   "bytes": 35420,
+   "sha256": "3b3e3108cd38bc0fea66bc37c9159854ffd521780c62d496111ee47b3c2b8e40"
+  },
+  "hu-eu.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\hu-eu\\hu-eu.train.500.cc.trans",
+   "bytes": 7298,
+   "sha256": "9cdaa0c17192914b7b246e662f9130bcd2228ef7c0744b4381838e1a1ea7ab92"
+  },
+  "hu-eu.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\hu-eu\\hu-eu.train.5000.cc.trans",
+   "bytes": 82857,
+   "sha256": "25a0d84c489d4670d89fb63f1a465021a96a00241b2351c99c15840b85e38127"
+  },
+  "hu-eu.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\hu-eu\\hu-eu.test.2000.cc.trans",
+   "bytes": 35086,
+   "sha256": "50e9ed30863e25a27c4b29783258fe311b9775459c367cf8d65b85f512c5e2f0"
+  },
+  "hu-fi.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\hu-fi\\hu-fi.train.500.cc.trans",
+   "bytes": 7306,
+   "sha256": "386eb6ea05d043b0a2a76d9d108154b603c7421af992fce4f692ef8c7a638fd5"
+  },
+  "hu-fi.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\hu-fi\\hu-fi.train.5000.cc.trans",
+   "bytes": 84899,
+   "sha256": "176b5bcd7080b9156a7b1354e72f27fbd40b07eadaeaacd4fb08a61c2e804d80"
+  },
+  "hu-fi.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\hu-fi\\hu-fi.test.2000.cc.trans",
+   "bytes": 36422,
+   "sha256": "a259204ae2d7f6117643b9bbb68616973e8e846d12ed50ba74950b8f9304bcae"
+  },
+  "hu-he.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\hu-he\\hu-he.train.500.cc.trans",
+   "bytes": 7897,
+   "sha256": "4735daefa25c8abb02b5f1c2e3c477331391070bd3a72ce0487ef5c14d85ce37"
+  },
+  "hu-he.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\hu-he\\hu-he.train.5000.cc.trans",
+   "bytes": 91059,
+   "sha256": "3271635eb5cf0f34f0539a81739e085c667982a52024bd5d6653af086b0c61bc"
+  },
+  "hu-he.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\hu-he\\hu-he.test.2000.cc.trans",
+   "bytes": 40010,
+   "sha256": "b1e3845ee71d75b3d6180383dce4d898143733b0f0c3c518972bb94029bda0c1"
+  },
+  "hu-id.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\hu-id\\hu-id.train.500.cc.trans",
+   "bytes": 7161,
+   "sha256": "962258bbea42aaac186bd7b3ba693c0ea304ade953eb2fefccd1afd79fc8c0d5"
+  },
+  "hu-id.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\hu-id\\hu-id.train.5000.cc.trans",
+   "bytes": 80789,
+   "sha256": "21fef709f7bad9cb17b2eb79c4ee162918d5afa9815054a20b738de47ff18912"
+  },
+  "hu-id.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\hu-id\\hu-id.test.2000.cc.trans",
+   "bytes": 33621,
+   "sha256": "4a23f1f81947d68e4054e7dab08e0e01b4020883d102b31494836662100f3c23"
+  },
+  "hu-ka.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\hu-ka\\hu-ka.train.500.cc.trans",
+   "bytes": 13876,
+   "sha256": "b4dba1cae608f878c62c331aad7a4659f1395af091fe42a9c7934a9592218e32"
+  },
+  "hu-ka.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\hu-ka\\hu-ka.train.5000.cc.trans",
+   "bytes": 153762,
+   "sha256": "ed604b804bf2e89d3657e51a83c2b853afe96f4f70df00999fc23b720bb56480"
+  },
+  "hu-ka.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\hu-ka\\hu-ka.test.2000.cc.trans",
+   "bytes": 63248,
+   "sha256": "af2d9d641e47d1125a093b5a3c291162f0b34cbb9dacb2d034c90f608d578020"
+  },
+  "hu-ko.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\hu-ko\\hu-ko.train.500.cc.trans",
+   "bytes": 8298,
+   "sha256": "5990fe338be8b2e3c3886de5cb791913111409db3adf0735b1a3d7f2a6e3c1d7"
+  },
+  "hu-ko.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\hu-ko\\hu-ko.train.5000.cc.trans",
+   "bytes": 87844,
+   "sha256": "1d269f7d49dc310040b9b58a9bd23f39f2510dba368bf1ca4388d4512bc45293"
+  },
+  "hu-ko.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\hu-ko\\hu-ko.test.2000.cc.trans",
+   "bytes": 37364,
+   "sha256": "1eb94c3712c425e0c3a2114c9e8a55fc888c966e84cb63968abb6629ee9befed"
+  },
+  "hu-lt.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\hu-lt\\hu-lt.train.500.cc.trans",
+   "bytes": 7691,
+   "sha256": "fd9782ba31982952e8e2aa05b8c2db8aa2a97a842136e6794439764bf277d75a"
+  },
+  "hu-lt.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\hu-lt\\hu-lt.train.5000.cc.trans",
+   "bytes": 86328,
+   "sha256": "f9b146285532b2250f3f80deea9ff15708855d4ba218e6b0b0f9f044b9c71934"
+  },
+  "hu-lt.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\hu-lt\\hu-lt.test.2000.cc.trans",
+   "bytes": 35489,
+   "sha256": "16f4813aa4260ea1fd8acdc405e5ac17644303061e1667163ab4ef51cdeb7c6b"
+  },
+  "hu-no.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\hu-no\\hu-no.train.500.cc.trans",
+   "bytes": 6671,
+   "sha256": "e56c6633d374d3b285efbfd9589fce14b29c3b3198f4ade1632415fa3dd71167"
+  },
+  "hu-no.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\hu-no\\hu-no.train.5000.cc.trans",
+   "bytes": 80777,
+   "sha256": "6c85a496ec1604539dfd6bd2a447b937eda4640daba2b0d67da4b8bc5da962e7"
+  },
+  "hu-no.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\hu-no\\hu-no.test.2000.cc.trans",
+   "bytes": 34642,
+   "sha256": "2c6e95ecb30930881d688c50835273251519b1763d1cb9e2394cb95a7e4bbbf7"
+  },
+  "hu-th.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\hu-th\\hu-th.train.500.cc.trans",
+   "bytes": 9998,
+   "sha256": "bc50010cd4ffe91207468f17d402baef3666af27d347b683b860f708e4ae7f7a"
+  },
+  "hu-th.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\hu-th\\hu-th.train.5000.cc.trans",
+   "bytes": 124654,
+   "sha256": "e7e7f8758567dc341c25c1c8308e4224010768048c92a9742b0a0f72421752a3"
+  },
+  "hu-th.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\hu-th\\hu-th.test.2000.cc.trans",
+   "bytes": 27188,
+   "sha256": "1aab9a8a2611917dbaf148404ef1e2495ddc549a26b7cf69afdc2fdd023ad0a6"
+  },
+  "hu-tr.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\hu-tr\\hu-tr.train.500.cc.trans",
+   "bytes": 7310,
+   "sha256": "fbfcf50a1d9e27a372bf108de505834b02a3fbc2ed28c3c9aef33cab1785836b"
+  },
+  "hu-tr.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\hu-tr\\hu-tr.train.5000.cc.trans",
+   "bytes": 79761,
+   "sha256": "c22b44cf2ca6cd32130afcd487bb6b9acb2947ce82e6143dcb5487bdf028434c"
+  },
+  "hu-tr.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\hu-tr\\hu-tr.test.2000.cc.trans",
+   "bytes": 33887,
+   "sha256": "8a1981544a63b8471f4aca636cabeac5d3ec75dd0686abd75584dd40884effc6"
+  },
+  "id-bg.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\id-bg\\id-bg.train.500.cc.trans",
+   "bytes": 9722,
+   "sha256": "b2bb3361e5c997a456b4d5b05bdab6d3c44fb916a51ca11323cf2b6b38beae2f"
+  },
+  "id-bg.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\id-bg\\id-bg.train.5000.cc.trans",
+   "bytes": 109693,
+   "sha256": "ea1a066b25505ffc9fb9414dd361328c602a856aba53084d97a800a7ca52ed1f"
+  },
+  "id-bg.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\id-bg\\id-bg.test.2000.cc.trans",
+   "bytes": 46562,
+   "sha256": "13c239ffd865e1b60b394ec9e4adaa7c400f1885f3dc5a136a8a553818970a8f"
+  },
+  "id-ca.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\id-ca\\id-ca.train.500.cc.trans",
+   "bytes": 6794,
+   "sha256": "d3520c2a955070afd273ca7f66dda073b00ac2948bdbd07c62e04dc53597ea6e"
+  },
+  "id-ca.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\id-ca\\id-ca.train.5000.cc.trans",
+   "bytes": 78649,
+   "sha256": "7195f11120d426c385a5a298bac51c039fe31b0d029c9f5af6a497d8a46415e7"
+  },
+  "id-ca.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\id-ca\\id-ca.test.2000.cc.trans",
+   "bytes": 33473,
+   "sha256": "3a51a38eee8753d30fd0fdb1afd5f3227aad77e7c9d5f07938705ed4e79eb748"
+  },
+  "id-eo.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\id-eo\\id-eo.train.500.cc.trans",
+   "bytes": 6962,
+   "sha256": "5f98005f6ad7db18d8539b61f94e3f3f3b0ef7232abe87bbb68a104e3e7a7b2d"
+  },
+  "id-eo.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\id-eo\\id-eo.train.5000.cc.trans",
+   "bytes": 78095,
+   "sha256": "25a55e9112dc1a6f82f431ce8c479cff071eba91b485a236a7ff5d0723550580"
+  },
+  "id-eo.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\id-eo\\id-eo.test.2000.cc.trans",
+   "bytes": 33174,
+   "sha256": "c2caa0b683fe33e5a52652c674e14425e7c549cd26a80890662bca268e71d800"
+  },
+  "id-et.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\id-et\\id-et.train.500.cc.trans",
+   "bytes": 6778,
+   "sha256": "b6693b8e589146f7c1b4fbd8f1c6a3b62fab26d9168ccc996ef34224775e842d"
+  },
+  "id-et.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\id-et\\id-et.train.5000.cc.trans",
+   "bytes": 76668,
+   "sha256": "02c26d8d1869ed2e7b3bbf1c671e375aaff6c77f9f7fe0c033fef61d4bb54bef"
+  },
+  "id-et.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\id-et\\id-et.test.2000.cc.trans",
+   "bytes": 21680,
+   "sha256": "ec9727c6db6d379c124efb0491f091f9b4b92f60c0d69d23ddbf6959742572f6"
+  },
+  "id-eu.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\id-eu\\id-eu.train.500.cc.trans",
+   "bytes": 7168,
+   "sha256": "e47b82dc0c0930c47994215b217f8c5f4dda3e42892e4714c757cf9aa9ab5311"
+  },
+  "id-eu.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\id-eu\\id-eu.train.5000.cc.trans",
+   "bytes": 78701,
+   "sha256": "801418cc37fd0bd359eefe5ac45ee17b31eea3bdf299bd0c4261458bdf4cf4c3"
+  },
+  "id-eu.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\id-eu\\id-eu.test.2000.cc.trans",
+   "bytes": 32887,
+   "sha256": "c122d9d89f4f3506ee82d04f54030b5c4a19f6f21ac8f392c66ec61dbb68bbd3"
+  },
+  "id-fi.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\id-fi\\id-fi.train.500.cc.trans",
+   "bytes": 7323,
+   "sha256": "a3676b50d2015c66bbd844aa4692576999457cb333b7db9391f31b3574cca639"
+  },
+  "id-fi.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\id-fi\\id-fi.train.5000.cc.trans",
+   "bytes": 80646,
+   "sha256": "57b6cacd9c2f5e328664c1bd57864f7d5cb5fe7031cfd8a856428dc2fa0432d9"
+  },
+  "id-fi.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\id-fi\\id-fi.test.2000.cc.trans",
+   "bytes": 34030,
+   "sha256": "a529d29b10c3469690ce60c1680215fc366f587be50a470cbd7dc5d286239cef"
+  },
+  "id-he.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\id-he\\id-he.train.500.cc.trans",
+   "bytes": 7857,
+   "sha256": "5488afb516f8c91b1e29a510a6ef898041a2403a7e342c277c20a61ed2ffa8d0"
+  },
+  "id-he.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\id-he\\id-he.train.5000.cc.trans",
+   "bytes": 89302,
+   "sha256": "042098ba41b037a2cc57289a7cc7f4867815378b6ed084c873e66be1a056af33"
+  },
+  "id-he.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\id-he\\id-he.test.2000.cc.trans",
+   "bytes": 25167,
+   "sha256": "4d41ab37c2b2f5b6263e694535fefc97e8ec772ba71916e3942039e406688b9a"
+  },
+  "id-hu.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\id-hu\\id-hu.train.500.cc.trans",
+   "bytes": 7258,
+   "sha256": "52cc6e90df4a1ad99e504e901988e131368cbb6bed4934f47041ad4224e8827c"
+  },
+  "id-hu.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\id-hu\\id-hu.train.5000.cc.trans",
+   "bytes": 80530,
+   "sha256": "b27f80205f2844efed5fb8052d98dc96f003e7fae60aa6a5d698b70104d120de"
+  },
+  "id-hu.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\id-hu\\id-hu.test.2000.cc.trans",
+   "bytes": 33799,
+   "sha256": "d793495549067487d09d9b376f01125727a7464e75897c7484d4349e5984eaa1"
+  },
+  "id-ka.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\id-ka\\id-ka.train.500.cc.trans",
+   "bytes": 13508,
+   "sha256": "439aec36ffefc2438a75f42407aa0e3175fb23dbd274acfc4ad566f07c4d0c27"
+  },
+  "id-ka.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\id-ka\\id-ka.train.5000.cc.trans",
+   "bytes": 146329,
+   "sha256": "04289296f3df1b0cfa60dd30390f2103a8b2445c3be84c31d0f333eae6350aeb"
+  },
+  "id-ka.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\id-ka\\id-ka.test.2000.cc.trans",
+   "bytes": 52327,
+   "sha256": "487e75d67c1c62f5f4676c10f29016a0111fbb25e7765ac85304ee0603d4553d"
+  },
+  "id-ko.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\id-ko\\id-ko.train.500.cc.trans",
+   "bytes": 7644,
+   "sha256": "70a8e613a9c73a2d90b85e5fbc4ef2ec08c8721fcdb451a4cd9ffcf564df185f"
+  },
+  "id-ko.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\id-ko\\id-ko.train.5000.cc.trans",
+   "bytes": 81773,
+   "sha256": "6c0f3109dcaeb256baabaab68b348d41c5d935e053309a19ea16ed66df6e5543"
+  },
+  "id-ko.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\id-ko\\id-ko.test.2000.cc.trans",
+   "bytes": 34509,
+   "sha256": "7e49167e85ee24479c49a0d4db4b9de40be23fc8df743909579ca9931144b21c"
+  },
+  "id-lt.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\id-lt\\id-lt.train.500.cc.trans",
+   "bytes": 7587,
+   "sha256": "0e671d7ae680a56fc8629ba1f5c8085630733b5cb0f875418159edfac0a4ce83"
+  },
+  "id-lt.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\id-lt\\id-lt.train.5000.cc.trans",
+   "bytes": 81855,
+   "sha256": "ae142cb2c121c59ec497a777d2302dafd408789da15437e68f4572ecfc1e491c"
+  },
+  "id-lt.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\id-lt\\id-lt.test.2000.cc.trans",
+   "bytes": 30199,
+   "sha256": "cc0c07211a317f3d120651e929cbb0a3d6aed17e7a382b52805240bfcedc22b4"
+  },
+  "id-no.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\id-no\\id-no.train.500.cc.trans",
+   "bytes": 6578,
+   "sha256": "ad166f7f67d69dd5aa8e35f27820247e22c9475582315cdbe095063a18cc3f76"
+  },
+  "id-no.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\id-no\\id-no.train.5000.cc.trans",
+   "bytes": 76776,
+   "sha256": "b389597713b6724220d261344d4c7242958f5d27f0d6280f35261843d72bc703"
+  },
+  "id-no.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\id-no\\id-no.test.2000.cc.trans",
+   "bytes": 32220,
+   "sha256": "0afaa03e97971536627fec3fe4e4cec1bcf5768a6e5a5cfb6b33822ba1ea17dd"
+  },
+  "id-th.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\id-th\\id-th.train.500.cc.trans",
+   "bytes": 9978,
+   "sha256": "2a4efb288095909ddf0a7fe55680acb47169e98d2aa0835864530256f0b11ced"
+  },
+  "id-th.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\id-th\\id-th.train.5000.cc.trans",
+   "bytes": 114399,
+   "sha256": "fe41069975b430ec0b19ce361e4e0b03eb00a05a2657254257c72dab7df4587d"
+  },
+  "id-th.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\id-th\\id-th.test.2000.cc.trans",
+   "bytes": 50741,
+   "sha256": "fe7dda9f092660425b7559db99a71952d8425a3341ddde55e57ba3e4747dca64"
+  },
+  "id-tr.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\id-tr\\id-tr.train.500.cc.trans",
+   "bytes": 6820,
+   "sha256": "5058b4d1d2b9c42cdcc094d34371e10a0823dcd6ae315146a5fadb35ec5dc4e6"
+  },
+  "id-tr.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\id-tr\\id-tr.train.5000.cc.trans",
+   "bytes": 75611,
+   "sha256": "5f4601e8a5354fa209f44059f2b7d1a361ff6c6d972e32f98fd7b05bf31eaade"
+  },
+  "id-tr.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\id-tr\\id-tr.test.2000.cc.trans",
+   "bytes": 32152,
+   "sha256": "d460b96a7efd23611a365274f9661d36be893d1909433242194e20953a839c77"
+  },
+  "ka-bg.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ka-bg\\ka-bg.train.500.cc.trans",
+   "bytes": 15992,
+   "sha256": "6ae11ca8b9004005fa7d9c79cc0aae383e385a8391e201c2c2f189289ff97f17"
+  },
+  "ka-bg.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ka-bg\\ka-bg.train.5000.cc.trans",
+   "bytes": 180789,
+   "sha256": "e53dca670c6c95715fe0eeb0a60192f042d39b765452ac1ebde3bd538687aefb"
+  },
+  "ka-bg.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ka-bg\\ka-bg.test.2000.cc.trans",
+   "bytes": 76635,
+   "sha256": "228b853bc0216a8d4e6cdf3be56a8bb7e6c7f0176dbec5f255beab7eb6b31ebd"
+  },
+  "ka-ca.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ka-ca\\ka-ca.train.500.cc.trans",
+   "bytes": 13329,
+   "sha256": "21f2f8d6f42e40a68cfcf7c2a54c5a77c41727dd3caefa3babeb0dd11920e929"
+  },
+  "ka-ca.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ka-ca\\ka-ca.train.5000.cc.trans",
+   "bytes": 152089,
+   "sha256": "f5124ff6f792b7708d041ea14ee9230ec34687f653a84b2fac7989b58339399b"
+  },
+  "ka-ca.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ka-ca\\ka-ca.test.2000.cc.trans",
+   "bytes": 62731,
+   "sha256": "6af7cb4ce99dd096b5e73bc84bb6a8faea77251e09952b654db6f6d57e55f27d"
+  },
+  "ka-eo.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ka-eo\\ka-eo.train.500.cc.trans",
+   "bytes": 13963,
+   "sha256": "5d549e276f37d99dc044113ec2d4e6cf93fb10a8c504637e4ee7eb9c35da6dec"
+  },
+  "ka-eo.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ka-eo\\ka-eo.train.5000.cc.trans",
+   "bytes": 152847,
+   "sha256": "c0022203a359858aab27ba4addf7b95b900fa4e2425f41d253927ade0fdf051a"
+  },
+  "ka-eo.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ka-eo\\ka-eo.test.2000.cc.trans",
+   "bytes": 63284,
+   "sha256": "da15b2eb3071ddbb4bb93a5eb922eb674f67f3e65e6b15876b8209c64af7573f"
+  },
+  "ka-et.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ka-et\\ka-et.train.500.cc.trans",
+   "bytes": 12988,
+   "sha256": "39b8d02b3cb886ce5737160d51fa91efe23134a0e9d3e649b4e1379e7add96f4"
+  },
+  "ka-et.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ka-et\\ka-et.train.5000.cc.trans",
+   "bytes": 149059,
+   "sha256": "0a049931f44f6bc2e67490a131b2a41c690ad8ad9442d6cc9e1cbf8141c08d59"
+  },
+  "ka-et.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ka-et\\ka-et.test.2000.cc.trans",
+   "bytes": 60686,
+   "sha256": "95de0d7c8a424685cc5f778f7d0906df5d324adcc74ed133e7bc66fb572fe05b"
+  },
+  "ka-eu.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ka-eu\\ka-eu.train.500.cc.trans",
+   "bytes": 13851,
+   "sha256": "fa7c43886b616eb93dc0c8d3fea991b06c16800a087c55f7f11226cd899f78d0"
+  },
+  "ka-eu.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ka-eu\\ka-eu.train.5000.cc.trans",
+   "bytes": 152102,
+   "sha256": "c1fedd877709a0949eec493939c145c3651871712d34c5c88ee61922253ad5f6"
+  },
+  "ka-eu.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ka-eu\\ka-eu.test.2000.cc.trans",
+   "bytes": 47928,
+   "sha256": "9c695f843e4b9949647d14c685970b2767620171a1236f4302fcf16f30dc7358"
+  },
+  "ka-fi.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ka-fi\\ka-fi.train.500.cc.trans",
+   "bytes": 13534,
+   "sha256": "0df57ff74ccdc2e4625ac5460e653560520fa375432f3406299be3b5a41e0340"
+  },
+  "ka-fi.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ka-fi\\ka-fi.train.5000.cc.trans",
+   "bytes": 154840,
+   "sha256": "5afcafd6cebb102bbdf7696bfdaa980a3a7f50396053e6755ecbed61a5ee1341"
+  },
+  "ka-fi.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ka-fi\\ka-fi.test.2000.cc.trans",
+   "bytes": 64265,
+   "sha256": "b4b12930f3251366cdfb20dbe2162554bf7aef65acb65ca3b058603cdffb51ae"
+  },
+  "ka-he.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ka-he\\ka-he.train.500.cc.trans",
+   "bytes": 14087,
+   "sha256": "f9fa5deb3d3fa81b043730617cc0b1021f27fae22109523d36aa482f06da79e1"
+  },
+  "ka-he.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ka-he\\ka-he.train.5000.cc.trans",
+   "bytes": 160012,
+   "sha256": "e52197f066610e028cc28d80f6dab6e8d32cd7109820934c7a1902fe3cd971db"
+  },
+  "ka-he.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ka-he\\ka-he.test.2000.cc.trans",
+   "bytes": 55923,
+   "sha256": "4d2beff5871aae2d81ce8d9e1b9146491dbbcf0020fe9ed056b119e33f0d4fd8"
+  },
+  "ka-hu.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ka-hu\\ka-hu.train.500.cc.trans",
+   "bytes": 13839,
+   "sha256": "379cfa9380041e7ec0c15f3b68fe3630157c64b089684195ab8d640b0e7147cc"
+  },
+  "ka-hu.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ka-hu\\ka-hu.train.5000.cc.trans",
+   "bytes": 154600,
+   "sha256": "4604c055a79f4d2d3fae0ee6f1fb7e49d83af9a10ca04350d0dc0fba73f67225"
+  },
+  "ka-hu.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ka-hu\\ka-hu.test.2000.cc.trans",
+   "bytes": 63576,
+   "sha256": "955b4bf6387050151e7e13b667310fb919326de4ccf22bf8ee75222740ab5fc9"
+  },
+  "ka-id.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ka-id\\ka-id.train.500.cc.trans",
+   "bytes": 13693,
+   "sha256": "71ce8c017b294e3831ab484592690a4bba9664a7948d464f73a03ceecd0cff52"
+  },
+  "ka-id.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ka-id\\ka-id.train.5000.cc.trans",
+   "bytes": 147215,
+   "sha256": "28e348dca5f4eea5f6e2d966eade3e34cf6f0006686cf82382b6b7d13d26852e"
+  },
+  "ka-id.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ka-id\\ka-id.test.2000.cc.trans",
+   "bytes": 58783,
+   "sha256": "640947bfccb785aadce953d419e77c697db9c257ded531e06299b65e145f6eca"
+  },
+  "ka-ko.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ka-ko\\ka-ko.train.500.cc.trans",
+   "bytes": 14953,
+   "sha256": "631f63961c44c6c1350c66ef5dea98ac094f4f6fe1185529091ae55e385e8c1d"
+  },
+  "ka-ko.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ka-ko\\ka-ko.train.5000.cc.trans",
+   "bytes": 156390,
+   "sha256": "661b8f12b918b69e1e3b2758cde4de5d3bb4e929d37290c587b8874adc6a0950"
+  },
+  "ka-ko.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ka-ko\\ka-ko.test.2000.cc.trans",
+   "bytes": 64167,
+   "sha256": "bce396d4ff2ba45b934c2c6b5149ad7c9fdd65798cf5b17788794ae18ca24470"
+  },
+  "ka-lt.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ka-lt\\ka-lt.train.500.cc.trans",
+   "bytes": 14253,
+   "sha256": "7beda195147b86a550abc5ad607655561112de768f5c2e77af9073c59a4dfed9"
+  },
+  "ka-lt.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ka-lt\\ka-lt.train.5000.cc.trans",
+   "bytes": 151732,
+   "sha256": "eff3bc6ca2f40cd5b3f78b795bb8376220e6956c832ebeddae7e4a97496e94f1"
+  },
+  "ka-lt.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ka-lt\\ka-lt.test.2000.cc.trans",
+   "bytes": 62753,
+   "sha256": "957f258fa6b28af7a16ff8d49c5743e7afc48c689470b0ba992b3ae33527e2e2"
+  },
+  "ka-no.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ka-no\\ka-no.train.500.cc.trans",
+   "bytes": 13026,
+   "sha256": "d325e1977746729c56cf3a61ddf636ed5a134dbcd6aec1bb7e72247cbdbaa096"
+  },
+  "ka-no.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ka-no\\ka-no.train.5000.cc.trans",
+   "bytes": 149004,
+   "sha256": "15843535bdd94ea1b6f528da661b5988200fbb85966afd357d16a1d2139c1c4d"
+  },
+  "ka-no.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ka-no\\ka-no.test.2000.cc.trans",
+   "bytes": 61196,
+   "sha256": "c88328b8bdbd2781ff2e1ff9b2460e8357a2444cdc44d4ece3bcb419704a7596"
+  },
+  "ka-th.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ka-th\\ka-th.train.500.cc.trans",
+   "bytes": 16345,
+   "sha256": "6a16f22e30ef2df4ecf793472253c588574884f2de34957be02c44504674cd96"
+  },
+  "ka-th.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ka-th\\ka-th.train.5000.cc.trans",
+   "bytes": 113201,
+   "sha256": "d115a4dee292f8693db3c4519323fb457e5cdff0f61f804e778f7cbbed9bc7e7"
+  },
+  "ka-th.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ka-th\\ka-th.test.2000.cc.trans",
+   "bytes": 40591,
+   "sha256": "269f7ba7b95ee7b93e692447cc4f3840d974b7e2f2bf2725518ba4e9f00aed13"
+  },
+  "ka-tr.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ka-tr\\ka-tr.train.500.cc.trans",
+   "bytes": 13757,
+   "sha256": "00adf64c40ebdb1d437184f6cfe92620b8b8d651283c2cd8b653813cc6c787e0"
+  },
+  "ka-tr.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ka-tr\\ka-tr.train.5000.cc.trans",
+   "bytes": 150617,
+   "sha256": "84e2df37cad9acf3162aa3c9fdfa93b89aa187459369f4f71b6f9fd524285ef2"
+  },
+  "ka-tr.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ka-tr\\ka-tr.test.2000.cc.trans",
+   "bytes": 62966,
+   "sha256": "913b438c65e06f1d8e4714fa38b3058610d44481242b68333d79a5c549a495e7"
+  },
+  "ko-bg.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ko-bg\\ko-bg.train.500.cc.trans",
+   "bytes": 10463,
+   "sha256": "5c52b0f10541edba81b2225cc7decc689cd8ef6a4311f6bca72520e163225fc8"
+  },
+  "ko-bg.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ko-bg\\ko-bg.train.5000.cc.trans",
+   "bytes": 115467,
+   "sha256": "970abfa8dbb1ed56b4c86ae77d7b4b7ab078ca538003a650648b1200a4fd781a"
+  },
+  "ko-bg.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ko-bg\\ko-bg.test.2000.cc.trans",
+   "bytes": 49381,
+   "sha256": "9d268d4f21e6a84c39ff84079d49aa4432a69c60db46f98fb9fa08017187506d"
+  },
+  "ko-ca.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ko-ca\\ko-ca.train.500.cc.trans",
+   "bytes": 7355,
+   "sha256": "80011c2e8b497a7ff6f7d4fd84386c5dfc45ac6c1bc76dd68918081b841dc2ce"
+  },
+  "ko-ca.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ko-ca\\ko-ca.train.5000.cc.trans",
+   "bytes": 84730,
+   "sha256": "48d7189922c839b82ff21725ed8804796142f000bef3840126ce2dc4f46914ad"
+  },
+  "ko-ca.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ko-ca\\ko-ca.test.2000.cc.trans",
+   "bytes": 36119,
+   "sha256": "0d6d531fb99b9350d73abe489784d093680e87551565c861d20a2c4e24917006"
+  },
+  "ko-eo.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ko-eo\\ko-eo.train.500.cc.trans",
+   "bytes": 7713,
+   "sha256": "f8bc7dbbfda6b3218d1227b4048c713dc99cac6d1829e3d835a7002d15da2e04"
+  },
+  "ko-eo.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ko-eo\\ko-eo.train.5000.cc.trans",
+   "bytes": 85146,
+   "sha256": "e7a6179281e6d7b85ce85fa359baa6b0b1790b9c877c1edcd69fa13e18da738e"
+  },
+  "ko-eo.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ko-eo\\ko-eo.test.2000.cc.trans",
+   "bytes": 35587,
+   "sha256": "ab493b34507436699bd918cdb3383466ebef1ea33530811bea7c26506920d6b5"
+  },
+  "ko-et.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ko-et\\ko-et.train.500.cc.trans",
+   "bytes": 7705,
+   "sha256": "8e3710219f2d7ece3b053e5a33ce891ff89e274e2a91ede14f76b662938b4f7d"
+  },
+  "ko-et.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ko-et\\ko-et.train.5000.cc.trans",
+   "bytes": 84448,
+   "sha256": "fc980388df5eb1c489a0521a5f076e2c9c3db07268af0ede32e6eba04c91bb0c"
+  },
+  "ko-et.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ko-et\\ko-et.test.2000.cc.trans",
+   "bytes": 37129,
+   "sha256": "2a127f0bffcb47a4b75b04793a71b6cbda4b64c59de0e247200f3b7cd49717af"
+  },
+  "ko-eu.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ko-eu\\ko-eu.train.500.cc.trans",
+   "bytes": 7749,
+   "sha256": "bcf91b5c029dc06b3ae8731dfb0ba770a63512d460188b365db818b101bd9a4a"
+  },
+  "ko-eu.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ko-eu\\ko-eu.train.5000.cc.trans",
+   "bytes": 86062,
+   "sha256": "21ce25c95032dd97b41deb2509c2b8703cef227dfc4f07cbfe5ab4a4bd1c3e37"
+  },
+  "ko-eu.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ko-eu\\ko-eu.test.2000.cc.trans",
+   "bytes": 21815,
+   "sha256": "ab9a5fb9559b370a50b7bd9c7c2a3bf2beeba59607df6bf4c1a91dd22fbab075"
+  },
+  "ko-fi.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ko-fi\\ko-fi.train.500.cc.trans",
+   "bytes": 7972,
+   "sha256": "709c7d2d979a1af522f23a5ca02a8eab1a5df6c8bd7a8cab0e8dcda0d34605c6"
+  },
+  "ko-fi.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ko-fi\\ko-fi.train.5000.cc.trans",
+   "bytes": 86924,
+   "sha256": "5aa30e2c3314f41096355d436a135f32b8e4c5502fb274789616172eeeeec667"
+  },
+  "ko-fi.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ko-fi\\ko-fi.test.2000.cc.trans",
+   "bytes": 37213,
+   "sha256": "df3c4a30d3b97ed914d6135e0f3343c16d39677bc75c86afe071ced8fa523b39"
+  },
+  "ko-he.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ko-he\\ko-he.train.500.cc.trans",
+   "bytes": 8559,
+   "sha256": "3a34eec2f2cd4a145ce55be1daf0c2ddd5dbc9272306f1e6ae42765edd8a5f74"
+  },
+  "ko-he.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ko-he\\ko-he.train.5000.cc.trans",
+   "bytes": 97235,
+   "sha256": "4bab0993310eff64e24259d2a94f08ce214efc82f71e93d7be04038894600c89"
+  },
+  "ko-he.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ko-he\\ko-he.test.2000.cc.trans",
+   "bytes": 33171,
+   "sha256": "c76a796f13ce993373dff1bbb3c4c3627fa3af1f9910aadfb6b4558a98282ba6"
+  },
+  "ko-hu.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ko-hu\\ko-hu.train.500.cc.trans",
+   "bytes": 8079,
+   "sha256": "a277bd3dfba56b10bbc121e752e278ed6626739e6c7eac8c543b1a72a9c74956"
+  },
+  "ko-hu.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ko-hu\\ko-hu.train.5000.cc.trans",
+   "bytes": 88459,
+   "sha256": "b943cac8a1655fdc540d0519e31c1c31aaf03520e7265b4106b140f12927555d"
+  },
+  "ko-hu.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ko-hu\\ko-hu.test.2000.cc.trans",
+   "bytes": 37354,
+   "sha256": "505f14ac88851bd25470b2a375683a80dd1ed611d2300a7738408339247e6db8"
+  },
+  "ko-id.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ko-id\\ko-id.train.500.cc.trans",
+   "bytes": 7456,
+   "sha256": "907c7275982999d56de87efcfb4e702b5523891a6e55dcbd7c231e0b6cdbd0e9"
+  },
+  "ko-id.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ko-id\\ko-id.train.5000.cc.trans",
+   "bytes": 82088,
+   "sha256": "fcc1d6941f567597b734adaf904bdc053677bbebe1c6314e982a39e7783661bf"
+  },
+  "ko-id.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ko-id\\ko-id.test.2000.cc.trans",
+   "bytes": 35271,
+   "sha256": "337dd9e54e15f0d37240bfbfea99b525c90c55fc28987d7bcd75fc5138a40806"
+  },
+  "ko-ka.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ko-ka\\ko-ka.train.500.cc.trans",
+   "bytes": 14504,
+   "sha256": "610e0d1bb6efeb7d1ba3f6844c75d9756fccd107d7ebe6324f7f2fb5cecbb587"
+  },
+  "ko-ka.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ko-ka\\ko-ka.train.5000.cc.trans",
+   "bytes": 156825,
+   "sha256": "6e0862e256c26a53d06d3de60ca93bd0d4300b52b543df69b94aaee2b5edd889"
+  },
+  "ko-ka.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ko-ka\\ko-ka.test.2000.cc.trans",
+   "bytes": 49336,
+   "sha256": "9493e9ffd22c53ecffd2d7d366e9f3a96c5daf4343b7aa28296b2e8e62e613d0"
+  },
+  "ko-lt.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ko-lt\\ko-lt.train.500.cc.trans",
+   "bytes": 8181,
+   "sha256": "d9bd0c075571dd39550547e3d666a52d09c90bb8df72f14feda597d370c6c614"
+  },
+  "ko-lt.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ko-lt\\ko-lt.train.5000.cc.trans",
+   "bytes": 89472,
+   "sha256": "967e244023b3371a091ba561c43fac07903808bee97ff29923b17b45526a49c8"
+  },
+  "ko-lt.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ko-lt\\ko-lt.test.2000.cc.trans",
+   "bytes": 38232,
+   "sha256": "a594f141889a8e2e00cd9b9e7d4c9e9c072c0c82c50cc04e88283036a849a50c"
+  },
+  "ko-no.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ko-no\\ko-no.train.500.cc.trans",
+   "bytes": 7209,
+   "sha256": "24f154ef51ab5c866fa95487027b376567c98b110e84cb2e5a06d09586f67107"
+  },
+  "ko-no.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ko-no\\ko-no.train.5000.cc.trans",
+   "bytes": 83190,
+   "sha256": "654b7df2b28eece4f5dd4dfa02e5dd2ff67f4de719f1c0c98994ed799d422910"
+  },
+  "ko-no.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ko-no\\ko-no.test.2000.cc.trans",
+   "bytes": 35849,
+   "sha256": "459b294fefbbc1701fffd1a09cf3e46ba23d69b48d4d5388da26f1f7ccd8012d"
+  },
+  "ko-th.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ko-th\\ko-th.train.500.cc.trans",
+   "bytes": 10960,
+   "sha256": "b280f2879b9019c9d8e719bc54303b9e135bb4f22e385484efe797dab86c4248"
+  },
+  "ko-th.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ko-th\\ko-th.train.5000.cc.trans",
+   "bytes": 84472,
+   "sha256": "db196580ffcb654703e0fe39415ee6216133db77c70dc4c7bbd69f0c3c51408c"
+  },
+  "ko-th.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ko-th\\ko-th.test.2000.cc.trans",
+   "bytes": 27671,
+   "sha256": "fa4b6f8adb11c62ae02845f5005525f9d86fa973e8f52d7beee97b1a28257f39"
+  },
+  "ko-tr.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ko-tr\\ko-tr.train.500.cc.trans",
+   "bytes": 7452,
+   "sha256": "d9276d74d407257900e925d9c4b402b91ec1a2ee235e17e15cac466c17ada5f3"
+  },
+  "ko-tr.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ko-tr\\ko-tr.train.5000.cc.trans",
+   "bytes": 80726,
+   "sha256": "4e3f422b69c5f04b43a10046e4c19cbe3a1f075d05473c1ff67ccebc034c302c"
+  },
+  "ko-tr.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\ko-tr\\ko-tr.test.2000.cc.trans",
+   "bytes": 34159,
+   "sha256": "d456dfea0842f9ca1da53440d0d73d926bcb7251d2fce072ea456cec6989c2e7"
+  },
+  "lt-bg.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\lt-bg\\lt-bg.train.500.cc.trans",
+   "bytes": 9930,
+   "sha256": "1ac4f5ae2364c8d3cfc4f8ab869df76be875fc876790c8b0e605c7370dd9c0e0"
+  },
+  "lt-bg.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\lt-bg\\lt-bg.train.5000.cc.trans",
+   "bytes": 113410,
+   "sha256": "584ad16745b69c60aab65cc4ac3d437218f8671d74c238bdd174113eb369ce02"
+  },
+  "lt-bg.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\lt-bg\\lt-bg.test.2000.cc.trans",
+   "bytes": 48251,
+   "sha256": "d79e5d2992344390ee9b6c8c937e5afc65df75d5e4ab0a10be0bd6c61442af6c"
+  },
+  "lt-ca.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\lt-ca\\lt-ca.train.500.cc.trans",
+   "bytes": 7324,
+   "sha256": "d93324beab2671330b646c95ed872550f7b6f8d2adff81854063cc31efcbed80"
+  },
+  "lt-ca.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\lt-ca\\lt-ca.train.5000.cc.trans",
+   "bytes": 83493,
+   "sha256": "e296adb6d1ebdfbdb7f8839c8f20f0e17efd6ddc0a1e37dad283ca5315f96bbf"
+  },
+  "lt-ca.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\lt-ca\\lt-ca.test.2000.cc.trans",
+   "bytes": 34919,
+   "sha256": "834ca3c7ff7ef8413e3b095d60e9803676ecff367e5db7b355a77c2af7b80c73"
+  },
+  "lt-eo.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\lt-eo\\lt-eo.train.500.cc.trans",
+   "bytes": 7264,
+   "sha256": "3568c6f54cca666c3a731ebe0a3c9ee18b163086964337ca44988b9646c502ce"
+  },
+  "lt-eo.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\lt-eo\\lt-eo.train.5000.cc.trans",
+   "bytes": 82906,
+   "sha256": "e42557c4e431ae65d67af452163f5d7e8007ef7fe4fec9b215fd005c704009e3"
+  },
+  "lt-eo.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\lt-eo\\lt-eo.test.2000.cc.trans",
+   "bytes": 34997,
+   "sha256": "6a69e629278ebfec6968c6555249e6492d8e2fc5abcc4a6262a6a440da240fb9"
+  },
+  "lt-et.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\lt-et\\lt-et.train.500.cc.trans",
+   "bytes": 7165,
+   "sha256": "0f083b421a5f2a4b6686692bc9327e5c2820860d7fbb91564134752b3db33286"
+  },
+  "lt-et.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\lt-et\\lt-et.train.5000.cc.trans",
+   "bytes": 82203,
+   "sha256": "3bf0ff645c1fe62863f83c4aea49ae3e58e54500232a1faab6c2dceb232c438a"
+  },
+  "lt-et.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\lt-et\\lt-et.test.2000.cc.trans",
+   "bytes": 34906,
+   "sha256": "07ea68137e24e7a126832393768063f8a66e7fb736d4882542734f0b5e61f20c"
+  },
+  "lt-eu.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\lt-eu\\lt-eu.train.500.cc.trans",
+   "bytes": 7604,
+   "sha256": "653fb871dc6290c68f7b0773df24e1e601412cab37d7066ea7c9c5641950a890"
+  },
+  "lt-eu.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\lt-eu\\lt-eu.train.5000.cc.trans",
+   "bytes": 83154,
+   "sha256": "f438207988d827392e9a14162469c9dd03404950432df4a2de5df66aecedf2b1"
+  },
+  "lt-eu.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\lt-eu\\lt-eu.test.2000.cc.trans",
+   "bytes": 25551,
+   "sha256": "f6de0d80e7d6906eb12981bed3a3e500d11b115be34ca4edd5b9e0bc72e5e680"
+  },
+  "lt-fi.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\lt-fi\\lt-fi.train.500.cc.trans",
+   "bytes": 7585,
+   "sha256": "6bb3f6080fc90e802f49b77cc104a6acdce80f90ea0b94daa700b31d278bc41f"
+  },
+  "lt-fi.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\lt-fi\\lt-fi.train.5000.cc.trans",
+   "bytes": 85427,
+   "sha256": "4f2d00e85eb2375fb714918514ffef0eeb25e79bcd1c4ea1cd3c10b0ccfa21e2"
+  },
+  "lt-fi.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\lt-fi\\lt-fi.test.2000.cc.trans",
+   "bytes": 35767,
+   "sha256": "ab58c877f1b8ce8698a032e3c73ebf898363d41c47de4150d9ecd44e79795e16"
+  },
+  "lt-he.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\lt-he\\lt-he.train.500.cc.trans",
+   "bytes": 8321,
+   "sha256": "e296e6f4229cd9df4e74687e8226096bff3d49cb43dce2be41a59adc4bac8dbe"
+  },
+  "lt-he.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\lt-he\\lt-he.train.5000.cc.trans",
+   "bytes": 94553,
+   "sha256": "c559241327046f3b0da369825a4f70b499697cb2e2880c4fdf63eff9dc165a01"
+  },
+  "lt-he.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\lt-he\\lt-he.test.2000.cc.trans",
+   "bytes": 40628,
+   "sha256": "19dbd70da5aa4d34cd7b4ed57b6e9da1f389929b5697ce4d4b7743d6e52c11ad"
+  },
+  "lt-hu.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\lt-hu\\lt-hu.train.500.cc.trans",
+   "bytes": 7701,
+   "sha256": "b8690d4b753c612c89a69538a08cac51a69c4b9d9bbd467c993d0efc33c64c40"
+  },
+  "lt-hu.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\lt-hu\\lt-hu.train.5000.cc.trans",
+   "bytes": 86658,
+   "sha256": "7c1fa644f851e304abe8e9ab64b1cfb6a7aa5e346d7b96601588b650ebd5e573"
+  },
+  "lt-hu.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\lt-hu\\lt-hu.test.2000.cc.trans",
+   "bytes": 35757,
+   "sha256": "f68337caf5166dcc68207d8a7d4aa10b7bb8c7ba7ac8dbf17e281fc24ddcd8ad"
+  },
+  "lt-id.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\lt-id\\lt-id.train.500.cc.trans",
+   "bytes": 7475,
+   "sha256": "47e2653e5abcb73eecebf7f49d59c28fda47a35f81d2ed7d150d25f18a773036"
+  },
+  "lt-id.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\lt-id\\lt-id.train.5000.cc.trans",
+   "bytes": 82143,
+   "sha256": "106703b33c608116be372919b8821c945a863168fa8ecb1b036f3aad00a1ffb1"
+  },
+  "lt-id.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\lt-id\\lt-id.test.2000.cc.trans",
+   "bytes": 28226,
+   "sha256": "3a07475eba8d3635d4d33e1d4bfad06397a776aa5bf3ddb265e1151e4ea23806"
+  },
+  "lt-ka.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\lt-ka\\lt-ka.train.500.cc.trans",
+   "bytes": 14007,
+   "sha256": "2823693b6cc6bd235dbdec0314808d7c668568e38777ceb996313cd2be7fef82"
+  },
+  "lt-ka.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\lt-ka\\lt-ka.train.5000.cc.trans",
+   "bytes": 152297,
+   "sha256": "106be597b4e5c96b26ab70600f68d684907347e09251b8dd56d7e72852dbc36c"
+  },
+  "lt-ka.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\lt-ka\\lt-ka.test.2000.cc.trans",
+   "bytes": 53156,
+   "sha256": "537c2d23f5ad0f2de533e3fc659cd43d066ef4171764c2618086daf2ad96e5fc"
+  },
+  "lt-ko.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\lt-ko\\lt-ko.train.500.cc.trans",
+   "bytes": 8253,
+   "sha256": "9cf34a46c71605c8b80b06a26a3b2e41829774660bb341d643e0a68985fc9d1f"
+  },
+  "lt-ko.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\lt-ko\\lt-ko.train.5000.cc.trans",
+   "bytes": 88387,
+   "sha256": "d2600ac32634932e11107f8296b9e5a55bd303db508d939f30fc559e091ab9bb"
+  },
+  "lt-ko.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\lt-ko\\lt-ko.test.2000.cc.trans",
+   "bytes": 37710,
+   "sha256": "f8db1dfc66ea5fd2e42e4426373461dd3441f117e60d73e11885bfc3d3d4f875"
+  },
+  "lt-no.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\lt-no\\lt-no.train.500.cc.trans",
+   "bytes": 6925,
+   "sha256": "bef4820a10de5ecd777234eca24dcbfadcc6eabef38f0b10d3294f4f7ee73f8a"
+  },
+  "lt-no.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\lt-no\\lt-no.train.5000.cc.trans",
+   "bytes": 81302,
+   "sha256": "e993403a12a9e6922388c13780db479b1a4b696f6b0c0dd0bbcc846939fd90b3"
+  },
+  "lt-no.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\lt-no\\lt-no.test.2000.cc.trans",
+   "bytes": 33937,
+   "sha256": "b141f850aadf7dc9da4df3d5b73772d0f9891097a80af87242106f756bc2cc7c"
+  },
+  "lt-th.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\lt-th\\lt-th.train.500.cc.trans",
+   "bytes": 10428,
+   "sha256": "60ff8fb0064b23613ad3801429b9e047babd430b6c6b1712b35b2a4d254187a5"
+  },
+  "lt-th.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\lt-th\\lt-th.train.5000.cc.trans",
+   "bytes": 78631,
+   "sha256": "fb6fa895079292e419bbadf01f4bea4c50cf3c71558baeec5aa25e9b5437683c"
+  },
+  "lt-th.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\lt-th\\lt-th.test.2000.cc.trans",
+   "bytes": 23975,
+   "sha256": "81972bdb1f980013a524e8b4e1e91155725377e2aba36d9233cc459ddc4d8a43"
+  },
+  "lt-tr.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\lt-tr\\lt-tr.train.500.cc.trans",
+   "bytes": 7433,
+   "sha256": "2af5237731defa22daaa45d9200a712938db7e60d428937fb164c42474d1b874"
+  },
+  "lt-tr.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\lt-tr\\lt-tr.train.5000.cc.trans",
+   "bytes": 80579,
+   "sha256": "1f90f07f0684a9c4d1dcf86e8958afd28b94e5e3735bbeb9028b889386086fe1"
+  },
+  "lt-tr.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\lt-tr\\lt-tr.test.2000.cc.trans",
+   "bytes": 33988,
+   "sha256": "128afaa987285609988bedadf3f0668841a6b42fd407673189608935e83e5525"
+  },
+  "no-bg.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\no-bg\\no-bg.train.500.cc.trans",
+   "bytes": 9081,
+   "sha256": "bfc547e3dfa010a19a51d9df0455a264e7d5028dc26529569844f58d11eef48e"
+  },
+  "no-bg.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\no-bg\\no-bg.train.5000.cc.trans",
+   "bytes": 108145,
+   "sha256": "0d3e7351ab2b098c80426262e2383e736d41ba0ee179522131ec1e902e6f1b42"
+  },
+  "no-bg.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\no-bg\\no-bg.test.2000.cc.trans",
+   "bytes": 46233,
+   "sha256": "a92e94d5f8842c6e155927c1eb7e661a97170d2b2b8f115818087eb2124949ff"
+  },
+  "no-ca.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\no-ca\\no-ca.train.500.cc.trans",
+   "bytes": 6483,
+   "sha256": "1483f79de27e697eeff53bb5998904be1f2dd29bc50d911a7119eb32b3b7dd72"
+  },
+  "no-ca.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\no-ca\\no-ca.train.5000.cc.trans",
+   "bytes": 77906,
+   "sha256": "e5b40eaa8be78154c21de01061d7de27d87b616da0b8273e27d8297c1b928b9d"
+  },
+  "no-ca.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\no-ca\\no-ca.test.2000.cc.trans",
+   "bytes": 32992,
+   "sha256": "f2ccb742066f2e2a3b901c9eb4ffd6c59e17dc9f77feeba7138acd04cbe8cae2"
+  },
+  "no-eo.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\no-eo\\no-eo.train.500.cc.trans",
+   "bytes": 6604,
+   "sha256": "c91ab042424eac42731d3cd8a7875d3b3004f49baf1bfcfcbc2fe6b148e8ffdc"
+  },
+  "no-eo.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\no-eo\\no-eo.train.5000.cc.trans",
+   "bytes": 78073,
+   "sha256": "fb84010af2b9cc499d02c377ebb3c357a09efa1d1e8c1256e2b4ff765e8a1940"
+  },
+  "no-eo.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\no-eo\\no-eo.test.2000.cc.trans",
+   "bytes": 33037,
+   "sha256": "ad34f7d439dc0868867af538136797226c111d028d8ec03ad3554960fc3c27aa"
+  },
+  "no-et.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\no-et\\no-et.train.500.cc.trans",
+   "bytes": 6456,
+   "sha256": "cb0c57eff8f2628c19ea120f2dac78c35c8d1009862428be7d09818497101e7f"
+  },
+  "no-et.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\no-et\\no-et.train.5000.cc.trans",
+   "bytes": 76406,
+   "sha256": "dbf54fc802223e8a16a9dbe687323b83509af725f07aadcd2dc8c4857daefbe9"
+  },
+  "no-et.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\no-et\\no-et.test.2000.cc.trans",
+   "bytes": 33247,
+   "sha256": "d94d51470a0e629792e7d70d1a73960b8533d6d12ad3168f40c92372b410073a"
+  },
+  "no-eu.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\no-eu\\no-eu.train.500.cc.trans",
+   "bytes": 6899,
+   "sha256": "a8cc8696f63097cf1d07cadf68e50494784076fc68192d54b96609e4a5ff376c"
+  },
+  "no-eu.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\no-eu\\no-eu.train.5000.cc.trans",
+   "bytes": 77802,
+   "sha256": "388291f919e251f923e14a054150c14f9ba5a75719081a7f9be6c9bcacf077a6"
+  },
+  "no-eu.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\no-eu\\no-eu.test.2000.cc.trans",
+   "bytes": 32932,
+   "sha256": "f8fbcec2c17e1add98e71d586159ec6fc1e6d2e402a0b81bcef36096f47d254e"
+  },
+  "no-fi.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\no-fi\\no-fi.train.500.cc.trans",
+   "bytes": 6832,
+   "sha256": "bf2cf53cf8b8cafcfcd657e944021fc18b81c98342c1f6d08a7304d1e24f9b88"
+  },
+  "no-fi.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\no-fi\\no-fi.train.5000.cc.trans",
+   "bytes": 79490,
+   "sha256": "489c69754d79c9a30a03df345442a80382b15e5cd7ab535afddbf32eedd47e0b"
+  },
+  "no-fi.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\no-fi\\no-fi.test.2000.cc.trans",
+   "bytes": 34189,
+   "sha256": "1069fe2db5a6de5ea787dc9299e21a0362624be3cd2a127c70aaae7e254c8bbf"
+  },
+  "no-he.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\no-he\\no-he.train.500.cc.trans",
+   "bytes": 7367,
+   "sha256": "9f4a191b1b81210520f80080bf7fb9ac0c95131235971314c938511f1b9fdbba"
+  },
+  "no-he.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\no-he\\no-he.train.5000.cc.trans",
+   "bytes": 86550,
+   "sha256": "4b8ad1f39c3f83191748aab5c5d9e291d1e0364aa9a057efdca03db5011b30c4"
+  },
+  "no-he.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\no-he\\no-he.test.2000.cc.trans",
+   "bytes": 38187,
+   "sha256": "ca715d16dee6dbe571e9dfae1788a8633e5337d421e28124eb26b2e27290e8ff"
+  },
+  "no-hu.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\no-hu\\no-hu.train.500.cc.trans",
+   "bytes": 6662,
+   "sha256": "9b1cff7e52db101bb1589d8b476e3b52208074df8f9ac15eb8deb7a79fd64681"
+  },
+  "no-hu.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\no-hu\\no-hu.train.5000.cc.trans",
+   "bytes": 80113,
+   "sha256": "6e7bc83488e4e93ba9d757ba0c1634926e514f93387d3fb3995507a22ffabda9"
+  },
+  "no-hu.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\no-hu\\no-hu.test.2000.cc.trans",
+   "bytes": 34806,
+   "sha256": "6a3c5b8a7257af1f62f22e28787b54cd0e18dbb9002f5d5b92a09fd802eaedf6"
+  },
+  "no-id.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\no-id\\no-id.train.500.cc.trans",
+   "bytes": 6745,
+   "sha256": "7c37ee49776d28971b9dcfef7f0415246eb992e1ee4a3a1c4f85119f54c0b799"
+  },
+  "no-id.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\no-id\\no-id.train.5000.cc.trans",
+   "bytes": 76738,
+   "sha256": "4c5b65eda9de3c210101b6c0ef2f7ab527eb7619f711c21c2eeccb9f37796111"
+  },
+  "no-id.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\no-id\\no-id.test.2000.cc.trans",
+   "bytes": 32826,
+   "sha256": "07a7ad9e365de04072d1030a156ee18a15401c929adf6e5a5b7b29d6c23e4ab8"
+  },
+  "no-ka.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\no-ka\\no-ka.train.500.cc.trans",
+   "bytes": 13607,
+   "sha256": "b424bcd0354817897e59d3b2ecce0a3c3b21c9baf48b19305a284bf04ab9477c"
+  },
+  "no-ka.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\no-ka\\no-ka.train.5000.cc.trans",
+   "bytes": 148871,
+   "sha256": "5b6b90ad403aa28fe1fdced5964a27927172837d0b842e00f70487677f6a7746"
+  },
+  "no-ka.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\no-ka\\no-ka.test.2000.cc.trans",
+   "bytes": 61769,
+   "sha256": "333899bd5721e4f77f25b215ccc059767939e147b78e1d1bf24a0fa742612690"
+  },
+  "no-ko.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\no-ko\\no-ko.train.500.cc.trans",
+   "bytes": 7733,
+   "sha256": "9848d5908ce68c2b84a088904c86caad4e8f78568c820e001e79f0085d0e2d42"
+  },
+  "no-ko.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\no-ko\\no-ko.train.5000.cc.trans",
+   "bytes": 82164,
+   "sha256": "d64e0b00aca3c39774b4ff402c5e61bfacf2ad543c46fdd8850225b6b4277eef"
+  },
+  "no-ko.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\no-ko\\no-ko.test.2000.cc.trans",
+   "bytes": 35221,
+   "sha256": "ece5f05e4a6eabe3642a63907b5019e131a6a7438c28d704fa2a7d0e6603d712"
+  },
+  "no-lt.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\no-lt\\no-lt.train.500.cc.trans",
+   "bytes": 7167,
+   "sha256": "b7706e09b0afef1608e46c431e63d5c6c98b7323be393102b613b7a0aafe0535"
+  },
+  "no-lt.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\no-lt\\no-lt.train.5000.cc.trans",
+   "bytes": 80487,
+   "sha256": "04cf5fdf4d073434e770d0513b309016920678879205faa1d6d0a4698a00a24b"
+  },
+  "no-lt.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\no-lt\\no-lt.test.2000.cc.trans",
+   "bytes": 34050,
+   "sha256": "9b7584c2fd118def393588d755199b6cc5e3e1de8f45a45fa679b7fd3e2fa07d"
+  },
+  "no-th.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\no-th\\no-th.train.500.cc.trans",
+   "bytes": 9701,
+   "sha256": "9dfc7f2742f1c4287c678b897d8cebe14942f902e698a5ffe3b908db64d53f77"
+  },
+  "no-th.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\no-th\\no-th.train.5000.cc.trans",
+   "bytes": 116965,
+   "sha256": "2eaaa05a1aa3ceb3d0eee7e984a4c44bbf2a419ffc156224ae12da7b216f8f74"
+  },
+  "no-th.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\no-th\\no-th.test.2000.cc.trans",
+   "bytes": 50538,
+   "sha256": "89212f142ba42064a60eae989c887da8f8125efeb003c5fe1cbe9f33b8b4d103"
+  },
+  "no-tr.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\no-tr\\no-tr.train.500.cc.trans",
+   "bytes": 6759,
+   "sha256": "2175c740f97a626cc8ba6075ca7435013d205fee12560a61657339040efe0057"
+  },
+  "no-tr.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\no-tr\\no-tr.train.5000.cc.trans",
+   "bytes": 74649,
+   "sha256": "1cf4c620caa594a4b0b35294dc47b2e36b2bb2b156559178ec5b2880b906881d"
+  },
+  "no-tr.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\no-tr\\no-tr.test.2000.cc.trans",
+   "bytes": 32044,
+   "sha256": "5f2f88b8816370b1c9e8dd313f3f4a7e3bce2a65b94f9a72d32a094cac5f0913"
+  },
+  "th-bg.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\th-bg\\th-bg.train.500.cc.trans",
+   "bytes": 14057,
+   "sha256": "c9c3ecf1c6377fadfd62b19199d84139d9b3be02849da053346607852349dec2"
+  },
+  "th-bg.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\th-bg\\th-bg.train.5000.cc.trans",
+   "bytes": 136275,
+   "sha256": "b0777c59fa11c26195416fac3474fcd543fb8c8e9e3f15bc8895d895afb186fd"
+  },
+  "th-bg.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\th-bg\\th-bg.test.2000.cc.trans",
+   "bytes": 31525,
+   "sha256": "06d6112dc1bfdc2fc0a25d4ae68b1a972e2f2c1bb9e8a959a1161f33c4e4bdd9"
+  },
+  "th-ca.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\th-ca\\th-ca.train.500.cc.trans",
+   "bytes": 10445,
+   "sha256": "720595e3c3b11d3dcb520f7bf1a860f9782f0527fe1e595648e1e32edaa10b80"
+  },
+  "th-ca.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\th-ca\\th-ca.train.5000.cc.trans",
+   "bytes": 121313,
+   "sha256": "4de6d89234436d51586b77b54ebf435e113e2308c10b1b7906137d8c975a4636"
+  },
+  "th-ca.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\th-ca\\th-ca.test.2000.cc.trans",
+   "bytes": 49255,
+   "sha256": "ccca98007d704223abc1ee91146bb3d519befe9df483da90b5b4f9bee10c9828"
+  },
+  "th-eo.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\th-eo\\th-eo.train.500.cc.trans",
+   "bytes": 11607,
+   "sha256": "4789ee9b7eb253a4bc1938f814333471d90cc4980eecc5b53d9dbf01bff08d96"
+  },
+  "th-eo.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\th-eo\\th-eo.train.5000.cc.trans",
+   "bytes": 112017,
+   "sha256": "1e5adde42d5231b185969a43507869cc725a1a393af1b5879ec20646ca377b85"
+  },
+  "th-eo.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\th-eo\\th-eo.test.2000.cc.trans",
+   "bytes": 25989,
+   "sha256": "3629a2b23f39a16c71a7e168334e4c77dab103c263abd0ce514059627bce4122"
+  },
+  "th-et.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\th-et\\th-et.train.500.cc.trans",
+   "bytes": 11395,
+   "sha256": "d8c2e36f0c24b97aec8849a02d667f1056d66e7c3466ec37c607f0c32ff64957"
+  },
+  "th-et.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\th-et\\th-et.train.5000.cc.trans",
+   "bytes": 65736,
+   "sha256": "1153827e5d3437cfa2c519dd57276c2f97b95a319c11ce2a17bc4f880f4c4dd4"
+  },
+  "th-et.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\th-et\\th-et.test.2000.cc.trans",
+   "bytes": 23298,
+   "sha256": "1750db96dc24a49e6af16d5eaf043faaa13b6b4497ca270d3c688b864c04bcc7"
+  },
+  "th-eu.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\th-eu\\th-eu.train.500.cc.trans",
+   "bytes": 11037,
+   "sha256": "76d149851887af960a56e73ca432c2f5b2e3ced2c7d324a807343b35c409ac6f"
+  },
+  "th-eu.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\th-eu\\th-eu.train.5000.cc.trans",
+   "bytes": 105970,
+   "sha256": "e9d139957f1a06e4d5fb14ba29c21712f8d4092f89c31b4438e79bceecba9708"
+  },
+  "th-eu.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\th-eu\\th-eu.test.2000.cc.trans",
+   "bytes": 24941,
+   "sha256": "5dd7133242a8aa8ce11b28b2ac850099dcec8e3e9bde44975a38d3c019a48bb0"
+  },
+  "th-fi.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\th-fi\\th-fi.train.500.cc.trans",
+   "bytes": 10633,
+   "sha256": "af356422fd4ccaddf6ed36b34df6d27bb51ce4a1a594b789e4f1eb888ca1b03c"
+  },
+  "th-fi.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\th-fi\\th-fi.train.5000.cc.trans",
+   "bytes": 122675,
+   "sha256": "48a1588abf757758160b265188cc8976d805138444928e9a2ac099704c745175"
+  },
+  "th-fi.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\th-fi\\th-fi.test.2000.cc.trans",
+   "bytes": 50907,
+   "sha256": "49a82ddead3ff839b57bd2896a99955405270d72aea90d1dd434f85e9e9a5800"
+  },
+  "th-he.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\th-he\\th-he.train.500.cc.trans",
+   "bytes": 11700,
+   "sha256": "bcf057f085e81e729763e69f04951f2e17e0fa1ad55023e2ceaea4d1548eb851"
+  },
+  "th-he.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\th-he\\th-he.train.5000.cc.trans",
+   "bytes": 64752,
+   "sha256": "02d81ed67ad55a694d73288a9e585d1d3dbc7ab1c1d57c5050e1d2ed8e1945ea"
+  },
+  "th-he.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\th-he\\th-he.test.2000.cc.trans",
+   "bytes": 24289,
+   "sha256": "99b2509e23498bbc1678659e0a0c05defe985bc80eb78b9c238139429ed8b007"
+  },
+  "th-hu.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\th-hu\\th-hu.train.500.cc.trans",
+   "bytes": 11129,
+   "sha256": "c01a32d2e9f2ef44dc6f034d511cce4f701ad054f682e1f0fccbb621e5fc933a"
+  },
+  "th-hu.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\th-hu\\th-hu.train.5000.cc.trans",
+   "bytes": 122964,
+   "sha256": "f2b6ba1b075f6c5026f6b3c3a9fbfc0a350cf8baf714c823e3e03d6f33255b07"
+  },
+  "th-hu.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\th-hu\\th-hu.test.2000.cc.trans",
+   "bytes": 25592,
+   "sha256": "ea091ead17421add008b1827d3dfc88e483f38dca6127dbe403ffd24256a16ad"
+  },
+  "th-id.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\th-id\\th-id.train.500.cc.trans",
+   "bytes": 10784,
+   "sha256": "64a58324abf5d773838f0d08f70d65d89c26af91d1fe55723b670301b0b1ac44"
+  },
+  "th-id.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\th-id\\th-id.train.5000.cc.trans",
+   "bytes": 117995,
+   "sha256": "8499562a3b318e44b96993e9c81c90ccc35d86f363324dee39e82fb0a177e3f2"
+  },
+  "th-id.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\th-id\\th-id.test.2000.cc.trans",
+   "bytes": 48544,
+   "sha256": "4f61c0979621b1dbfc212c3223ef73825dbd2929261d0865fe61c136da8b3f58"
+  },
+  "th-ka.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\th-ka\\th-ka.train.500.cc.trans",
+   "bytes": 17684,
+   "sha256": "9fe800f95d973027c371fb0507b1d4902fdcc6ca88edb3f9e0cde2a31b52c009"
+  },
+  "th-ka.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\th-ka\\th-ka.train.5000.cc.trans",
+   "bytes": 91032,
+   "sha256": "296cf2cc362d1146428eacd6fb38445896b1e10864e0741a3e5ecee024fe410a"
+  },
+  "th-ka.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\th-ka\\th-ka.test.2000.cc.trans",
+   "bytes": 39150,
+   "sha256": "c11621c405d65999b1562418e6260ebba51da9f3d015b0be1de91e3d228f93c3"
+  },
+  "th-ko.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\th-ko\\th-ko.train.500.cc.trans",
+   "bytes": 12733,
+   "sha256": "1146818a938862e08721ec3f0a5c7484676261595963c79fa3f45cb0259673d9"
+  },
+  "th-ko.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\th-ko\\th-ko.train.5000.cc.trans",
+   "bytes": 89581,
+   "sha256": "656939c1cc207522889a3b4670af1f43227b82e2ed9491d48fccf2fca84376e7"
+  },
+  "th-ko.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\th-ko\\th-ko.test.2000.cc.trans",
+   "bytes": 25660,
+   "sha256": "c750b3d00029e1714eb5ca897df145d338e5f6d0ec6c611f8c8edf8603664c7c"
+  },
+  "th-lt.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\th-lt\\th-lt.train.500.cc.trans",
+   "bytes": 12160,
+   "sha256": "04a533e76b8bdf6fbd09cb410d2d4c1c7a27b6391b70c8bb38d0d5b64f7ee896"
+  },
+  "th-lt.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\th-lt\\th-lt.train.5000.cc.trans",
+   "bytes": 69642,
+   "sha256": "2d6c47d5035c9a89fefb06b49fc6f487b8a40b5d736bcd60eedcf1f7e05807dd"
+  },
+  "th-lt.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\th-lt\\th-lt.test.2000.cc.trans",
+   "bytes": 23480,
+   "sha256": "377697e024fff5c5ccfafd4a86b306c6f7b0bd372812de8b6d2f86eaaa21a114"
+  },
+  "th-no.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\th-no\\th-no.train.500.cc.trans",
+   "bytes": 10499,
+   "sha256": "6c8a0a348622fc71f1fa773db8c7379e2b5f9c7d5cbdb4756a47e68c821e4c20"
+  },
+  "th-no.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\th-no\\th-no.train.5000.cc.trans",
+   "bytes": 123316,
+   "sha256": "7e4c73656dcd7a77ad8266f4ea34c3bc0dde99ac24777ec8bba377433facc6f9"
+  },
+  "th-no.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\th-no\\th-no.test.2000.cc.trans",
+   "bytes": 45575,
+   "sha256": "fd1f1a0563d5bbf10acd167ef8a34b187e6b656218ce1ea99c5905cc06f684af"
+  },
+  "th-tr.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\th-tr\\th-tr.train.500.cc.trans",
+   "bytes": 10798,
+   "sha256": "44662e97d5b0a59f753aa6327af2d707da6bc0b888d3d5ff589357f22b676ee8"
+  },
+  "th-tr.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\th-tr\\th-tr.train.5000.cc.trans",
+   "bytes": 107992,
+   "sha256": "c41d5a41e9c254abd1d22d3baee22f2d63da38785d54b0b818777c56a3350a59"
+  },
+  "th-tr.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\th-tr\\th-tr.test.2000.cc.trans",
+   "bytes": 22882,
+   "sha256": "f56fd17d9e58350bf891fbe4e3d5c316ae62a49e2ecd3475e582f4d4a86ffa30"
+  },
+  "tr-bg.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\tr-bg\\tr-bg.train.500.cc.trans",
+   "bytes": 9443,
+   "sha256": "35d768efc9bdc898492ca408630f9c50051b724bd91c15b35c7409c6eb101b69"
+  },
+  "tr-bg.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\tr-bg\\tr-bg.train.5000.cc.trans",
+   "bytes": 107420,
+   "sha256": "8f902a3314a03451af8d43297ac4731ad5bad43778b56fd89de1fed43916c1c0"
+  },
+  "tr-bg.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\tr-bg\\tr-bg.test.2000.cc.trans",
+   "bytes": 45484,
+   "sha256": "32026de59978f6aadbfc7a235c01ef8ef5ac4c965b6150da2675ac96885cca37"
+  },
+  "tr-ca.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\tr-ca\\tr-ca.train.500.cc.trans",
+   "bytes": 6691,
+   "sha256": "544996ce74f20de97de7de46dc12b77b419eba55f371ca318fa6f164073b5b02"
+  },
+  "tr-ca.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\tr-ca\\tr-ca.train.5000.cc.trans",
+   "bytes": 77730,
+   "sha256": "a78fb20e3bc16943bf6711cde0662f9858b4d1df3d3cd933954f3accc5a38f3d"
+  },
+  "tr-ca.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\tr-ca\\tr-ca.test.2000.cc.trans",
+   "bytes": 32965,
+   "sha256": "e42865ffef6655222d4aa9ad88245fcf7af3dede4ee4592424b7d44feca2f379"
+  },
+  "tr-eo.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\tr-eo\\tr-eo.train.500.cc.trans",
+   "bytes": 6794,
+   "sha256": "d01bbe3cb0f7d17de8e1419c188c5f9ac57bbefaa3245cd34374ec83049e8916"
+  },
+  "tr-eo.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\tr-eo\\tr-eo.train.5000.cc.trans",
+   "bytes": 76606,
+   "sha256": "f5896876bf1b28e6702540757077d1272abccb7ee70a84fe0b6e6dc4e7ec3b15"
+  },
+  "tr-eo.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\tr-eo\\tr-eo.test.2000.cc.trans",
+   "bytes": 32586,
+   "sha256": "73c59dd84b3c3504dcccfd7902b1993c43f3c7f3ac1eeeddc797bbb31682dadc"
+  },
+  "tr-et.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\tr-et\\tr-et.train.500.cc.trans",
+   "bytes": 6541,
+   "sha256": "1252df260386aaa545b6e85b92a7310fe1fc2b356e07e10ee249198d71214544"
+  },
+  "tr-et.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\tr-et\\tr-et.train.5000.cc.trans",
+   "bytes": 74974,
+   "sha256": "afc7db72c34498b76216723f8ff8c3a79de82bbd20e57a83e9f82ecfefcd0619"
+  },
+  "tr-et.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\tr-et\\tr-et.test.2000.cc.trans",
+   "bytes": 32136,
+   "sha256": "4a342a18de76846d217d35637cafe44dd6b6d14498f67dac8b8c5c0337308f42"
+  },
+  "tr-eu.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\tr-eu\\tr-eu.train.500.cc.trans",
+   "bytes": 7141,
+   "sha256": "bbde852b4f5d2f85c8ae7f8ca03be657812ee7ed6fa944a189cc6d9ad7150070"
+  },
+  "tr-eu.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\tr-eu\\tr-eu.train.5000.cc.trans",
+   "bytes": 78059,
+   "sha256": "80c14969d1fbc6cba2d394b4416e4e15042a415faac4f4dd948ad1a30f34ee38"
+  },
+  "tr-eu.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\tr-eu\\tr-eu.test.2000.cc.trans",
+   "bytes": 33082,
+   "sha256": "442a5808134843a92a4e0bad5f258cbc8548d862e626cffbd1b49fd25b41a9b0"
+  },
+  "tr-fi.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\tr-fi\\tr-fi.train.500.cc.trans",
+   "bytes": 7286,
+   "sha256": "748db33f427dc575953eba9f420a48c0a93fe293cf7a2254b360b1e132e05eed"
+  },
+  "tr-fi.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\tr-fi\\tr-fi.train.5000.cc.trans",
+   "bytes": 79958,
+   "sha256": "0af6321146ac761f14ba082d1dd48664f3aef844d290d19394a085b4902fec0a"
+  },
+  "tr-fi.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\tr-fi\\tr-fi.test.2000.cc.trans",
+   "bytes": 33537,
+   "sha256": "cd37f81d81c028648875a0ec9b924d78d82fd1997ea6f4a45b57fdead29ea379"
+  },
+  "tr-he.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\tr-he\\tr-he.train.500.cc.trans",
+   "bytes": 7791,
+   "sha256": "94c033e0ac011490c7e23d32c64d879c18fed5613a26f06f1df59b79e9dd0cb1"
+  },
+  "tr-he.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\tr-he\\tr-he.train.5000.cc.trans",
+   "bytes": 86846,
+   "sha256": "99b0dbbf91abc3f406850c66d2b4c4ae6caf52490a75256398820a1707326650"
+  },
+  "tr-he.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\tr-he\\tr-he.test.2000.cc.trans",
+   "bytes": 38526,
+   "sha256": "7d60441feecbf9f9ac424325e20ba5f48d23ee845f1e78d9e7fd9f2ee1e9cc80"
+  },
+  "tr-hu.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\tr-hu\\tr-hu.train.500.cc.trans",
+   "bytes": 6997,
+   "sha256": "f356375ec914a2049cd4496f175cf01df06cc008cfd54f04a035b2e649b67675"
+  },
+  "tr-hu.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\tr-hu\\tr-hu.train.5000.cc.trans",
+   "bytes": 80033,
+   "sha256": "b550f48da6fdcf381685c094eab15ca1ecd98b0770d25464c8748836c01cfbcf"
+  },
+  "tr-hu.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\tr-hu\\tr-hu.test.2000.cc.trans",
+   "bytes": 34063,
+   "sha256": "28a8f78111d09e3e66317d412dbfd2c4787117bd2b70d6331df16d6e59d8ba51"
+  },
+  "tr-id.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\tr-id\\tr-id.train.500.cc.trans",
+   "bytes": 6744,
+   "sha256": "9734084cfa1fbdb80946929594d3b76b721b313d9dc3853083127264c835aa37"
+  },
+  "tr-id.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\tr-id\\tr-id.train.5000.cc.trans",
+   "bytes": 75942,
+   "sha256": "0faf65c14844536be69b75343102747c2ab13e91333c559939bbbb55492edb40"
+  },
+  "tr-id.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\tr-id\\tr-id.test.2000.cc.trans",
+   "bytes": 32089,
+   "sha256": "41a39ab41c00bacd3a98d1d26ddcc017c1296cc6223c78999d0af97dd7a8c113"
+  },
+  "tr-ka.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\tr-ka\\tr-ka.train.500.cc.trans",
+   "bytes": 13305,
+   "sha256": "e6c8a75d13e2da9e88478b58ba3080798fab71b3a4bc06b0952fc8a123fe9532"
+  },
+  "tr-ka.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\tr-ka\\tr-ka.train.5000.cc.trans",
+   "bytes": 152664,
+   "sha256": "089e4d3ec332032dab131b5c35a01b747873a5c539400a6c3b6634dccf3d228c"
+  },
+  "tr-ka.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\tr-ka\\tr-ka.test.2000.cc.trans",
+   "bytes": 62924,
+   "sha256": "2d67cb8ec8671323a0e37a9cb398741b1c46078c7797c4f08ad7ff84d02956ff"
+  },
+  "tr-ko.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\tr-ko\\tr-ko.train.500.cc.trans",
+   "bytes": 7456,
+   "sha256": "df09c9d54540575b91464996e530543b1aea5b9ff7b3ea24c87708c528b0b543"
+  },
+  "tr-ko.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\tr-ko\\tr-ko.train.5000.cc.trans",
+   "bytes": 80181,
+   "sha256": "fac11e59dc339b9e2ba2f074b048f0c5978bd9ab9a2a4fab128826fa15d6ffe9"
+  },
+  "tr-ko.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\tr-ko\\tr-ko.test.2000.cc.trans",
+   "bytes": 33839,
+   "sha256": "f2ad66e54bf3c664e3fc2332560e3a1885488ef59aaedac8fa2617b0aa778c27"
+  },
+  "tr-lt.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\tr-lt\\tr-lt.train.500.cc.trans",
+   "bytes": 7285,
+   "sha256": "3a95dc41265ac7e7db4827ef409793cca28ea20a88e0e0d3c565a91cdbbf7476"
+  },
+  "tr-lt.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\tr-lt\\tr-lt.train.5000.cc.trans",
+   "bytes": 80643,
+   "sha256": "a00e697ebd9c8e22b79f6e4281ea392baed9961cc51aad102e7b1fe63dc973ca"
+  },
+  "tr-lt.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\tr-lt\\tr-lt.test.2000.cc.trans",
+   "bytes": 33682,
+   "sha256": "5efd75a8e30c04af258c8b7d5749f5840ab3134840634dd1077472b10de182a7"
+  },
+  "tr-no.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\tr-no\\tr-no.train.500.cc.trans",
+   "bytes": 6345,
+   "sha256": "344da57dee70a3bcd44f358f5d6c1891a6204e74fbe4c9a235940b75bb8ea916"
+  },
+  "tr-no.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\tr-no\\tr-no.train.5000.cc.trans",
+   "bytes": 74908,
+   "sha256": "fe2ea878e5e3b24e02f7fc4b234a1f876c47e4f26872011ca9de18f501a76d1a"
+  },
+  "tr-no.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\tr-no\\tr-no.test.2000.cc.trans",
+   "bytes": 31906,
+   "sha256": "d497065eceb014f2e667290cdedabb020eee9968155839e2581b7ac49f475051"
+  },
+  "tr-th.train.500": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\tr-th\\tr-th.train.500.cc.trans",
+   "bytes": 9844,
+   "sha256": "4039b51f758aba54bed19fd3bea765124cc986ffbc54e3b9e3371996ccd745f1"
+  },
+  "tr-th.train.5000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\tr-th\\tr-th.train.5000.cc.trans",
+   "bytes": 117972,
+   "sha256": "92f783ab01ec964813506a13aafca3e9941d0d99f5873e5df407c4b958502059"
+  },
+  "tr-th.test.2000": {
+   "path": "C:\\data\\language-graph\\external\\panlex-bli\\lexicons\\all\\tr-th\\tr-th.test.2000.cc.trans",
+   "bytes": 22952,
+   "sha256": "b4afe568b634bab645387843041a4147a026eaccd4d8c39647c704f45128c1a6"
+  }
+ }
+}

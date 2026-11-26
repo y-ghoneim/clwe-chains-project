@@ -1,0 +1,181 @@
+{
+ "commit": "072a094f8a68b9b880261eef6df8fc94865a93ec",
+ "smoke": false,
+ "config": {
+  "n_mlp_seeds": 3,
+  "n_boot": 1000
+ },
+ "african": [
+  "yo",
+  "sw",
+  "am",
+  "so"
+ ],
+ "labelled": [
+  "en",
+  "fr"
+ ],
+ "pairs": 8,
+ "n_boot": 1000,
+ "classifiers": {
+  "lr_grid": [
+   0.001,
+   0.01,
+   0.1,
+   1,
+   10,
+   100
+  ],
+  "lr_C_chosen": {
+   "yo entertainment/health/politics/sports": 1,
+   "en entertainment/health/politics/sports": 0.1,
+   "yo health/politics/sports": 0.1,
+   "fr health/politics/sports": 0.01,
+   "sw business/entertainment/health/politics/sports/technology": 0.01,
+   "en business/entertainment/health/politics/sports/technology": 0.1,
+   "sw business/health/politics/sports/technology": 0.01,
+   "fr business/health/politics/sports/technology": 0.1,
+   "am business/health/politics/sports": 0.1,
+   "en business/health/politics/sports": 1,
+   "fr business/health/politics/sports": 0.1,
+   "so business/entertainment/health/politics/sports/technology": 0.1,
+   "so business/health/politics/sports/technology": 0.1
+  },
+  "mlp": {
+   "hidden": 256,
+   "seeds": 3,
+   "max_epochs": 100,
+   "patience": 10,
+   "batch": 64
+  }
+ },
+ "texts_without_a_matched_token": [],
+ "bli_companion_joined": true,
+ "inputs": {
+  "features/yo": {
+   "path": "C:\\data\\language-graph\\v1\\downstream\\masakhanews\\yo.npz",
+   "bytes": 2301837,
+   "sha256": "dc2b1e66fdf65923560aa84dd48888d66cedbd4457db7a6b179cbd1c4dbd6d78"
+  },
+  "features/sw": {
+   "path": "C:\\data\\language-graph\\v1\\downstream\\masakhanews\\sw.npz",
+   "bytes": 2659839,
+   "sha256": "51c486e0f8cfaf263d37cbfb02c5ac0f1aa82cc36830720bcafa5c4f70f1a060"
+  },
+  "features/am": {
+   "path": "C:\\data\\language-graph\\v1\\downstream\\masakhanews\\am.npz",
+   "bytes": 2090310,
+   "sha256": "f9c42bf87c8caeb3776c217bb55ec4c6b2a1f0960e6e6cda1816659ef8249e0e"
+  },
+  "features/so": {
+   "path": "C:\\data\\language-graph\\v1\\downstream\\masakhanews\\so.npz",
+   "bytes": 1642479,
+   "sha256": "ffb85e479b74bfdaec69bb2c0363aec6e6a6413a73c3a08c15655b6864092dbb"
+  },
+  "features/en": {
+   "path": "C:\\data\\language-graph\\v1\\downstream\\masakhanews\\en.npz",
+   "bytes": 5307441,
+   "sha256": "e43d1c60fd7b79ab6bfb5fca1fa5a96673b7b9691f038156d7766ebb9c61ca74"
+  },
+  "features/fr": {
+   "path": "C:\\data\\language-graph\\v1\\downstream\\masakhanews\\fr.npz",
+   "bytes": 2371640,
+   "sha256": "45163adeb141f07cf43b0718a5cf54e746046ef89851a9685c3251f5d94f994f"
+  },
+  "masakhanews/stats.csv": {
+   "path": "C:\\data\\language-graph\\v1\\downstream\\masakhanews\\stats.csv",
+   "bytes": 2019,
+   "sha256": "f7afa38d264a5ce9c5f4ca09d97c3f0700937a2ca6aae8dc9ade694945bf1d7a"
+  },
+  "pairs.csv": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\mn\\pairs.csv",
+   "bytes": 170,
+   "sha256": "09fb9af068661a65e8b75ff992a7192e604fc6e16c0c2ef6ebe5d07cb209b8c1"
+  },
+  "dict_sizes.csv": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\mn\\dict_sizes.csv",
+   "bytes": 352,
+   "sha256": "ef370ee2f0552f8ce9971f4bd9201de4c53edf096f5f2573471e00e450ee666d"
+  },
+  "bli_companion/pooled.csv": {
+   "path": "C:\\Users\\youss\\OneDrive - aus.edu\\Desktop\\clwe-chains\\experiments\\downstream-masakhanews-bli\\results\\pooled.csv",
+   "bytes": 2555,
+   "sha256": "8f62fcd04af76624f15b6595ca9c25c4d6e1902e4a97d48ddfd46af92f4b770e"
+  },
+  "bli_companion/run_info.json": {
+   "path": "C:\\Users\\youss\\OneDrive - aus.edu\\Desktop\\clwe-chains\\experiments\\downstream-masakhanews-bli\\results\\run_info.json",
+   "bytes": 4793,
+   "sha256": "7c8805a05f23e8b4357121c0fabab10b3695e3010bfe4814e057173021afcd3e"
+  },
+  "dicts/am__en.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\mn\\dicts\\am__en.parquet",
+   "bytes": 33477,
+   "sha256": "6f19bc2597328cca1910bdd451f05d2f1ede78eb70526d1fed94ea77e29e6b05"
+  },
+  "dicts/am__fr.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\mn\\dicts\\am__fr.parquet",
+   "bytes": 21791,
+   "sha256": "25709f24c5706cb86b40fd02bc16e8f9ae154a6f00d9741083d313ede895ac48"
+  },
+  "dicts/en__fr.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\mn\\dicts\\en__fr.parquet",
+   "bytes": 1135221,
+   "sha256": "30df80a3e03b40a0bc1fc58dd0df6f977250085bde4310c6b364c21cdac2ee2b"
+  },
+  "dicts/es__en.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\mn\\dicts\\es__en.parquet",
+   "bytes": 1056497,
+   "sha256": "5b9b63017dc049057f316ab2a54c768dd2b17b4ae7ab57ec2bf173455c929828"
+  },
+  "dicts/fr__en.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\mn\\dicts\\fr__en.parquet",
+   "bytes": 1125216,
+   "sha256": "f24ec44c0cfed37650e18a9b4ab84c42ce6b8b5f2e828811ba9f493b085e91a3"
+  },
+  "dicts/it__en.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\mn\\dicts\\it__en.parquet",
+   "bytes": 974234,
+   "sha256": "26fc2e3800220bbdce81ad11cb2d60b0b035c39579a49e68cdef0e22c8118e91"
+  },
+  "dicts/so__en.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\mn\\dicts\\so__en.parquet",
+   "bytes": 20000,
+   "sha256": "299b96152a0850adf0022cb83817a7d66e222c84fea3315f3824922cb5f7b833"
+  },
+  "dicts/so__fr.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\mn\\dicts\\so__fr.parquet",
+   "bytes": 13738,
+   "sha256": "4305b8a442dbffb11f9cc3bd959d2a939f2127bffd2293fd893d71899ddd9cbb"
+  },
+  "dicts/sw__en.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\mn\\dicts\\sw__en.parquet",
+   "bytes": 206990,
+   "sha256": "890e05ee654608678b2d92e9c5c333253526d9914ad9a399900ccefb1cfd0236"
+  },
+  "dicts/sw__fr.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\mn\\dicts\\sw__fr.parquet",
+   "bytes": 94699,
+   "sha256": "9275319b258af04fe78ce4c66b24f15a74f08483e5949e7f05acdd2c847bb675"
+  },
+  "dicts/sw__it.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\mn\\dicts\\sw__it.parquet",
+   "bytes": 144450,
+   "sha256": "e4178badb9bb375fa0f6dd7711890d8f6a2afb82ef58524e1981b9e02cfbf6f1"
+  },
+  "dicts/yo__en.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\mn\\dicts\\yo__en.parquet",
+   "bytes": 54994,
+   "sha256": "909d8c640f309f17604d76119524219eb4a95bb93733712f1aff961b2454859b"
+  },
+  "dicts/yo__es.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\mn\\dicts\\yo__es.parquet",
+   "bytes": 16352,
+   "sha256": "cb68436ffda5ec24d71bddd39d54a2663f20d2c8008c6841c662a882409ed56b"
+  },
+  "dicts/yo__fr.parquet": {
+   "path": "C:\\data\\language-graph\\v1\\phase6\\mn\\dicts\\yo__fr.parquet",
+   "bytes": 9963,
+   "sha256": "fc1c81a77de41664225b3ada51d640bb4e89b7f27af7ecb31430dfca58e7fb69"
+  }
+ }
+}
